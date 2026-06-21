@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Action For India — Empowering Social Entrepreneurs to Scale Impact</title>
+  <meta name="description" content="Action For India connects visionary social entrepreneurs with investors, mentors, and resources to create lasting change for millions across India." />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23C8340A'/><text x='50' y='68' font-size='48' fill='white' font-family='serif' text-anchor='middle' font-weight='bold'>AFI</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" id="logo">
+        <div class="navbar__logo-icon">AFI</div>
+        <span class="navbar__logo-text">Action For India</span>
+      </a>
+
+      <div class="navbar__nav" id="main-nav">
+        <a href="#" class="navbar__nav-link navbar__nav-link--active" id="nav-home">Home</a>
+        <a href="about.html" class="navbar__nav-link" id="nav-about">About Us</a>
+        <a href="#impact" class="navbar__nav-link" id="nav-programs">Programs</a>
+        <a href="#impact" class="navbar__nav-link" id="nav-impact">Our Impact</a>
+        <a href="#get-involved" class="navbar__nav-link" id="nav-involved">Get Involved</a>
+        <a href="#testimonials" class="navbar__nav-link" id="nav-news">News</a>
+      </div>
+
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__gradient"></div>
+
+    <div class="hero__content">
+      <!-- Left Column -->
+      <div class="hero__left">
+        <div class="hero__badge" id="hero-badge">
+          <span class="hero__badge-dot"></span>
+          <span class="hero__badge-text">Applications Open — AI+Impact Cohort 2025</span>
+        </div>
+
+        <h1 class="hero__title" id="hero-title">
+          Empowering India's <em>Social Entrepreneurs</em> to Scale Impact
+        </h1>
+
+        <p class="hero__subtitle" id="hero-subtitle">
+          Action For India connects visionary social entrepreneurs with investors, mentors, and resources to create lasting change for millions across India.
+        </p>
+
+        <div class="hero__actions" id="hero-actions">
+          <button class="btn btn--primary" id="apply-btn">Apply as Entrepreneur</button>
+          <button class="btn btn--outline" id="impact-btn">See Our Impact</button>
+        </div>
+      </div>
+
+      <!-- Right Column — Image Grid -->
+      <div class="hero__right">
+        <div class="hero__image-grid">
+          <div class="hero__image-col">
+            <div class="hero__image-item hero__image-item--tall">
+              <img src="images/hero-img-1.png" alt="Social entrepreneurs in action" loading="eager" />
+            </div>
+            <div class="hero__image-item hero__image-item--short">
+              <img src="images/hero-img-2.png" alt="Community empowerment" loading="eager" />
+            </div>
+          </div>
+          <div class="hero__image-col hero__image-col--offset">
+            <div class="hero__image-item hero__image-item--short">
+              <img src="images/hero-img-3.png" alt="Rural development" loading="eager" />
+            </div>
+            <div class="hero__image-item hero__image-item--tall">
+              <img src="images/hero-img-4.png" alt="Impact stories" loading="eager" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Stat Card -->
+        <div class="hero__stat-card" id="hero-stat-card">
+          <div class="hero__stat-value">10M+</div>
+          <div class="hero__stat-label">Lives Impacted</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar" id="stats-bar">
+    <div class="stats-bar__inner">
+      <div class="stats-bar__item reveal" id="stat-lives">
+        <div class="stats-bar__value" data-target="10000000" data-suffix="M+" data-display="10M+">10M+</div>
+        <div class="stats-bar__label">Lives Impacted</div>
+      </div>
+      <div class="stats-bar__item reveal" id="stat-entrepreneurs">
+        <div class="stats-bar__value" data-target="1000" data-suffix="+" data-display="1,000+">1,000+</div>
+        <div class="stats-bar__label">Social Entrepreneurs</div>
+      </div>
+      <div class="stats-bar__item reveal" id="stat-farmers">
+        <div class="stats-bar__value" data-target="400000" data-suffix="k" data-display="400k">400k</div>
+        <div class="stats-bar__label">Farmers Supported</div>
+      </div>
+      <div class="stats-bar__item reveal" id="stat-students">
+        <div class="stats-bar__value" data-target="3400000" data-suffix="M" data-display="3.4M">3.4M</div>
+        <div class="stats-bar__label">Students Reached</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION SECTION ===== -->
+  <section class="mission" id="mission">
+    <div class="mission__inner">
+      <div class="mission__content">
+        <!-- Image Side -->
+        <div class="mission__image-wrapper reveal">
+          <div class="mission__image">
+            <img src="images/mission-img.png" alt="Children learning in a classroom" />
+            <div class="mission__image-overlay"></div>
+          </div>
+          <div class="mission__image-tag" id="mission-tag">
+            <div class="mission__image-tag-label">Founded</div>
+            <div class="mission__image-tag-value">2012 · Silicon Valley &amp; India</div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="mission__text reveal">
+          <span class="mission__label">Our Mission</span>
+
+          <h2 class="mission__title" id="mission-title">
+            Bridging India's Social Entrepreneurs with Global Resources
+          </h2>
+
+          <p class="mission__desc" id="mission-desc">
+            Founded in 2012, Action For India connects social enterprises addressing human development challenges with investors, mentors, and technology from Silicon Valley and beyond.
+          </p>
+
+          <div class="mission__pillars" id="mission-pillars">
+            <div class="mission__pillar">
+              <div class="mission__pillar-bar mission__pillar-bar--red"></div>
+              <div>
+                <div class="mission__pillar-title mission__pillar-title--red">Recognise &amp; Nurture</div>
+                <div class="mission__pillar-desc">Identify early-stage social entrepreneurs with high-impact potential</div>
+              </div>
+            </div>
+
+            <div class="mission__pillar">
+              <div class="mission__pillar-bar mission__pillar-bar--orange"></div>
+              <div>
+                <div class="mission__pillar-title mission__pillar-title--orange">Accelerate Growth</div>
+                <div class="mission__pillar-desc">Connect entrepreneurs with 1,000+ mentors and funding partners</div>
+              </div>
+            </div>
+
+            <div class="mission__pillar">
+              <div class="mission__pillar-bar mission__pillar-bar--red"></div>
+              <div>
+                <div class="mission__pillar-title mission__pillar-title--red">Scale Impact</div>
+                <div class="mission__pillar-desc">Create pathways to reach millions across underserved communities</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="mission__link" id="mission-link">
+            Learn more about AFI
+            <span class="mission__link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT AREAS SECTION ===== -->
+  <section class="impact" id="impact">
+    <div class="impact__inner">
+      <div class="section-header reveal">
+        <span class="section-header__label">Impact Areas</span>
+        <h2 class="section-header__title" id="impact-title">Creating Change Across Six Sectors</h2>
+      </div>
+
+      <div class="impact__grid" id="impact-grid">
+        <!-- Education -->
+        <div class="impact__card reveal" id="card-education">
+          <div class="impact__card-icon impact__card-icon--pink">📚</div>
+          <h3 class="impact__card-title impact__card-title--red">Education</h3>
+          <p class="impact__card-desc">3.4 million students supported through innovative EdTech solutions</p>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="impact__card reveal" id="card-healthcare">
+          <div class="impact__card-icon impact__card-icon--peach">🏥</div>
+          <h3 class="impact__card-title impact__card-title--orange">Healthcare</h3>
+          <p class="impact__card-desc">1.3 million patients served with accessible and affordable care</p>
+        </div>
+
+        <!-- Agriculture -->
+        <div class="impact__card reveal" id="card-agriculture">
+          <div class="impact__card-icon impact__card-icon--peach">🌾</div>
+          <h3 class="impact__card-title impact__card-title--orange">Agriculture</h3>
+          <p class="impact__card-desc">400,000 farmers empowered with modern tools and markets</p>
+        </div>
+
+        <!-- Clean Energy -->
+        <div class="impact__card reveal" id="card-energy">
+          <div class="impact__card-icon impact__card-icon--pink">⚡</div>
+          <h3 class="impact__card-title impact__card-title--red">Clean Energy</h3>
+          <p class="impact__card-desc">280,000 kg CO₂ reduced through sustainable energy ventures</p>
+        </div>
+
+        <!-- Livelihoods -->
+        <div class="impact__card reveal" id="card-livelihoods">
+          <div class="impact__card-icon impact__card-icon--peach">💼</div>
+          <h3 class="impact__card-title impact__card-title--orange">Livelihoods</h3>
+          <p class="impact__card-desc">₹20M revenue generated by women entrepreneurs</p>
+        </div>
+
+        <!-- Financial Inclusion -->
+        <div class="impact__card reveal" id="card-finance">
+          <div class="impact__card-icon impact__card-icon--pink">💰</div>
+          <h3 class="impact__card-title impact__card-title--red">Financial Inclusion</h3>
+          <p class="impact__card-desc">600,000+ people with increased financial literacy and access</p>
+        </div>
+      </div>
+
+      <div class="impact__cta reveal" id="impact-cta">
+        <button class="btn btn--primary" id="impact-report-btn">View Full Impact Report</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__inner">
+      <div class="section-header reveal">
+        <span class="section-header__label">Testimonials</span>
+        <h2 class="section-header__title" id="testimonials-title">Voices from Our Community</h2>
+      </div>
+
+      <div class="testimonials__card-wrapper reveal">
+        <div class="testimonials__card" id="testimonials-card">
+          <div class="testimonials__quote-mark">"</div>
+          <p class="testimonials__quote-text" id="testimonial-quote">
+            AFI has been instrumental in bridging the gap for social enterprises, connecting us with the right investors and mentors.
+          </p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar" id="testimonial-avatar">SG</div>
+            <div>
+              <div class="testimonials__author-name" id="testimonial-author-name">Sombhodi Ghosh</div>
+              <div class="testimonials__author-role" id="testimonial-author-role">Aakar Innovations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__dots" id="testimonials-dots">
+        <div class="testimonials__dot testimonials__dot--active" id="dot-1"></div>
+        <div class="testimonials__dot testimonials__dot--inactive" id="dot-2"></div>
+        <div class="testimonials__dot testimonials__dot--inactive" id="dot-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GET INVOLVED SECTION ===== -->
+  <section class="get-involved" id="get-involved">
+    <div class="get-involved__inner">
+      <!-- Social Entrepreneur -->
+      <div class="get-involved__card get-involved__card--primary reveal" id="card-entrepreneur">
+        <div class="get-involved__card-emoji">🚀</div>
+        <h3 class="get-involved__card-title get-involved__card-title--red">Social Entrepreneur</h3>
+        <p class="get-involved__card-desc">Apply to our accelerator cohort and get the mentorship, funding, and network to scale.</p>
+        <a href="#" class="get-involved__card-link get-involved__card-link--red" id="link-apply">
+          Apply Now <span>→</span>
+        </a>
+      </div>
+
+      <!-- Mentor -->
+      <div class="get-involved__card get-involved__card--accent reveal" id="card-mentor">
+        <div class="get-involved__card-emoji">🌱</div>
+        <h3 class="get-involved__card-title get-involved__card-title--orange">Mentor</h3>
+        <p class="get-involved__card-desc">Share your expertise with India's most promising social entrepreneurs.</p>
+        <a href="#" class="get-involved__card-link get-involved__card-link--orange" id="link-mentor">
+          Become a Mentor <span>→</span>
+        </a>
+      </div>
+
+      <!-- Investor -->
+      <div class="get-involved__card get-involved__card--primary reveal" id="card-investor">
+        <div class="get-involved__card-emoji">💡</div>
+        <h3 class="get-involved__card-title get-involved__card-title--red">Investor</h3>
+        <p class="get-involved__card-desc">Discover high-impact investment opportunities across our portfolio.</p>
+        <a href="#" class="get-involved__card-link get-involved__card-link--red" id="link-invest">
+          Explore Opportunities <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__columns">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <div class="footer__brand-icon">AFI</div>
+            <span class="footer__brand-name">Action For India</span>
+          </div>
+          <p class="footer__brand-desc">Empowering social entrepreneurs to create lasting impact across India since 2012.</p>
+        </div>
+
+        <!-- Organization -->
+        <div>
+          <div class="footer__col-title">Organization</div>
+          <a href="#" class="footer__col-link" id="footer-about">About Us</a>
+          <a href="#" class="footer__col-link" id="footer-team">Our Team</a>
+          <a href="#" class="footer__col-link" id="footer-partners">Partners</a>
+          <a href="#" class="footer__col-link" id="footer-forum">Annual Forum</a>
+        </div>
+
+        <!-- Programs -->
+        <div>
+          <div class="footer__col-title">Programs</div>
+          <a href="#" class="footer__col-link" id="footer-agri">Agri Cohort</a>
+          <a href="#" class="footer__col-link" id="footer-ai">AI+Impact Cohort</a>
+          <a href="#" class="footer__col-link" id="footer-women">Women Entrepreneurship</a>
+          <a href="#" class="footer__col-link" id="footer-accelerator">Accelerator Programs</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a>
+          <a href="tel:+919000678108" class="footer__col-link" id="footer-phone">+91 90006 78108</a>
+          <span class="footer__col-link">New Delhi · Bangalore</span>
+          <span class="footer__col-link">Silicon Valley · London</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">© 2026 Action For India. All rights reserved.</div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" id="social-facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-twitter">Twitter</a>
+          <a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-youtube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
