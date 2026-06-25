@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — Action For India</title>
+  <meta name="description" content="News, recognition, and updates from AFI's entrepreneurs, programs, and annual events." />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="news.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23C8340A'/><text x='50' y='68' font-size='48' fill='white' font-family='serif' text-anchor='middle' font-weight='bold'>AFI</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" id="logo">
+        <div class="navbar__logo-icon">AFI</div>
+        <span class="navbar__logo-text">Action For India</span>
+      </a>
+
+      <div class="navbar__nav" id="main-nav">
+        <a href="index.html" class="navbar__nav-link" id="nav-home">Home</a>
+        <a href="about.html" class="navbar__nav-link" id="nav-about">About Us</a>
+        <a href="programs.html" class="navbar__nav-link" id="nav-programs">Programs</a>
+        <a href="impact.html" class="navbar__nav-link" id="nav-impact">Our Impact</a>
+        <a href="get-involved.html" class="navbar__nav-link" id="nav-involved">Get Involved</a>
+        <a href="news.html" class="navbar__nav-link navbar__nav-link--active" id="nav-news">News</a>
+      </div>
+
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <!-- ===== NEWS HERO ===== -->
+  <section class="news-hero" id="news-hero">
+    <div class="news-hero__inner">
+      <div class="news-hero__content">
+        <span class="news-hero__label">News &amp; Media</span>
+        <h1 class="news-hero__title" id="news-hero-title">
+          Stories of <em>Impact</em> from Our Community
+        </h1>
+        <p class="news-hero__desc" id="news-hero-desc">
+          News, recognition, and updates from AFI's entrepreneurs, programs, and annual events.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY FILTER BAR ===== -->
+  <section class="news-filters" id="news-filters">
+    <div class="news-filters__inner">
+      <button class="news-filters__btn news-filters__btn--active" id="filter-all" data-filter="all">All</button>
+      <button class="news-filters__btn" id="filter-recognition" data-filter="recognition">Recognition</button>
+      <button class="news-filters__btn" id="filter-program" data-filter="program">Program</button>
+      <button class="news-filters__btn" id="filter-agriculture" data-filter="agriculture">Agriculture</button>
+      <button class="news-filters__btn" id="filter-women" data-filter="women">Women</button>
+      <button class="news-filters__btn" id="filter-forum" data-filter="annual-forum">Annual Forum</button>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED ARTICLES ===== -->
+  <section class="news-featured" id="news-featured">
+    <div class="news-featured__inner">
+      <div class="news-featured__grid">
+
+        <!-- Featured Article 1 -->
+        <article class="news-card news-card--featured" id="article-forbes" data-category="recognition">
+          <div class="news-card__image">
+            <img src="images/news-featured.png" alt="Four AFI Entrepreneurs Named in Forbes Asia 30 Under 30" />
+            <span class="news-card__badge">Recognition</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="news-card__date">March 15, 2024</span>
+              <span class="news-card__dot">·</span>
+              <span class="news-card__read-time">3 min read</span>
+            </div>
+            <h2 class="news-card__title">Four AFI Entrepreneurs Named in Forbes Asia 30 Under 30</h2>
+            <p class="news-card__excerpt">Four social entrepreneurs from AFI's Impact Catalyzer cohort have been recognized in Forbes Asia's prestigious 30 Under 30 list for their work in healthcare and financial inclusion.</p>
+            <a href="#" class="news-card__link" id="link-forbes">Read more <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Featured Article 2 -->
+        <article class="news-card news-card--featured" id="article-ai-cohort" data-category="program">
+          <div class="news-card__image">
+            <img src="images/news-ai-cohort.png" alt="AI+Impact Cohort 2025 Opens Applications" />
+            <span class="news-card__badge">Program</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="news-card__date">February 28, 2024</span>
+              <span class="news-card__dot">·</span>
+              <span class="news-card__read-time">4 min read</span>
+            </div>
+            <h2 class="news-card__title">AI+Impact Cohort 2025 Opens Applications — 20 Spots for Tech-Driven Social Ventures</h2>
+            <p class="news-card__excerpt">AFI announces its first-ever cohort focused on artificial intelligence and its applications for social good, offering ₹25L in grant support to selected ventures.</p>
+            <a href="#" class="news-card__link" id="link-ai-cohort">Read more <span>→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MORE STORIES ===== -->
+  <section class="news-more" id="news-more">
+    <div class="news-more__inner">
+      <span class="news-more__label">More Stories</span>
+
+      <div class="news-more__list">
+
+        <!-- Article Row 1 -->
+        <article class="news-row" id="article-agri" data-category="agriculture">
+          <div class="news-row__image">
+            <img src="images/news-featured.png" alt="Agri Cohort 24–25 Graduates" />
+          </div>
+          <div class="news-row__body">
+            <div class="news-row__meta">
+              <span class="news-row__tag">Agriculture</span>
+              <span class="news-row__date">January 10, 2024</span>
+              <span class="news-row__dot">·</span>
+              <span class="news-row__read-time">5 min read</span>
+            </div>
+            <h3 class="news-row__title">Agri Cohort 24–25 Graduates 15 Ventures Reaching 180,000 Farmers</h3>
+            <p class="news-row__excerpt">The latest graduation ceremony for AFI's Agri Cohort showcased 15 ventures that collectively reached 180,000 smallholder farmers with technology tools and market access.</p>
+          </div>
+        </article>
+
+        <!-- Article Row 2 -->
+        <article class="news-row" id="article-wpower" data-category="women">
+          <div class="news-row__image">
+            <img src="images/news-ai-cohort.png" alt="Forbes India WPower Trailblazers" />
+          </div>
+          <div class="news-row__body">
+            <div class="news-row__meta">
+              <span class="news-row__tag">Women</span>
+              <span class="news-row__date">December 5, 2023</span>
+              <span class="news-row__dot">·</span>
+              <span class="news-row__read-time">4 min read</span>
+            </div>
+            <h3 class="news-row__title">Forbes India WPower Trailblazers: Three AFI Women Entrepreneurs Honored</h3>
+            <p class="news-row__excerpt">Wilma Rodrigues, Prerna Mukharya, and Neha Juneja — all AFI alumni — have been named Forbes India WPower Trailblazers for their transformative work in waste management, period care, and clean cookstoves.</p>
+          </div>
+        </article>
+
+        <!-- Article Row 3 -->
+        <article class="news-row" id="article-forum" data-category="annual-forum">
+          <div class="news-row__image">
+            <img src="images/news-featured.png" alt="9th AFI Annual Forum" />
+          </div>
+          <div class="news-row__body">
+            <div class="news-row__meta">
+              <span class="news-row__tag">Annual Forum</span>
+              <span class="news-row__date">November 18, 2023</span>
+              <span class="news-row__dot">·</span>
+              <span class="news-row__read-time">6 min read</span>
+            </div>
+            <h3 class="news-row__title">9th AFI Annual Forum Brings Together 500 Impact Leaders in Hyderabad</h3>
+            <p class="news-row__excerpt">The 9th edition of the AFI Annual Forum convened social enterprises, technology companies, government officials, and global investors for two days of collaboration and knowledge exchange.</p>
+          </div>
+        </article>
+
+        <!-- Article Row 4 -->
+        <article class="news-row" id="article-leo" data-category="recognition">
+          <div class="news-row__image">
+            <img src="images/news-ai-cohort.png" alt="AFI Fellow Leo Mavely" />
+          </div>
+          <div class="news-row__body">
+            <div class="news-row__meta">
+              <span class="news-row__tag">Recognition</span>
+              <span class="news-row__date">October 2, 2023</span>
+              <span class="news-row__dot">·</span>
+              <span class="news-row__read-time">3 min read</span>
+            </div>
+            <h3 class="news-row__title">AFI Fellow Leo Mavely Named Fortune India 40 Under 40 in Healthcare</h3>
+            <p class="news-row__excerpt">Leo Mavely, an AFI Impact Catalyzer alumni and founder of a telemedicine platform serving rural Odisha, has been named in Fortune India's 40 Under 40 list for healthcare innovation.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER / STAY IN THE LOOP ===== -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter__inner">
+      <h2 class="newsletter__title" id="newsletter-title">Stay in the Loop</h2>
+      <p class="newsletter__desc">Get the latest news, cohort announcements, and impact stories from the AFI community.</p>
+      <form class="newsletter__form" id="newsletter-form">
+        <input type="email" class="newsletter__input" id="newsletter-email" placeholder="your@email.com" required />
+        <button type="submit" class="newsletter__btn" id="newsletter-submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__columns">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <div class="footer__brand-icon">AFI</div>
+            <span class="footer__brand-name">Action For India</span>
+          </div>
+          <p class="footer__brand-desc">Empowering social entrepreneurs to create lasting impact across India since 2012.</p>
+        </div>
+
+        <!-- Organization -->
+        <div>
+          <div class="footer__col-title">Organization</div>
+          <a href="about.html" class="footer__col-link" id="footer-about">About Us</a>
+          <a href="#" class="footer__col-link" id="footer-team">Our Team</a>
+          <a href="#" class="footer__col-link" id="footer-partners">Partners</a>
+          <a href="#" class="footer__col-link" id="footer-forum">Annual Forum</a>
+        </div>
+
+        <!-- Programs -->
+        <div>
+          <div class="footer__col-title">Programs</div>
+          <a href="#" class="footer__col-link" id="footer-agri">Agri Cohort</a>
+          <a href="#" class="footer__col-link" id="footer-ai">AI+Impact Cohort</a>
+          <a href="#" class="footer__col-link" id="footer-women">Women Entrepreneurship</a>
+          <a href="#" class="footer__col-link" id="footer-accelerator">Accelerator Programs</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a>
+          <a href="tel:+919000678108" class="footer__col-link" id="footer-phone">+91 90006 78108</a>
+          <span class="footer__col-link">New Delhi · Bangalore</span>
+          <span class="footer__col-link">Silicon Valley · London</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">© 2026 Action For India. All rights reserved.</div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" id="social-facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-twitter">Twitter</a>
+          <a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-youtube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="news.js"></script>
+</body>
+</html>

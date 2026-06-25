@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved — Action For India</title>
+  <meta name="description" content="Whether you're building, mentoring, investing, or donating — your contribution helps social entrepreneurs scale solutions that transform millions of lives." />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="get-involved.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23C8340A'/><text x='50' y='68' font-size='48' fill='white' font-family='serif' text-anchor='middle' font-weight='bold'>AFI</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" id="logo">
+        <div class="navbar__logo-icon">AFI</div>
+        <span class="navbar__logo-text">Action For India</span>
+      </a>
+
+      <div class="navbar__nav" id="main-nav">
+        <a href="index.html" class="navbar__nav-link" id="nav-home">Home</a>
+        <a href="about.html" class="navbar__nav-link" id="nav-about">About Us</a>
+        <a href="programs.html" class="navbar__nav-link" id="nav-programs">Programs</a>
+        <a href="impact.html" class="navbar__nav-link" id="nav-impact">Our Impact</a>
+        <a href="get-involved.html" class="navbar__nav-link navbar__nav-link--active" id="nav-involved">Get Involved</a>
+        <a href="news.html" class="navbar__nav-link" id="nav-news">News</a>
+      </div>
+
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <!-- ===== GET INVOLVED HERO ===== -->
+  <section class="gi-hero" id="gi-hero">
+    <div class="gi-hero__inner">
+      <span class="gi-hero__label">GET INVOLVED</span>
+      <h1 class="gi-hero__title reveal" id="gi-hero-title">
+        There's a <em>Role For You</em> in India's Impact Story
+      </h1>
+      <p class="gi-hero__desc reveal" id="gi-hero-desc">
+        Whether you're building, mentoring, investing, or donating — your contribution helps social entrepreneurs scale solutions that transform millions of lives.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== ROLES TAB SECTION ===== -->
+  <section class="roles-section" id="roles-section">
+    <div class="roles-section__inner">
+      <div class="roles-tabs reveal" id="roles-tabs">
+        <button class="role-tab role-tab--active" data-tab="entrepreneur" id="tab-entrepreneur">
+          <div class="role-tab__icon">🚀</div>
+          <h3 class="role-tab__title">Social Entrepreneur</h3>
+          <p class="role-tab__desc">Applications open for AI+Impact Cohort 2025</p>
+        </button>
+        <button class="role-tab" data-tab="mentor" id="tab-mentor">
+          <div class="role-tab__icon">🧭</div>
+          <h3 class="role-tab__title">Mentor</h3>
+          <p class="role-tab__desc">1,000+ mentors from India and Silicon Valley</p>
+        </button>
+        <button class="role-tab" data-tab="investor" id="tab-investor">
+          <div class="role-tab__icon">💡</div>
+          <h3 class="role-tab__title">Investor</h3>
+          <p class="role-tab__desc">₹50Cr+ deployed across portfolio</p>
+        </button>
+        <button class="role-tab" data-tab="corporate" id="tab-corporate">
+          <div class="role-tab__icon">🤝</div>
+          <h3 class="role-tab__title">Corporate Partner</h3>
+          <p class="role-tab__desc">Cisco, HP, Intel, Infosys are current partners</p>
+        </button>
+      </div>
+
+      <div class="role-content-area reveal" id="role-content-area">
+        <!-- Content changes based on tab -->
+        <div class="role-pane role-pane--active" id="pane-entrepreneur">
+          <div class="role-pane__info">
+            <div class="role-pane__header">
+              <span class="role-pane__icon-large">🚀</span>
+              <h2 class="role-pane__title">Social Entrepreneur</h2>
+            </div>
+            <p class="role-pane__subtitle">Applications open for AI+Impact Cohort 2025</p>
+            <p class="role-pane__desc">Apply to our accelerator programs and get the mentorship, funding, and network your venture needs.</p>
+            
+            <h3 class="role-pane__list-title">How it works:</h3>
+            <ol class="role-pane__list">
+              <li>Submit your application with a 2-minute video pitch</li>
+              <li>Shortlisting and screening call with AFI team</li>
+              <li>Panel presentation to mentors and investors</li>
+              <li>Cohort kick-off and 6–12 month program</li>
+            </ol>
+            <button class="btn btn--primary" id="btn-apply-now">Apply Now</button>
+          </div>
+          
+          <div class="role-pane__form-card">
+            <h3 class="form-card__title">Express Your Interest</h3>
+            <form class="gi-form" id="gi-form">
+              <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" placeholder="Priya Sharma" required>
+              </div>
+              <div class="form-group">
+                <label for="email_address">Email Address</label>
+                <input type="email" id="email_address" placeholder="priya@yourventure.in" required>
+              </div>
+              <div class="form-group">
+                <label for="organization">Organization / Venture</label>
+                <input type="text" id="organization" placeholder="Your Organization Name" required>
+              </div>
+              <div class="form-group">
+                <label for="interest_role">I am interested in joining as</label>
+                <div class="custom-select">
+                  <select id="interest_role">
+                    <option value="entrepreneur" selected>Social Entrepreneur</option>
+                    <option value="mentor">Mentor</option>
+                    <option value="investor">Investor</option>
+                    <option value="corporate">Corporate Partner</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="about_yourself">Tell us about yourself</label>
+                <textarea id="about_yourself" rows="4" placeholder="Briefly describe your work and what you're looking for..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="btn-submit-interest">Submit Interest</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DONATION SECTION ===== -->
+  <section class="donation-section" id="donation-section">
+    <div class="donation-section__inner">
+      <span class="donation-section__label reveal">MAKE A DONATION</span>
+      <h2 class="donation-section__title reveal">Every Rupee Multiplies Impact</h2>
+      <p class="donation-section__desc reveal">Your donation funds mentorship programs, annual forums, and accelerator support that help social entrepreneurs reach millions.</p>
+
+      <div class="donation-card reveal">
+        <div class="donation-card__amounts" id="donation-amounts">
+          <button class="donation-amount" data-amount="500">₹500</button>
+          <button class="donation-amount donation-amount--active" data-amount="1000">₹1,000</button>
+          <button class="donation-amount" data-amount="2500">₹2,500</button>
+          <button class="donation-amount" data-amount="5000">₹5,000</button>
+          <button class="donation-amount" data-amount="10000">₹10,000</button>
+          <button class="donation-amount donation-amount--custom" data-amount="custom">Custom amount</button>
+        </div>
+
+        <div class="donation-card__details">
+          <span class="donation-card__details-label">Your donation of</span>
+          <div class="donation-card__amount-wrapper">
+             <h3 class="donation-card__details-amount" id="donation-display">₹1,000</h3>
+          </div>
+          <p class="donation-card__details-impact" id="donation-impact">covers workshop materials for 10 entrepreneurs</p>
+        </div>
+
+        <button class="btn btn--primary btn--full btn--large" id="btn-donate-now">Donate ₹1,000 Now</button>
+        <p class="donation-card__disclaimer">Donations are tax-deductible under Section 80G · All payments are secure</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__columns">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <div class="footer__brand-icon">AFI</div>
+            <span class="footer__brand-name">Action For India</span>
+          </div>
+          <p class="footer__brand-desc">Empowering social entrepreneurs to create lasting impact across India since 2012.</p>
+        </div>
+
+        <!-- Organization -->
+        <div>
+          <div class="footer__col-title">Organization</div>
+          <a href="about.html" class="footer__col-link" id="footer-about">About Us</a>
+          <a href="about.html#team" class="footer__col-link" id="footer-team">Our Team</a>
+          <a href="about.html#partners" class="footer__col-link" id="footer-partners">Partners</a>
+          <a href="#" class="footer__col-link" id="footer-forum">Annual Forum</a>
+        </div>
+
+        <!-- Programs -->
+        <div>
+          <div class="footer__col-title">Programs</div>
+          <a href="programs.html" class="footer__col-link" id="footer-agri">Agri Cohort</a>
+          <a href="programs.html" class="footer__col-link" id="footer-ai">AI+Impact Cohort</a>
+          <a href="programs.html" class="footer__col-link" id="footer-women">Women Entrepreneurship</a>
+          <a href="programs.html" class="footer__col-link" id="footer-accelerator">Accelerator Programs</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a>
+          <a href="tel:+919000678108" class="footer__col-link" id="footer-phone">+91 90006 78108</a>
+          <span class="footer__col-link">New Delhi · Bangalore</span>
+          <span class="footer__col-link">Silicon Valley · London</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">© 2026 Action For India. All rights reserved.</div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" id="social-facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-twitter">Twitter</a>
+          <a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-youtube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="get-involved.js"></script>
+</body>
+</html>
