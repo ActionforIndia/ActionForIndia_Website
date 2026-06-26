@@ -189,8 +189,9 @@ img {
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  min-height: 923px;
+  min-height: auto;
   overflow: hidden;
+  padding-bottom: 48px;
 }
 
 .hero__gradient {
@@ -222,7 +223,7 @@ img {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--side-padding);
-  padding-top: 224px;
+  padding-top: 88px;
   display: flex;
   gap: 64px;
 }
@@ -1273,7 +1274,7 @@ img {
 
   .hero__content {
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 80px;
     gap: 40px;
   }
 

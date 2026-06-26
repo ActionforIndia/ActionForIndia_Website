@@ -102,6 +102,7 @@
   position: relative;
   overflow: hidden;
   background: var(--color-bg-cream);
+  --slide-height: clamp(200px, 24vw, 320px);
 }
 
 .banner-carousel__track {
@@ -116,15 +117,21 @@
 }
 
 .banner-carousel__slide a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: var(--slide-height);
   line-height: 0;
+  background: var(--color-bg-cream);
 }
 
 .banner-carousel__slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
+  object-position: center;
 }
 
 .banner-carousel__dots {
@@ -497,5 +504,9 @@
 
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .banner-carousel {
+    --slide-height: clamp(150px, 32vw, 220px);
   }
 }
