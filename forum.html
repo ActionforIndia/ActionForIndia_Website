@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFI Annual Forum — Action For India</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="shared-components.css" />
+  <link rel="stylesheet" href="programs.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon">AFI</div><span class="navbar__logo-text">Action For India</span></a>
+      <div class="navbar__nav" id="main-nav"></div>
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">Annual Event</span>
+      <h1 class="page-hero__title" id="forum-title"></h1>
+      <p class="page-hero__desc" id="forum-desc"></p>
+    </div>
+  </section>
+
+  <section class="page-section page-section--white">
+    <div class="page-section__inner">
+      <div class="home-forum__inner" style="padding:0">
+        <div class="home-forum__image reveal">
+          <img id="forum-image" src="https://actionforindia.org/afi-forum-2024/assets/img/sliders/AFI-Hero-Section-new.png" alt="AFI Annual Forum" />
+        </div>
+      </div>
+      <div class="forum__stats" style="margin-top:40px;display:flex;gap:32px;flex-wrap:wrap">
+        <div class="forum__stat"><div class="forum__stat-value">1000+</div><div class="forum__stat-label">Entrepreneurs in Network</div></div>
+        <div class="forum__stat"><div class="forum__stat-value" id="forum-edition">9th</div><div class="forum__stat-label">Edition</div></div>
+        <div class="forum__stat"><div class="forum__stat-value">6</div><div class="forum__stat-label">Impact Sectors</div></div>
+      </div>
+      <p style="margin-top:40px">
+        <a href="#" class="btn btn--primary" id="forum-cta">View Full Forum Site</a>
+        <a href="get-involved.html" class="btn btn--outline" style="margin-left:12px">Get Involved</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner">
+    <div class="footer__columns">
+      <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-icon">AFI</div><span class="footer__brand-name">Action For India</span></div><p class="footer__brand-desc"></p></div>
+      <div><div class="footer__col-title">Organization</div><a href="about.html" class="footer__col-link" id="footer-about">About Us</a><a href="about.html#team" class="footer__col-link" id="footer-team">Our Team</a><a href="about.html#partners" class="footer__col-link" id="footer-partners">Partners</a></div>
+      <div><div class="footer__col-title">Programs</div><a href="programs.html" class="footer__col-link" id="footer-agri">Agri Cohort</a><a href="programs.html" class="footer__col-link" id="footer-ai">AI+Impact Cohort</a></div>
+      <div><div class="footer__col-title">Contact</div><a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a><a href="tel:+919000678108" class="footer__col-link" id="footer-phone">+91 90006 78108</a></div>
+    </div>
+    <div class="footer__bottom"><div class="footer__copyright">© 2026 Action For India. All rights reserved.</div><div class="footer__social"><a href="#" class="footer__social-link" id="social-facebook">Facebook</a><a href="#" class="footer__social-link" id="social-twitter">Twitter</a><a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a><a href="#" class="footer__social-link" id="social-youtube">YouTube</a></div></div>
+  </div></footer>
+
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
+  <script src="page-shell.js"></script>
+  <script>
+    initPage((data) => {
+      const f = data.annual_forum;
+      document.getElementById('forum-title').textContent = f.current_edition;
+      document.getElementById('forum-desc').textContent = f.description;
+      document.getElementById('forum-image').src = f.banner_url;
+      document.getElementById('forum-edition').textContent = data.key_stats.annual_forum_count + 'th';
+      const cta = document.getElementById('forum-cta');
+      cta.href = f.url;
+      cta.target = '_blank';
+    });
+  </script>
+</body>
+</html>

@@ -6,6 +6,7 @@
   <title>Action For India — Empowering Social Entrepreneurs to Scale Impact</title>
   <meta name="description" content="Action For India connects visionary social entrepreneurs with investors, mentors, and resources to create lasting change for millions across India." />
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="shared-components.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23C8340A'/><text x='50' y='68' font-size='48' fill='white' font-family='serif' text-anchor='middle' font-weight='bold'>AFI</text></svg>" />
 </head>
 <body>
@@ -13,23 +14,22 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="navbar__inner">
-      <a href="#" class="navbar__logo" id="logo">
+      <a href="index.html" class="navbar__logo" id="logo">
         <div class="navbar__logo-icon">AFI</div>
         <span class="navbar__logo-text">Action For India</span>
       </a>
 
-      <div class="navbar__nav" id="main-nav">
-        <a href="#" class="navbar__nav-link navbar__nav-link--active" id="nav-home">Home</a>
-        <a href="about.html" class="navbar__nav-link" id="nav-about">About Us</a>
-        <a href="programs.html" class="navbar__nav-link" id="nav-programs">Programs</a>
-        <a href="impact.html" class="navbar__nav-link" id="nav-impact">Our Impact</a>
-        <a href="#get-involved" class="navbar__nav-link" id="nav-involved">Get Involved</a>
-        <a href="news.html" class="navbar__nav-link" id="nav-news">News</a>
-      </div>
+      <div class="navbar__nav" id="main-nav"></div>
 
       <button class="navbar__cta" id="donate-btn">Donate</button>
     </div>
   </nav>
+
+  <!-- ===== BANNER CAROUSEL ===== -->
+  <section class="banner-carousel" id="banner-carousel">
+    <div class="banner-carousel__track"></div>
+    <div class="banner-carousel__dots"></div>
+  </section>
 
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="hero">
@@ -62,18 +62,18 @@
         <div class="hero__image-grid">
           <div class="hero__image-col">
             <div class="hero__image-item hero__image-item--tall">
-              <img src="images/hero-img-1.png" alt="Social entrepreneurs in action" loading="eager" />
+              <img src="https://actionforindia.org/assets/img/afi-page-about-1.jpg" alt="Social entrepreneurs in action" loading="eager" />
             </div>
             <div class="hero__image-item hero__image-item--short">
-              <img src="images/hero-img-2.png" alt="Community empowerment" loading="eager" />
+              <img src="https://actionforindia.org/assets/img/afi-page-about-2.jpg" alt="Community empowerment" loading="eager" />
             </div>
           </div>
           <div class="hero__image-col hero__image-col--offset">
             <div class="hero__image-item hero__image-item--short">
-              <img src="images/hero-img-3.png" alt="Rural development" loading="eager" />
+              <img src="https://actionforindia.org/assets/img/afi-page-about-3.jpg" alt="Rural development" loading="eager" />
             </div>
             <div class="hero__image-item hero__image-item--tall">
-              <img src="images/hero-img-4.png" alt="Impact stories" loading="eager" />
+              <img src="https://actionforindia.org/assets/img/afi-page-about-4.jpg" alt="Impact stories" loading="eager" />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
         <!-- Image Side -->
         <div class="mission__image-wrapper reveal">
           <div class="mission__image">
-            <img src="images/mission-img.png" alt="Children learning in a classroom" />
+            <img src="https://actionforindia.org/assets/img/afi-initiatives.jpg" alt="AFI initiatives across India" />
             <div class="mission__image-overlay"></div>
           </div>
           <div class="mission__image-tag" id="mission-tag">
@@ -254,10 +254,56 @@
         </div>
       </div>
 
-      <div class="testimonials__dots" id="testimonials-dots">
-        <div class="testimonials__dot testimonials__dot--active" id="dot-1"></div>
-        <div class="testimonials__dot testimonials__dot--inactive" id="dot-2"></div>
-        <div class="testimonials__dot testimonials__dot--inactive" id="dot-3"></div>
+      <div class="testimonials__dots" id="testimonials-dots"></div>
+    </div>
+  </section>
+
+  <!-- ===== ANNUAL FORUM ===== -->
+  <section class="home-forum" id="annual-forum">
+    <div class="home-forum__inner">
+      <div class="home-forum__content reveal">
+        <span class="section-header__label">Annual Event</span>
+        <h2 class="home-forum__title" id="forum-title">9th AFI Annual Forum</h2>
+        <p class="home-forum__desc" id="forum-desc"></p>
+        <a href="#" class="btn btn--primary" id="forum-cta" target="_blank" rel="noopener noreferrer">View Details</a>
+      </div>
+      <div class="home-forum__image reveal">
+        <img id="forum-image" src="https://actionforindia.org/afi-forum-2024/assets/img/sliders/AFI-Hero-Section-new.png" alt="AFI Annual Forum" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE PROVIDE ===== -->
+  <section class="home-provide" id="what-we-provide">
+    <div class="home-provide__inner">
+      <div class="section-header reveal">
+        <span class="section-header__label">What We Provide</span>
+        <h2 class="section-header__title">Providing Entrepreneurs with What Matters Most</h2>
+      </div>
+      <div class="home-provide__grid" id="provide-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="home-partners" id="partners">
+    <div class="home-partners__inner">
+      <div class="section-header reveal">
+        <span class="section-header__label">Partners</span>
+        <h2 class="section-header__title">Our Ecosystem of Partners</h2>
+      </div>
+      <div class="home-partners__groups" id="partners-groups"></div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT VISUAL ===== -->
+  <section class="page-section page-section--white" id="impact-visual-section">
+    <div class="page-section__inner">
+      <div class="section-header reveal">
+        <span class="section-header__label">Impact So Far</span>
+        <h2 class="section-header__title">Our Collective Impact</h2>
+      </div>
+      <div class="impact-visual reveal">
+        <img id="impact-infographic" src="https://actionforindia.org/assets/img/afi-impact.png" alt="AFI Impact infographic" loading="lazy" />
       </div>
     </div>
   </section>
@@ -294,6 +340,26 @@
           Explore Opportunities <span>→</span>
         </a>
       </div>
+
+      <!-- Partner -->
+      <div class="get-involved__card get-involved__card--accent reveal" id="card-partner">
+        <div class="get-involved__card-emoji">🤝</div>
+        <h3 class="get-involved__card-title get-involved__card-title--orange">Partner</h3>
+        <p class="get-involved__card-desc">Collaborate with AFI to support social entrepreneurs at scale.</p>
+        <a href="#" class="get-involved__card-link get-involved__card-link--orange" id="link-partner">
+          Partner With Us <span>→</span>
+        </a>
+      </div>
+
+      <!-- Donate -->
+      <div class="get-involved__card get-involved__card--primary reveal" id="card-donate">
+        <div class="get-involved__card-emoji">❤️</div>
+        <h3 class="get-involved__card-title get-involved__card-title--red">Donate</h3>
+        <p class="get-involved__card-desc">Support AFI's mission to help social entrepreneurs create lasting impact.</p>
+        <a href="#" class="get-involved__card-link get-involved__card-link--red" id="link-donate">
+          Donate Now <span>→</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -313,9 +379,9 @@
         <!-- Organization -->
         <div>
           <div class="footer__col-title">Organization</div>
-          <a href="#" class="footer__col-link" id="footer-about">About Us</a>
-          <a href="#" class="footer__col-link" id="footer-team">Our Team</a>
-          <a href="#" class="footer__col-link" id="footer-partners">Partners</a>
+          <a href="about.html" class="footer__col-link" id="footer-about">About Us</a>
+          <a href="about.html#team" class="footer__col-link" id="footer-team">Our Team</a>
+          <a href="about.html#partners" class="footer__col-link" id="footer-partners">Partners</a>
           <a href="#" class="footer__col-link" id="footer-forum">Annual Forum</a>
         </div>
 
@@ -350,6 +416,9 @@
     </div>
   </footer>
 
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

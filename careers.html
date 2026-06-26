@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at AFI — Action For India</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="shared-components.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon">AFI</div><span class="navbar__logo-text">Action For India</span></a>
+      <div class="navbar__nav" id="main-nav"></div>
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">Careers</span>
+      <h1 class="page-hero__title">Careers at <em>AFI</em></h1>
+      <p class="page-hero__desc" id="page-desc"></p>
+    </div>
+  </section>
+
+  <section class="page-section page-section--cream">
+    <div class="page-section__inner">
+      <h2 class="section-header__title">Open Positions</h2>
+      <div class="card-grid" id="careers-grid"></div>
+      <p style="margin-top:32px;text-align:center">
+        <a href="#" class="btn btn--primary" id="careers-apply">Apply via AFI Careers</a>
+        <span style="display:block;margin-top:12px;font-size:14px;color:var(--color-text-muted)">Or email <a href="#" id="careers-email">info@actionforindia.org</a></span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner">
+    <div class="footer__columns">
+      <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-icon">AFI</div><span class="footer__brand-name">Action For India</span></div><p class="footer__brand-desc"></p></div>
+      <div><div class="footer__col-title">Organization</div><a href="about.html" class="footer__col-link" id="footer-about">About Us</a><a href="about.html#team" class="footer__col-link" id="footer-team">Our Team</a><a href="about.html#partners" class="footer__col-link" id="footer-partners">Partners</a><a href="forum.html" class="footer__col-link" id="footer-forum">Annual Forum</a></div>
+      <div><div class="footer__col-title">Programs</div><a href="programs.html" class="footer__col-link" id="footer-agri">Agri Cohort</a><a href="programs.html" class="footer__col-link" id="footer-ai">AI+Impact Cohort</a><a href="programs.html" class="footer__col-link" id="footer-women">Women Entrepreneurship</a><a href="programs.html" class="footer__col-link" id="footer-accelerator">Accelerator Programs</a></div>
+      <div><div class="footer__col-title">Contact</div><a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a><a href="tel:+919000678108" class="footer__col-link" id="footer-phone">+91 90006 78108</a></div>
+    </div>
+    <div class="footer__bottom"><div class="footer__copyright">© 2026 Action For India. All rights reserved.</div><div class="footer__social"><a href="#" class="footer__social-link" id="social-facebook">Facebook</a><a href="#" class="footer__social-link" id="social-twitter">Twitter</a><a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a><a href="#" class="footer__social-link" id="social-youtube">YouTube</a></div></div>
+  </div></footer>
+
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
+  <script src="page-shell.js"></script>
+  <script>
+    initPage((data) => {
+      const c = data.careers;
+      document.getElementById('page-desc').textContent = c.intro;
+      document.getElementById('careers-grid').innerHTML = c.openings.map((j) => `
+        <div class="info-card reveal">
+          <div class="info-card__title">${j.title}</div>
+          <div class="info-card__meta">${j.location} · ${j.type}</div>
+        </div>`).join('');
+      const apply = document.getElementById('careers-apply');
+      apply.href = c.apply_url;
+      apply.target = '_blank';
+      const email = document.getElementById('careers-email');
+      email.href = `mailto:${c.email}`;
+      email.textContent = c.email;
+    });
+  </script>
+</body>
+</html>

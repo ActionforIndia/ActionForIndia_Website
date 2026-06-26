@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program — Action For India</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="shared-components.css" />
+  <link rel="stylesheet" href="programs.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon">AFI</div><span class="navbar__logo-text">Action For India</span></a>
+      <div class="navbar__nav" id="main-nav"></div>
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">What We Do</span>
+      <h1 class="page-hero__title" id="program-title"></h1>
+      <p class="page-hero__desc" id="program-desc"></p>
+    </div>
+  </section>
+
+  <section class="page-section page-section--cream">
+    <div class="page-section__inner">
+      <div class="programs-panel__image" style="height:320px;margin-bottom:32px;border-radius:16px;overflow:hidden">
+        <img id="program-image" src="https://actionforindia.org/assets/img/afi-initiatives.jpg" alt="AFI Program" style="width:100%;height:100%;object-fit:cover" />
+      </div>
+      <h2 class="section-header__title">What You Get</h2>
+      <div class="programs-panel__benefits-grid" id="program-benefits" style="margin-top:20px"></div>
+      <p style="margin-top:40px">
+        <a href="#" class="btn btn--primary" id="program-apply">Apply / Learn More</a>
+        <a href="programs.html" class="btn btn--outline" style="margin-left:12px">All Programs</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner">
+    <div class="footer__columns">
+      <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-icon">AFI</div><span class="footer__brand-name">Action For India</span></div><p class="footer__brand-desc"></p></div>
+      <div><div class="footer__col-title">Programs</div><a href="programs.html" class="footer__col-link">All Programs</a><a href="forum.html" class="footer__col-link" id="footer-forum">Annual Forum</a></div>
+      <div><div class="footer__col-title">Contact</div><a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a></div>
+    </div>
+    <div class="footer__bottom"><div class="footer__copyright">© 2026 Action For India. All rights reserved.</div></div>
+  </div></footer>
+
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
+  <script src="page-shell.js"></script>
+  <script>
+    initPage((data) => {
+      const id = new URLSearchParams(location.search).get('id');
+      const program = data.program_details?.find(p => p.id === id);
+      if (!program) { location.href = 'programs.html'; return; }
+      document.title = program.name + ' — Action For India';
+      document.getElementById('program-title').textContent = program.name;
+      document.getElementById('program-desc').textContent = program.description;
+      document.getElementById('program-image').src = program.image;
+      document.getElementById('program-image').alt = program.name;
+      document.getElementById('program-benefits').innerHTML = program.benefits.map(b =>
+        `<div class="programs-panel__benefit"><span class="programs-panel__benefit-dot"></span>${b}</div>`
+      ).join('');
+      const apply = document.getElementById('program-apply');
+      apply.href = program.apply_url;
+      apply.target = '_blank';
+    });
+  </script>
+</body>
+</html>

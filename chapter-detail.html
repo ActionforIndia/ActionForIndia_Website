@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter — Action For India</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="shared-components.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon">AFI</div><span class="navbar__logo-text">Action For India</span></a>
+      <div class="navbar__nav" id="main-nav"></div>
+      <button class="navbar__cta" id="donate-btn">Donate</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">International Chapters</span>
+      <h1 class="page-hero__title" id="chapter-title"></h1>
+      <p class="page-hero__desc" id="chapter-location"></p>
+    </div>
+  </section>
+
+  <section class="page-section page-section--cream">
+    <div class="page-section__inner">
+      <p id="chapter-desc" style="font-size:17px;line-height:1.7;color:var(--color-text-muted);max-width:720px"></p>
+      <h2 style="margin-top:40px;font-family:var(--font-display)">Highlights</h2>
+      <ul id="chapter-highlights" style="margin-top:16px;padding-left:20px;line-height:2;color:var(--color-text-muted)"></ul>
+      <p style="margin-top:32px">
+        <a href="#" id="chapter-email" class="btn btn--primary"></a>
+        <a href="chapters.html" class="btn btn--outline" style="margin-left:12px">All Chapters</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner">
+    <div class="footer__columns">
+      <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-icon">AFI</div><span class="footer__brand-name">Action For India</span></div><p class="footer__brand-desc"></p></div>
+      <div><div class="footer__col-title">Organization</div><a href="about.html" class="footer__col-link" id="footer-about">About Us</a><a href="chapters.html" class="footer__col-link">Chapters</a><a href="forum.html" class="footer__col-link" id="footer-forum">Annual Forum</a></div>
+      <div><div class="footer__col-title">Contact</div><a href="mailto:info@actionforindia.org" class="footer__col-link" id="footer-email">info@actionforindia.org</a></div>
+    </div>
+    <div class="footer__bottom"><div class="footer__copyright">© 2026 Action For India. All rights reserved.</div><div class="footer__social"><a href="#" class="footer__social-link" id="social-facebook">Facebook</a><a href="#" class="footer__social-link" id="social-linkedin">LinkedIn</a></div></div>
+  </div></footer>
+
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
+  <script src="page-shell.js"></script>
+  <script>
+    initPage((data) => {
+      const id = new URLSearchParams(location.search).get('chapter') || 'silicon-valley';
+      const ch = data.chapter_pages[id];
+      if (!ch) { location.href = 'chapters.html'; return; }
+      document.title = ch.name + ' — Action For India';
+      document.getElementById('chapter-title').innerHTML = ch.name;
+      document.getElementById('chapter-location').textContent = ch.location;
+      document.getElementById('chapter-desc').textContent = ch.description;
+      document.getElementById('chapter-highlights').innerHTML = ch.highlights.map(h => `<li>${h}</li>`).join('');
+      const emailBtn = document.getElementById('chapter-email');
+      emailBtn.href = `mailto:${ch.email}`;
+      emailBtn.textContent = `Contact: ${ch.email}`;
+    });
+  </script>
+</body>
+</html>

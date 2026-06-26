@@ -7,6 +7,7 @@
   <meta name="description" content="From agri-tech to AI, our cohorts provide the mentorship, funding, and networks social entrepreneurs need to go from promising to proven." />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="programs.css" />
+  <link rel="stylesheet" href="shared-components.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23C8340A'/><text x='50' y='68' font-size='48' fill='white' font-family='serif' text-anchor='middle' font-weight='bold'>AFI</text></svg>" />
 </head>
 <body>
@@ -19,14 +20,7 @@
         <span class="navbar__logo-text">Action For India</span>
       </a>
 
-      <div class="navbar__nav" id="main-nav">
-        <a href="index.html" class="navbar__nav-link" id="nav-home">Home</a>
-        <a href="about.html" class="navbar__nav-link" id="nav-about">About Us</a>
-        <a href="programs.html" class="navbar__nav-link navbar__nav-link--active" id="nav-programs">Programs</a>
-        <a href="index.html#impact" class="navbar__nav-link" id="nav-impact">Our Impact</a>
-        <a href="index.html#get-involved" class="navbar__nav-link" id="nav-involved">Get Involved</a>
-        <a href="news.html" class="navbar__nav-link" id="nav-news">News</a>
-      </div>
+      <div class="navbar__nav" id="main-nav"></div>
 
       <button class="navbar__cta" id="donate-btn">Donate</button>
     </div>
@@ -65,7 +59,7 @@
         <!-- AI+Impact Cohort 2025 -->
         <div class="programs-panel programs-panel--active" id="panel-ai" data-panel="ai">
           <div class="programs-panel__image">
-            <img src="images/programs-cohort.png" alt="AI+Impact Cohort 2025 — entrepreneurs collaborating" />
+            <img src="https://actionforindia.org/assets/img/AFI-Impact-Cohort-2025.png" alt="AI+Impact Cohort 2025 — entrepreneurs collaborating" />
           </div>
           <div class="programs-panel__details">
             <div class="programs-panel__tags">
@@ -113,7 +107,7 @@
         <!-- Agri Cohort 25-26 -->
         <div class="programs-panel" id="panel-agri" data-panel="agri">
           <div class="programs-panel__image">
-            <img src="images/programs-cohort.png" alt="Agri Cohort — agricultural innovation" />
+            <img src="https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg" alt="Agri Cohort — agricultural innovation" />
           </div>
           <div class="programs-panel__details">
             <div class="programs-panel__tags">
@@ -159,7 +153,7 @@
         <!-- Impact Catalyzer Program -->
         <div class="programs-panel" id="panel-catalyzer" data-panel="catalyzer">
           <div class="programs-panel__image">
-            <img src="images/programs-cohort.png" alt="Impact Catalyzer Program" />
+            <img src="https://actionforindia.org/assets/img/afi-initiatives.jpg" alt="Impact Catalyzer Program" />
           </div>
           <div class="programs-panel__details">
             <div class="programs-panel__tags">
@@ -205,7 +199,7 @@
         <!-- Women Entrepreneurship -->
         <div class="programs-panel" id="panel-women" data-panel="women">
           <div class="programs-panel__image">
-            <img src="images/programs-cohort.png" alt="Women Entrepreneurship Program" />
+            <img src="https://actionforindia.org/assets/img/afi-page-about-4.jpg" alt="Women Entrepreneurship Program" />
           </div>
           <div class="programs-panel__details">
             <div class="programs-panel__tags">
@@ -286,7 +280,7 @@
         <!-- Image Column -->
         <div class="forum__image-wrapper">
           <div class="forum__image">
-            <img src="images/programs-forum.png" alt="AFI Annual Forum — hundreds of attendees at the event" />
+            <img src="https://actionforindia.org/afi-forum-2024/assets/img/sliders/AFI-Hero-Section-new.png" alt="AFI Annual Forum — hundreds of attendees at the event" />
           </div>
         </div>
       </div>
@@ -298,31 +292,15 @@
     <div class="resources__inner">
       <h2 class="resources__title" id="resources-title">Additional Resources</h2>
 
-      <div class="resources__grid" id="resources-grid">
-        <div class="resources__card reveal" id="resource-funding">
-          <div class="resources__card-emoji">💰</div>
-          <h3 class="resources__card-title">Funding Access</h3>
-          <p class="resources__card-desc">Connections to foundations, angels, and impact investors</p>
-        </div>
+      <div class="resources__grid" id="resources-grid"></div>
+    </div>
+  </section>
 
-        <div class="resources__card reveal" id="resource-mentorship">
-          <div class="resources__card-emoji">🧭</div>
-          <h3 class="resources__card-title">Mentorship Network</h3>
-          <p class="resources__card-desc">1,000+ industry mentors from India and Silicon Valley</p>
-        </div>
-
-        <div class="resources__card reveal" id="resource-tech">
-          <div class="resources__card-emoji">💻</div>
-          <h3 class="resources__card-title">Technology Support</h3>
-          <p class="resources__card-desc">Silicon Valley tech partnerships and tools</p>
-        </div>
-
-        <div class="resources__card reveal" id="resource-media">
-          <div class="resources__card-emoji">📡</div>
-          <h3 class="resources__card-title">Media &amp; PR</h3>
-          <p class="resources__card-desc">Coverage and storytelling to amplify your impact</p>
-        </div>
-      </div>
+  <!-- ===== ALL PROGRAMS ===== -->
+  <section class="all-programs" id="all-programs">
+    <div class="all-programs__inner">
+      <h2 class="all-programs__title reveal">All AFI Programs</h2>
+      <div class="all-programs__grid" id="all-programs-grid"></div>
     </div>
   </section>
 
@@ -379,6 +357,9 @@
     </div>
   </footer>
 
+  <script src="site-data.js"></script>
+  <script src="shared-layout.js"></script>
+  <script src="site-common.js"></script>
   <script src="programs.js"></script>
 </body>
 </html>

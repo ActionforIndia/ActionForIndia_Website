@@ -1,34 +1,130 @@
 /* ===== Impact Page JavaScript ===== */
 
-// Scroll reveal observer
-document.addEventListener('DOMContentLoaded', () => {
-  // --- Scroll Reveal ---
-  const revealElements = document.querySelectorAll('.reveal');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
-  });
+const SECTOR_STYLES = [
+  { icon: 'yellow', stat: 'amber', emoji: '📚' },
+  { icon: 'green', stat: 'green', emoji: '🏥' },
+  { icon: 'blue', stat: 'blue', emoji: '🌾' },
+  { icon: 'pink', stat: 'pink', emoji: '⚡' },
+  { icon: 'purple', stat: 'purple', emoji: '💼' },
+  { icon: 'lemon', stat: 'lemon', emoji: '💰' },
+];
 
-  revealElements.forEach((el) => revealObserver.observe(el));
+function extractSdgNumber(sdg) {
+  const match = sdg?.match(/SDG\s*(\d+)/i);
+  return match ? match[1] : '';
+}
 
-  // --- Navbar scroll effect ---
-  const navbar = document.getElementById('navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
+function extractSdgName(sdg) {
+  if (!sdg) return '';
+  const parts = sdg.split('-');
+  return parts.length > 1 ? parts.slice(1).join('-').trim() : sdg;
+}
+
+function renderSectorCard(area, index) {
+  const style = SECTOR_STYLES[index % SECTOR_STYLES.length];
+  const reverse = index % 2 === 1 ? ' sector__card--reverse' : '';
+  const sdgNum = extractSdgNumber(area.sdg);
+  const statParts = area.impact_stat.split(/[;,]/);
+  const mainStat = statParts[0].replace(/^Over\s+/i, '').trim();
+  const statLabel = area.sector.toLowerCase();
+
+  return `
+    <div class="sector__card${reverse} reveal">
+      <div class="sector__card-body">
+        <div class="sector__card-header">
+          <div class="sector__card-icon sector__card-icon--${style.icon}">${style.emoji}</div>
+          <div class="sector__card-meta">
+            <span class="sector__card-sdg">SDG ${sdgNum}</span>
+            <span class="sector__card-name">${area.sector}</span>
+          </div>
+        </div>
+        <div class="sector__card-stat sector__card-stat--${style.stat}">${mainStat}</div>
+        <div class="sector__card-stat-label">${area.sector.toLowerCase()} impact</div>
+        <p class="sector__card-desc">${area.description}</p>
+        <div class="sector__card-metrics">
+          <div class="sector__card-metric">
+            <span class="sector__card-metric-value">${area.impact_stat}</span>
+          </div>
+        </div>
+      </div>
+      <div class="sector__card-visual sector__card-visual--${style.icon}">
+        <div class="sector__card-emoji-bg">${style.emoji}</div>
+        <div class="sector__card-badge">
+          <span class="sector__card-badge-value sector__card-badge-value--${style.stat}">${mainStat}</span>
+          <span class="sector__card-badge-label">${statLabel}</span>
+        </div>
+      </div>
+    </div>`;
+}
+
+function populateImpactPage(data) {
+  const org = data.organization;
+  const stats = data.key_stats;
+
+  const heroDesc = document.getElementById('impact-hero-desc');
+  if (heroDesc) {
+    heroDesc.textContent = org.un_alignment;
+  }
+
+  const livesStat = document.querySelector('#imp-stat-lives .impact-stats__value');
+  if (livesStat) livesStat.textContent = stats.lives_impacted;
+
+  const entrepreneursStat = document.querySelector('#imp-stat-entrepreneurs .impact-stats__value');
+  if (entrepreneursStat) entrepreneursStat.textContent = stats.entrepreneurs_supported;
+
+  const areasStat = document.querySelector('#imp-stat-areas .impact-stats__value');
+  if (areasStat) areasStat.textContent = String(stats.impact_areas_count);
+
+  const forumStat = document.querySelector('#imp-stat-forum .impact-stats__value');
+  if (forumStat) forumStat.textContent = `${stats.annual_forum_count}th`;
+
+  const sectorGrid = document.getElementById('sector-grid');
+  if (sectorGrid && data.impact_areas) {
+    sectorGrid.innerHTML = data.impact_areas.map(renderSectorCard).join('');
+    sectorGrid.querySelectorAll('.sector__card').forEach((card, index) => {
+      const sectorObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add('visible'), index * 100);
+              sectorObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      sectorObserver.observe(card);
     });
   }
+
+  const sdgDesc = document.getElementById('sdg-desc');
+  if (sdgDesc) sdgDesc.textContent = org.un_alignment;
+
+  const sdgGrid = document.getElementById('sdg-grid');
+  if (sdgGrid && data.impact_areas) {
+    sdgGrid.innerHTML = data.impact_areas
+      .map(
+        (area) => `
+        <div class="sdg__card">
+          <div class="sdg__card-number">SDG ${extractSdgNumber(area.sdg)}</div>
+          <div class="sdg__card-name">${extractSdgName(area.sdg)}</div>
+          <div class="sdg__card-ventures">${area.sector}</div>
+        </div>`
+      )
+      .join('');
+  }
+
+  const mentorCta = document.getElementById('cta-mentor');
+  if (mentorCta) {
+    mentorCta.href = getRoleUrl(data, 'Mentor');
+    mentorCta.target = '_blank';
+    mentorCta.rel = 'noopener noreferrer';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const data = await initSite();
+  if (data) populateImpactPage(data);
 
   // --- Animated stat counters ---
   const statValues = document.querySelectorAll('.impact-stats__value');
@@ -52,10 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateCounters() {
     statValues.forEach((el) => {
       const finalText = el.textContent;
-      const hasPrefix = finalText.startsWith('₹');
-      const hasSuffix = finalText.match(/[A-Za-z+]+$/);
-
-      // Extract the numeric part
       const numericStr = finalText.replace(/[^0-9.]/g, '');
       const targetNum = parseFloat(numericStr);
 
@@ -67,31 +159,21 @@ document.addEventListener('DOMContentLoaded', () => {
       function update(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-
-        // Ease out cubic
         const eased = 1 - Math.pow(1 - progress, 3);
         const currentVal = Math.floor(eased * targetNum);
 
-        // Format the number
-        let formatted;
-        if (targetNum >= 1000) {
-          formatted = currentVal.toLocaleString('en-IN');
-        } else {
-          formatted = currentVal.toString();
-        }
+        let formatted =
+          targetNum >= 1000 ? currentVal.toLocaleString('en-IN') : currentVal.toString();
 
-        // Re-add prefix/suffix
-        let display = '';
-        if (hasPrefix) display += '₹';
-        display += formatted;
-        if (hasSuffix) display += hasSuffix[0];
+        if (finalText.includes('M')) formatted += 'M';
+        if (finalText.includes('+')) formatted += '+';
+        if (finalText.includes('th')) formatted += 'th';
 
-        el.textContent = display;
+        el.textContent = formatted;
 
         if (progress < 1) {
           requestAnimationFrame(update);
         } else {
-          // Ensure final text is exact
           el.textContent = finalText;
         }
       }
@@ -100,24 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Sector cards stagger animation ---
-  const sectorCards = document.querySelectorAll('.sector__card');
-  const sectorObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, index * 100);
-        sectorObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  sectorCards.forEach((card) => sectorObserver.observe(card));
-
-  // --- SDG card hover counter effect ---
-  const sdgCards = document.querySelectorAll('.sdg__card');
-  sdgCards.forEach((card) => {
+  // --- SDG card hover ---
+  document.querySelectorAll('.sdg__card').forEach((card) => {
     card.addEventListener('mouseenter', () => {
       card.style.borderColor = 'var(--color-primary)';
     });

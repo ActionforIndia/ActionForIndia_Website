@@ -273,6 +273,17 @@
   gap: 12px;
 }
 
+.news-article-link {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-article-link:hover .news-card__title,
+.news-article-link:hover .news-row__title {
+  color: var(--color-primary);
+}
+
 /* ===== MORE STORIES ===== */
 .news-more {
   padding: 0 0 96px;

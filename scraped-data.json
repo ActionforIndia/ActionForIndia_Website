@@ -1,0 +1,2926 @@
+{
+  "meta": {
+    "source": "https://actionforindia.org/",
+    "scraped_date": "2026-06-24",
+    "description": "All data extracted from the live Action For India website for use in the redesigned website."
+  },
+  "organization": {
+    "name": "Action For India",
+    "abbreviation": "AFI",
+    "founded": 2012,
+    "tagline": "A Platform to Help Scale High-Potential Social Entrepreneurs",
+    "mission_statement": "Action For India's mission is to help high potential social entrepreneurs overcome barriers to scale and achieve greater impact at the bottom of the pyramid.",
+    "mission_goal": "Our intent is to create 25 Impact Unicorns by the year 2025. AFI believes that Impact Unicorns have the potential to positively impact at least a million lives with sustainable revenues over a 5-year period. In this context, our mission is to identify and help scale at least 25 of such Social Enterprises to be Unicorns and in the process, potentially enhance the lives of 25 Million people.",
+    "vision": "AFI strongly believes in the philosophy that sustainable human development can happen only by empowering high-potential social entrepreneurs and creating conditions to enable their success.",
+    "social_enterprise_definition": "Any organization that is developing products and services that proactively make things better for those in the under-served communities and attempts to do it at scale.",
+    "un_alignment": "AFI Strongly mirrors the United Nations philosophy that Human Development can happen sustainably only by enhancing human abilities and creating conditions to enable development. In line with the UN Sustainable Development Goals.",
+    "description_footer": "Action For India (AFI) is a platform to help scale high-potential social entrepreneurs. AFI provides access to capital via our relationships with foundations and funding institutions. It also helps social entrepreneurs benefit from the diverse experience of our best-in-class mentors working across industries globally. AFI helps maximize entrepreneurs' potential through high-impact technology support from Silicon Valley experts and also access to a cohesive network of the Indian diaspora.",
+    "logo_url": "https://actionforindia.org/assets/img/logo/AFI-logo.png",
+    "logo_white_url": "https://actionforindia.org/assets/img/logo/AFI-logo-white.png"
+  },
+  "value_propositions": [
+    {
+      "title": "Recognising and Nurturing",
+      "description": "We have been a pioneer in recognising high potential entrepreneurs and nurturing them to scale up to new heights."
+    },
+    {
+      "title": "Accelerating Growth",
+      "description": "We have helped connect over 1000+ entrepreneurs to resources and opportunities, enabling their growth."
+    },
+    {
+      "title": "Creating Large Scale Impact",
+      "description": "We believe we have impacted more than 10 million lives through our interventions."
+    }
+  ],
+  "what_we_provide": [
+    {
+      "title": "Funding",
+      "description": "Access to capital via our relationships with foundations and funding institutions."
+    },
+    {
+      "title": "Mentorship",
+      "description": "Benefit from the diverse experience of our best-in-class mentors working across industries globally."
+    },
+    {
+      "title": "Technology & Resources",
+      "description": "Maximize your potential through high-impact technology support from Silicon Valley experts and also access to a cohesive network of the Indian diaspora."
+    }
+  ],
+  "impact_areas": [
+    {
+      "sector": "Education",
+      "sdg": "SDG 4 - Quality Education",
+      "color": "#B91A25",
+      "description": "Helping enhancing quality and access, thus increasing employability.",
+      "impact_stat": "Over 3.4 million students supported",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-education-2.png"
+    },
+    {
+      "sector": "Healthcare",
+      "sdg": "SDG 3 - Good Health and Well-being",
+      "color": "#3F9336",
+      "description": "Driving penetration of healthcare technologies to Base of Pyramid.",
+      "impact_stat": "Over 1.3 million patients served, safe drinking water provided to over 200k villagers",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-healthcare-2.png"
+    },
+    {
+      "sector": "Agriculture",
+      "sdg": "SDG 2 - Zero Hunger / Responsible Consumption",
+      "color": "#9C6D22",
+      "description": "Making agriculture attractive for the next generation.",
+      "impact_stat": "Over 400k farmers supported",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-agriculture-2.png"
+    },
+    {
+      "sector": "Energy",
+      "sdg": "SDG 7 - Affordable and Clean Energy",
+      "color": "#D5A536",
+      "description": "Helping enable alternate sources of clean energy.",
+      "impact_stat": "280,000 kgs of CO2 emission reduced",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-energy-2.png"
+    },
+    {
+      "sector": "Livelihoods",
+      "sdg": "SDG 8 - Decent Work and Economic Growth",
+      "color": "#901635",
+      "description": "Helping improve livelihoods by skill development.",
+      "impact_stat": "480,000 days of employment generated; 20 million rupees revenue generated by women entrepreneurs",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-livelihoods-2.png"
+    },
+    {
+      "sector": "Financial Inclusion",
+      "sdg": "SDG 10 - Reduced Inequality",
+      "color": "#D72371",
+      "description": "Helping drive financial literacy and inclusion.",
+      "impact_stat": "Increased Financial Literacy of over 600k people",
+      "icon_url": "https://actionforindia.org/assets/img/icons/icon-financial-2.png"
+    }
+  ],
+  "key_stats": {
+    "lives_impacted": "10 million+",
+    "entrepreneurs_supported": "1000+",
+    "impact_areas_count": 6,
+    "annual_forum_count": 9
+  },
+  "board_of_trustees": [
+    {
+      "name": "Sam Pitroda",
+      "title": "Honorary Chairman, Action For India",
+      "description": "Development Thinker, & Advisor To The Former Prime Minister",
+      "linkedin": "https://www.linkedin.com/in/sampitroda/",
+      "photo_url": "https://actionforindia.org/assets/img/team/sam-pitroda.jpg"
+    },
+    {
+      "name": "Dr. P Vijay Bhatkar",
+      "title": "Architect of India's First Supercomputer",
+      "linkedin": "https://www.linkedin.com/company/dr-vijay-bhatkar/about/",
+      "photo_url": "https://actionforindia.org/assets/img/team/vijay-bhatkar.jpg"
+    },
+    {
+      "name": "Rentala Chandrashekhar",
+      "title": "Former President at NASSCOM",
+      "linkedin": "https://www.linkedin.com/in/chandrashekhar-rentala-793378145/",
+      "photo_url": "https://actionforindia.org/assets/img/team/rentala-chandrashekhar.jpg"
+    },
+    {
+      "name": "Rajeev Gowda",
+      "title": "Former Member of Parliament, Rajya Sabha",
+      "linkedin": "https://www.linkedin.com/in/rajeev-gowda-94a76a/",
+      "photo_url": "https://actionforindia.org/assets/img/team/rajeev-gowda.jpg"
+    },
+    {
+      "name": "Shiv Khemka",
+      "title": "Vice-Chairman, SUN Group",
+      "linkedin": "https://www.linkedin.com/in/shiv-khemka-abb44298/",
+      "photo_url": "https://actionforindia.org/assets/img/team/shiv-khemka.jpg"
+    }
+  ],
+  "board_of_directors": [
+    {
+      "name": "Sanjay Kadaveru",
+      "title": "Founder & Chairperson, Action For India",
+      "chapter": "AFI",
+      "linkedin": "https://www.linkedin.com/in/kadaveru/",
+      "photo_url": "https://actionforindia.org/assets/img/team/sanjay-kadaveru.jpg"
+    },
+    {
+      "name": "Amit Jain",
+      "title": "Start-up Mentor & Business Strategist",
+      "chapter": "AFI - India",
+      "linkedin": "https://www.linkedin.com/in/amitjain22/",
+      "photo_url": "https://actionforindia.org/assets/img/team/amit-jain.jpg"
+    },
+    {
+      "name": "Kishore Kumar",
+      "title": "Founder & CEO, Nuviso Networks",
+      "chapter": "AFI - USA",
+      "linkedin": "https://www.linkedin.com/in/nkishorekumar/",
+      "photo_url": "https://actionforindia.org/assets/img/team/kishore-kumar.jpg"
+    },
+    {
+      "name": "James Gillespie",
+      "title": "Managing Director, Life Sciences at Sterling Bay",
+      "chapter": "AFI - USA",
+      "linkedin": "https://www.linkedin.com/in/jamesjgillespie/",
+      "photo_url": "https://actionforindia.org/assets/img/team/James-Gillepsie.jpg"
+    },
+    {
+      "name": "Satish Pulle",
+      "title": "Analyst, Financials, Utilities, REITs, HY",
+      "chapter": "AFI - USA",
+      "linkedin": "https://www.linkedin.com/in/satish-pulle",
+      "photo_url": "https://actionforindia.org/assets/img/team/Satish-Phulle.jpg"
+    },
+    {
+      "name": "Vijay Nadiminti",
+      "title": "CEO & Director - AgHub",
+      "chapter": "AFI - India",
+      "photo_url": "https://actionforindia.org/assets/img/agri/Vijay-Nandimnti.jpg"
+    }
+  ],
+  "team": [
+    {
+      "name": "Prabhavathy Adavikolanu",
+      "title": "President & COO",
+      "linkedin": "https://www.linkedin.com/in/prabhavathya/",
+      "photo_url": "https://actionforindia.org/assets/img/team/Prabhavathy.jpg"
+    },
+    {
+      "name": "Prateek Shabani",
+      "title": "Program Manager",
+      "linkedin": "https://www.linkedin.com/in/prateekshabani/",
+      "photo_url": "https://actionforindia.org/assets/img/team/Prateek.jpg"
+    },
+    {
+      "name": "Prasad Gade",
+      "title": "Marketing Manager",
+      "linkedin": "https://www.linkedin.com/in/prasadgade/",
+      "photo_url": "https://actionforindia.org/assets/img/team/Prasad-Photo-AFI.png"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Every year, as the new social entrepreneur and change-makers make their way into the AFI circuit, I feel excited at the larger possibilities for the next generation to explore new social and business frontiers.",
+      "name": "SAM PITRODA",
+      "title": "Development Thinker, & Advisor To The Former Prime Minister of India and the world"
+    },
+    {
+      "quote": "I think AFI is playing an extremely important role in terms of bridging the gap for social enterprises and organizations supporting them; thereby developing the ecosystem for a better tomorrow.",
+      "name": "SOMBHODI GHOSH",
+      "title": "Co-founder, Aakar Innovations"
+    },
+    {
+      "quote": "After the AFI event held in Aug 2013, where we met 46 IAS Officers, we got invited by the District Administration of Mayurbhanj district, Odisha to replicate our work in Thanjavur, Tamil Nadu. We have now entered a very exciting phase that combines the scale of the Government and the speed and efficiency of the private sector. I sincerely thank AFI for making this happen.",
+      "name": "DEVI PRASAD RAO",
+      "title": "Managing Director & CEO, Arohana Dairy Private Limited"
+    },
+    {
+      "quote": "AFI has been a key support network in our scale up journey, from great sessions and exposure during the forum in 2019 to the very in depth sessions during silicon valley trek. We thank Mr. Sanjay Kadaveru for taking keen interest individually in our journey.",
+      "name": "SUKHMEET SINGH",
+      "title": "Founder & CEO, A2P Energy Solution Pvt. Ltd."
+    },
+    {
+      "quote": "Being a part of AFI made me realize I am not lonely in this long yet adventurous journey. The insights I obtained from the Forum have helped me redefine many aspects of my business. I have a better perspective of who my beachhead market is and how to reach them. The friends I made at the forum, inspire me to create a greater impact with each passing day. AFI gives me great hope vis-a-vis the socio-economic development of India as I look forward to being at the Forum again soon.",
+      "name": "ABHIMANYU RATHI",
+      "title": "Co-Founder & CEO, SLII"
+    },
+    {
+      "quote": "AFI organizes the best social enterprise conference I know of in India, curating the 100 best social enterprises from across the country.",
+      "name": "SEAN BLAGSVEDT",
+      "title": "Founder, BabaJobs.com"
+    },
+    {
+      "quote": "AFI provides the opportunity to connect the social entrepreneurs' ecosystem in India with resources in Silicon Valley. This is a valuable link to accelerate their journeys to larger impact.",
+      "name": "STEVE TOBEN",
+      "title": "President, The Flora Family Foundation"
+    }
+  ],
+  "partners": {
+    "investors_and_foundations": [
+      "eBay Foundation",
+      "Nishit Desai Foundation",
+      "UNGC Network India",
+      "IDRF",
+      "NASSCOM Foundation",
+      "Deshpande Foundation",
+      "TiE Global",
+      "Motwani Jadeja Foundation",
+      "Kakatiya Sandbox",
+      "Guru Krupa Foundation",
+      "Omnivore",
+      "Caspian",
+      "Let's Venture",
+      "Impact Investors Council",
+      "Ashoka Changemakers",
+      "The Global Education & Leadership Foundation (tGELF)",
+      "Social Venture Partners",
+      "Indian Angel Network",
+      "Brahma Kumaris",
+      "INKtalks",
+      "Hyderabad Angels",
+      "Jagriti Yatra"
+    ],
+    "corporates": [
+      "Cisco",
+      "HP",
+      "Intel",
+      "Nishith Desai Associates",
+      "Nokia",
+      "Infosys",
+      "ENARR",
+      "Indigo",
+      "M-Power"
+    ],
+    "academia_and_government": [
+      "NITI Aayog",
+      "ISB Hyderabad",
+      "Government of Telangana",
+      "STPI",
+      "Centre for Innovations in Public Systems (CIPS)",
+      "IIT Alumni",
+      "Centre for Innovation, Incubation and Entrepreneurship (CIIE)",
+      "Department of Electronics and Information Technology (DeitY)",
+      "NIXI (National Internet Exchange of India)",
+      "Indian Agricultural Research Institute (IARI)"
+    ],
+    "partner_logos": {
+      "base_url": "https://actionforindia.org/assets/img/logo/",
+      "files": [
+        "ebay-foundation.jpg",
+        "nishit_desai_logo.jpg",
+        "ungc-network-india.jpg",
+        "idrf.jpg",
+        "nasscom-foundation.jpg",
+        "deshpande-foundation.jpg",
+        "tie-global.jpg",
+        "motwani-jadeja-foundation.jpg",
+        "kakatiya-sandbox.jpg",
+        "guru-krupa-foundation.png",
+        "omnivore.jpg",
+        "caspian.jpg",
+        "lets-venture.jpg",
+        "iic.jpg",
+        "ashoka-changemakers.jpg",
+        "tgelf.jpg",
+        "social-venture-partners.jpg",
+        "indian-angel-network.jpg",
+        "brahma-kumaris.jpg",
+        "inktalks.jpg",
+        "hyderabad-angels.jpg",
+        "jagriti-yatra.jpg",
+        "cisco.jpg",
+        "hp.jpg",
+        "intel.jpg",
+        "nishith-desai-associates.jpg",
+        "nokia.jpg",
+        "infosys.jpg",
+        "enarr.jpg",
+        "indigo.jpg",
+        "m-power.jpg",
+        "niti-aayog.jpg",
+        "isb.jpg",
+        "telangana-govt.jpg",
+        "stpi.jpg",
+        "cips.jpg",
+        "iit-alumni.jpg",
+        "ciie.jpg",
+        "deity.jpg",
+        "nixi.jpg",
+        "iari.jpg"
+      ]
+    }
+  },
+  "programs": {
+    "main_programs": [
+      {
+        "name": "Agri Cohort 2.0",
+        "url": "https://actionforindia.org/agri-cohort-2.0.html"
+      },
+      {
+        "name": "Agri Cohort 1.0",
+        "url": "https://actionforindia.org/agri-cohort-1.0.html"
+      },
+      {
+        "name": "Impact Catalyzer Program",
+        "url": "https://actionforindia.org/impact-catalyzer-program.html"
+      },
+      {
+        "name": "Funding",
+        "url": "https://actionforindia.org/afi-activity-funding.html"
+      },
+      {
+        "name": "Women Entrepreneurship (WISE Program)",
+        "url": "https://actionforindia.org/afi_wiseprogram2021.html"
+      },
+      {
+        "name": "Accelerator Programs",
+        "url": "https://actionforindia.org/afi-activity-accelerator-programs.html"
+      },
+      {
+        "name": "AI+Impact Cohort",
+        "url": "https://actionforindia.org/afi-ai-impact-cohort-landing-page.html"
+      },
+      {
+        "name": "AI + Agri Cohort",
+        "url": "https://actionforindia.org/afi-ai-impact-cohort-landing-page-new.html"
+      },
+      {
+        "name": "Learning & Networking",
+        "url": "https://actionforindia.org/afi-activity-learning-networking.html"
+      }
+    ]
+  },
+  "annual_forum": {
+    "current_edition": "9th AFI Annual Forum",
+    "description": "Our annual forum is a keenly anticipated event bringing together social enterprises with the entire ecosystem of industry leaders, investors, government and technology experts. The event showcases groundbreaking ideas and exceptional work done by our social entrepreneurs besides enabling them to network and get recognised. The forum is also a meeting ground where dialogues enable consolidation of possible insights for policy making.",
+    "url": "https://actionforindia.org/afi-forum-2024/new_index.html",
+    "banner_url": "https://actionforindia.org/afi-forum-2024/assets/img/sliders/AFI-Hero-Section-new.png"
+  },
+  "get_involved": {
+    "roles": [
+      {
+        "role": "Social Entrepreneur",
+        "description": "Are you a social entrepreneur, looking to unleash your potential?",
+        "url": "https://actionforindia.accubate.app/ext/form/1673/1/apply",
+        "image_url": "https://actionforindia.org/assets/img/afi-cta-entrepreneurs.jpg"
+      },
+      {
+        "role": "Investor",
+        "description": "Are you an investor looking for high potential social enterprises?",
+        "url": "https://docs.google.com/forms/d/1M5g5s4jlMDs-BOPzs3kfV2KJfGAyuUYUfvetk8gzgiQ/edit",
+        "image_url": "https://actionforindia.org/assets/img/afi-cta-investors.jpg"
+      },
+      {
+        "role": "Mentor",
+        "description": "Are you a mentor looking for high potential social entrepreneurs?",
+        "url": "https://docs.google.com/forms/d/1Cc-RgqRI00FiCB4ZUtAbEk-ONChb_IWHK99eiwwuJwM/edit",
+        "image_url": "https://actionforindia.org/assets/img/afi-cta-annual-forum.jpg"
+      },
+      {
+        "role": "Partner",
+        "url": "https://actionforindia.org/contact-afi-partner.html"
+      },
+      {
+        "role": "Donor",
+        "url": "https://actionforindia.org/contact-afi-donate.html"
+      }
+    ]
+  },
+  "international_chapters": {
+    "description": "AFI recognised that the Indian diaspora across the world is keen to contribute to the growth of the social enterprise ecosystem, as a form of giving back to the society. We believe that it is essential to bring together a group of dedicated individuals to further the growth of entrepreneurs by supporting them with the most crucial resources. Our International chapters connect such entrepreneurs to the mentors, industry leaders and funding opportunities.",
+    "chapters": [
+      {
+        "name": "Silicon Valley Chapter",
+        "location": "Los Altos, CA",
+        "email": "svc@actionforindia.org",
+        "url": "https://actionforindia.org/afi-chapter-silicon-valley.html"
+      },
+      {
+        "name": "UK Chapter",
+        "location": "London, UK",
+        "email": "uk@actionforindia.org",
+        "url": "https://actionforindia.org/afi-chapter-uk.html"
+      }
+    ],
+    "future_plans": "Hong Kong, Singapore, Middle East and Canada"
+  },
+  "contact": {
+    "offices": [
+      {
+        "name": "New Delhi Office",
+        "address": "15-A, 4th floor Pratap Nagar, Mayur Vihar near India bank, above KBM electronics, New Delhi 110 091, INDIA",
+        "phone": "+91 90006 78108",
+        "email": "info@actionforindia.org",
+        "maps_url": "https://g.page/eTribeCoworking?share"
+      },
+      {
+        "name": "Bangalore Office",
+        "address": "Prestige Loka, G 01, 7/1 Brunton Road, Bangalore 560 025, INDIA"
+      },
+      {
+        "name": "US Office",
+        "address": "1599 Mount Shasta Ave, Milpitas, CA 95035"
+      },
+      {
+        "name": "Silicon Valley Chapter",
+        "location": "Los Altos, CA",
+        "email": "svc@actionforindia.org"
+      },
+      {
+        "name": "UK Chapter",
+        "location": "London, UK",
+        "email": "uk@actionforindia.org"
+      }
+    ]
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/ActionForIndia/",
+    "twitter": "https://twitter.com/ActionForIndia",
+    "linkedin": "https://in.linkedin.com/company/actionforindia",
+    "youtube": "https://www.youtube.com/user/AFIForum2012/featured"
+  },
+  "journey_timeline": [
+    {
+      "year": 2012,
+      "event": "Action For India (AFI) took shape to help Social Entrepreneurs enable sustainable social impact. The first AFI Annual Forum enabled the coming together of high potential entrepreneurs, mentors and startup advisors."
+    },
+    {
+      "year": 2013,
+      "event": "Leveraged Indian Diaspora which helped begin AFI's US Silicon Valley Chapter. The Kakatiya Sandbox Network program in Telangana was undertaken in partnership with the Deshpande Foundation."
+    },
+    {
+      "year": 2014,
+      "event": "Launched the Silicon Valley Challenge (SVC) Trek - an immersive, experiential learning program for Social Entrepreneurs."
+    },
+    {
+      "year": 2015,
+      "event": "Expansion of Sandbox Network to Varanasi with the launch of Ek Soch Sandbox in partnership with Spice Connect."
+    },
+    {
+      "year": 2016,
+      "event": "Achieved the milestone of establishing a strong network of 500 social entrepreneurs across various sectors."
+    },
+    {
+      "year": 2017,
+      "event": "Initiated long-term collaboration with NITI Aayog for the AFI Forum."
+    },
+    {
+      "year": 2018,
+      "event": "Established a blueprint for programs to address the changing needs of social entrepreneurs, especially women entrepreneurs, to play a more direct role in the scaling journey of the entrepreneurs."
+    },
+    {
+      "year": 2019,
+      "event": "Launched the AFI i-TIC Foundation Social Entrepreneurship Accelerator (AISEA) in partnership with IIT Hyderabad."
+    },
+    {
+      "year": 2020,
+      "event": "AFI is on the threshold of evolution and is entering new territories of Advisory services, launched the UK Chapter of AFI, started partnership with eBay to facilitate growth of women entrepreneurship."
+    }
+  ],
+  "navigation_structure": {
+    "GET TO KNOW US": [
+      {
+        "label": "About Us",
+        "url": "afi-about-action-for-india.html"
+      },
+      {
+        "label": "People",
+        "url": "afi-people.html"
+      },
+      {
+        "label": "Our Social Entrepreneurs",
+        "url": "afi-social-entrepreneurs.html"
+      },
+      {
+        "label": "Our Mentors",
+        "url": "afi-mentors.html"
+      },
+      {
+        "label": "Our Partners",
+        "url": "afi-partners.html"
+      },
+      {
+        "label": "Our International Chapters",
+        "url": "afi-chapters.html"
+      }
+    ],
+    "WHAT WE DO": [
+      {
+        "label": "Agri Cohort 2.0",
+        "url": "agri-cohort-2.0.html"
+      },
+      {
+        "label": "Agri Cohort 1.0",
+        "url": "agri-cohort-1.0.html"
+      },
+      {
+        "label": "Impact Catalyzer Program",
+        "url": "impact-catalyzer-program.html"
+      },
+      {
+        "label": "Funding",
+        "url": "afi-activity-funding.html"
+      },
+      {
+        "label": "Women Entrepreneurship",
+        "url": "afi_wiseprogram2021.html"
+      },
+      {
+        "label": "Accelerator Programs",
+        "url": "afi-activity-accelerator-programs.html"
+      },
+      {
+        "label": "Media",
+        "url": "afi-media.html"
+      },
+      {
+        "label": "Learning & Networking",
+        "url": "afi-activity-learning-networking.html"
+      }
+    ],
+    "GET INVOLVED": [
+      {
+        "label": "As a Social Entrepreneur",
+        "url": "contact-afi-social-entrepreneur.html"
+      },
+      {
+        "label": "As a Mentor",
+        "url": "contact-afi-mentor.html"
+      },
+      {
+        "label": "As an Investor",
+        "url": "contact-afi-investor.html"
+      },
+      {
+        "label": "As a Partner",
+        "url": "contact-afi-partner.html"
+      },
+      {
+        "label": "Donate",
+        "url": "contact-afi-donate.html"
+      }
+    ],
+    "OTHER": [
+      {
+        "label": "Annual Forum",
+        "url": "afi-forum-2024/new_index.html"
+      },
+      {
+        "label": "News & Media",
+        "url": "news-coverage.html"
+      },
+      {
+        "label": "Blog",
+        "url": "blogs.html"
+      },
+      {
+        "label": "Careers at AFI",
+        "url": "contact-afi-careers.html"
+      },
+      {
+        "label": "Opportunities with SEs",
+        "url": "SEs_career.html"
+      }
+    ]
+  },
+  "banner_images": [
+    {
+      "name": "AI+Impact Cohort 2025",
+      "url": "https://actionforindia.org/assets/img/AFI-Impact-Cohort-2025.png",
+      "link": "https://actionforindia.org/afi-ai-impact-cohort-landing-page.html"
+    },
+    {
+      "name": "Agri Cohort 25-26",
+      "url": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg",
+      "link": "https://actionforindia.org/afi-agri-cohort-25-26.html"
+    },
+    {
+      "name": "Donate Banner",
+      "url": "https://actionforindia.org/assets/img/sliders/AFI-banner-new-5.jpg",
+      "link": "https://actionforindia.org/contact-afi-donate.html"
+    }
+  ],
+  "about_page_images": [
+    "https://actionforindia.org/assets/img/afi-page-about-1.jpg",
+    "https://actionforindia.org/assets/img/afi-page-about-2.jpg",
+    "https://actionforindia.org/assets/img/afi-page-about-3.jpg",
+    "https://actionforindia.org/assets/img/afi-page-about-4.jpg",
+    "https://actionforindia.org/assets/img/afi-page-about-5.jpg",
+    "https://actionforindia.org/assets/img/afi-page-about-6.jpg"
+  ],
+  "initiatives_image": "https://actionforindia.org/assets/img/afi-initiatives.jpg",
+  "journey_image": "https://actionforindia.org/assets/img/afi-journey.jpg",
+  "impact_image": "https://actionforindia.org/assets/img/afi-impact.png",
+  "mailchimp": {
+    "form_action": "https://actionforindia.us3.list-manage.com/subscribe/post?u=1696634b394cdebc876837e8d&id=10de9f53c4&f_id=006628e2f0",
+    "fields": [
+      "Email",
+      "Name",
+      "Company",
+      "Country",
+      "Category (Entrepreneur/Mentor/Investor)"
+    ]
+  },
+  "paypal": {
+    "hosted_button_id": "PTF7QVFY3HHXE",
+    "donate_button_url": "https://actionforindia.org/assets/img/donate-bt.png"
+  },
+  "analytics": {
+    "google_analytics_id": "G-8MHQRGD6PY",
+    "facebook_pixel_id": "1212685860048231"
+  },
+  "local_routes": {
+    "about": "about.html",
+    "people": "about.html#team",
+    "entrepreneurs": "entrepreneurs.html",
+    "mentors": "mentors.html",
+    "partners": "about.html#partners",
+    "chapters": "chapters.html",
+    "programs": "programs.html",
+    "forum": "forum.html",
+    "news": "news.html",
+    "blog": "blog.html",
+    "careers": "careers.html",
+    "opportunities": "opportunities.html",
+    "media": "media.html",
+    "get_involved": "get-involved.html",
+    "donate": "get-involved.html#donation-section"
+  },
+  "program_details": [
+    {
+      "id": "ai-impact",
+      "name": "AI+Impact Cohort",
+      "description": "A focused cohort for social entrepreneurs leveraging artificial intelligence and emerging technologies to solve India's most pressing challenges at scale.",
+      "benefits": [
+        "Mentorship from Silicon Valley experts",
+        "Access to AFI investor network",
+        "Technology support and resources",
+        "Annual Forum and demo day exposure"
+      ],
+      "apply_url": "https://actionforindia.org/afi-ai-impact-cohort-landing-page.html",
+      "image": "https://actionforindia.org/assets/img/AFI-Impact-Cohort-2025.png"
+    },
+    {
+      "id": "agri-2",
+      "name": "Agri Cohort 2.0",
+      "description": "Supporting agri-tech startups transforming India's agricultural value chain with sustainable, technology-driven solutions for smallholder farmers.",
+      "benefits": [
+        "Agri-expert mentors",
+        "Market linkages and FPO partnerships",
+        "Funding access via AFI network",
+        "Field pilots and scale support"
+      ],
+      "apply_url": "https://actionforindia.org/agri-cohort-2.0.html",
+      "image": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg"
+    },
+    {
+      "id": "agri-1",
+      "name": "Agri Cohort 1.0",
+      "description": "AFI's first dedicated agriculture cohort connecting agri-social enterprises with mentors, investors, and government partners.",
+      "benefits": [
+        "Sector-specific mentorship",
+        "Investor introductions",
+        "Government and ecosystem connections"
+      ],
+      "apply_url": "https://actionforindia.org/agri-cohort-1.0.html",
+      "image": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg"
+    },
+    {
+      "id": "catalyzer",
+      "name": "Impact Catalyzer Program",
+      "description": "An acceleration program designed to help early-stage social enterprises build scalable models, secure funding, and create measurable impact across sectors.",
+      "benefits": [
+        "1-on-1 mentoring",
+        "Impact measurement support",
+        "Investor connect sessions",
+        "Cross-sector peer learning"
+      ],
+      "apply_url": "https://actionforindia.org/impact-catalyzer-program.html",
+      "image": "https://actionforindia.org/assets/img/afi-initiatives.jpg"
+    },
+    {
+      "id": "funding",
+      "name": "Funding",
+      "description": "Access to capital via AFI's relationships with foundations, impact investors, and funding institutions across India and Silicon Valley.",
+      "benefits": [
+        "Foundation introductions",
+        "Angel and impact investor network",
+        "Pitch opportunities at Annual Forum"
+      ],
+      "apply_url": "https://actionforindia.org/afi-activity-funding.html",
+      "image": "https://actionforindia.org/assets/img/afi-page-about-3.jpg"
+    },
+    {
+      "id": "wise",
+      "name": "Women Entrepreneurship (WISE Program)",
+      "description": "Dedicated support for women-led social enterprises driving change in rural livelihoods, healthcare, education, and financial inclusion.",
+      "benefits": [
+        "Women mentor network",
+        "eBay Foundation partnership support",
+        "WISE program cohort access",
+        "Revenue and scale mentoring"
+      ],
+      "apply_url": "https://actionforindia.org/afi_wiseprogram2021.html",
+      "image": "https://actionforindia.org/assets/img/afi-page-about-4.jpg"
+    },
+    {
+      "id": "accelerator",
+      "name": "Accelerator Programs",
+      "description": "AFI accelerator programs including AISEA in partnership with IIT Hyderabad help social enterprises refine models and prepare for scale.",
+      "benefits": [
+        "Structured acceleration curriculum",
+        "University and incubator partnerships",
+        "Investor readiness",
+        "Silicon Valley Challenge Trek access"
+      ],
+      "apply_url": "https://actionforindia.org/afi-activity-accelerator-programs.html",
+      "image": "https://actionforindia.org/assets/img/afi-page-about-5.jpg"
+    },
+    {
+      "id": "ai-agri",
+      "name": "AI + Agri Cohort",
+      "description": "Combining artificial intelligence with agricultural innovation to support the next generation of agri-social entrepreneurs.",
+      "benefits": [
+        "AI and Agri mentor pool",
+        "Technology partnerships",
+        "Farmer-impact focused scaling"
+      ],
+      "apply_url": "https://actionforindia.org/afi-ai-impact-cohort-landing-page-new.html",
+      "image": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg"
+    },
+    {
+      "id": "learning",
+      "name": "Learning & Networking",
+      "description": "AFI connects social entrepreneurs with learning sessions, Silicon Valley Challenge Trek, and networking through the Annual Forum and chapter events.",
+      "benefits": [
+        "SVC Trek experiential learning",
+        "Annual Forum access",
+        "International chapter networking",
+        "Peer community of 1000+ entrepreneurs"
+      ],
+      "apply_url": "https://actionforindia.org/afi-activity-learning-networking.html",
+      "image": "https://actionforindia.org/assets/img/afi-journey.jpg"
+    }
+  ],
+  "social_entrepreneurs": {
+    "intro": "AFI has supported over 1000+ social entrepreneurs across education, healthcare, agriculture, energy, livelihoods, and financial inclusion. Our alumni have been recognised by Forbes, Fortune India, and leading publications.",
+    "featured": [
+      {
+        "name": "Ayushi Mishra",
+        "venture": "Forbes Asia 30 Under 30",
+        "sector": "Healthcare",
+        "recognition": "Forbes Asia 30 Under 30, 2020"
+      },
+      {
+        "name": "Vidyut Mohan",
+        "venture": "Forbes Asia 30 Under 30",
+        "sector": "Clean Energy",
+        "recognition": "Forbes Asia 30 Under 30, 2020"
+      },
+      {
+        "name": "Vihari Kanukollu",
+        "venture": "Forbes Asia 30 Under 30",
+        "sector": "Agriculture",
+        "recognition": "Forbes Asia 30 Under 30, 2020"
+      },
+      {
+        "name": "Prem Kumar",
+        "venture": "Forbes Asia 30 Under 30",
+        "sector": "Livelihoods",
+        "recognition": "Forbes Asia 30 Under 30, 2020"
+      },
+      {
+        "name": "Wilma Rodrigues",
+        "venture": "Waste Management",
+        "sector": "Environment",
+        "recognition": "Forbes India WPower Trailblazers"
+      },
+      {
+        "name": "Prerna Mukharya",
+        "venture": "Data Empowerment",
+        "sector": "Technology",
+        "recognition": "Forbes India WPower Trailblazers"
+      },
+      {
+        "name": "Neha Juneja",
+        "venture": "Clean Energy",
+        "sector": "Energy",
+        "recognition": "Forbes India WPower Trailblazers"
+      },
+      {
+        "name": "Leo Mavely",
+        "venture": "Healthcare",
+        "sector": "Healthcare",
+        "recognition": "Fortune India 40 Under 40, 2018"
+      },
+      {
+        "name": "Sombhodi Ghosh",
+        "venture": "Aakar Innovations",
+        "sector": "Healthcare",
+        "recognition": "AFI Alumni"
+      },
+      {
+        "name": "Devi Prasad Rao",
+        "venture": "Arohana Dairy",
+        "sector": "Agriculture",
+        "recognition": "AFI Alumni"
+      },
+      {
+        "name": "Sukhmeet Singh",
+        "venture": "A2P Energy Solution",
+        "sector": "Energy",
+        "recognition": "AFI Alumni"
+      },
+      {
+        "name": "Abhimanyu Rathi",
+        "venture": "SLII",
+        "sector": "Education",
+        "recognition": "AFI Alumni"
+      }
+    ]
+  },
+  "mentors_network": {
+    "intro": "AFI's mentor network includes 1000+ industry leaders from India, Silicon Valley, and across the globe — spanning technology, finance, agriculture, healthcare, and social impact.",
+    "apply_url": "https://docs.google.com/forms/d/1Cc-RgqRI00FiCB4ZUtAbEk-ONChb_IWHK99eiwwuJwM/edit",
+    "featured": [
+      {
+        "name": "Sam Pitroda",
+        "title": "Honorary Chairman, AFI",
+        "expertise": "Policy & Development"
+      },
+      {
+        "name": "Sanjay Kadaveru",
+        "title": "Founder & Chairperson, AFI",
+        "expertise": "Social Entrepreneurship"
+      },
+      {
+        "name": "Amit Jain",
+        "title": "Start-up Mentor & Business Strategist",
+        "expertise": "Strategy & Scale"
+      },
+      {
+        "name": "James Gillespie",
+        "title": "Managing Director, Life Sciences",
+        "expertise": "Life Sciences & Investment"
+      },
+      {
+        "name": "Kishore Kumar",
+        "title": "Founder & CEO, Nuviso Networks",
+        "expertise": "Technology"
+      }
+    ]
+  },
+  "blog_posts": [
+    {
+      "title": "Driving Social Change",
+      "excerpt": "Driving Social Change",
+      "url": "https://actionforindia.org/gkf.html",
+      "date": "2025"
+    },
+    {
+      "title": "Dehaat",
+      "excerpt": "Dehaat",
+      "url": "https://actionforindia.org/afi-social-enterprises-dehaat-post.html",
+      "date": "2025"
+    },
+    {
+      "title": "A note on Social Entrepreneurs",
+      "excerpt": "A note on Social Entrepreneurs",
+      "url": "https://actionforindia.org/blog_post.html",
+      "date": "2025"
+    },
+    {
+      "title": "Past AFI-SVC Fellows, Nemocare Wellness & AgNext, among the 16 Indian Startups Selected for Google's Accelerator Program",
+      "excerpt": "Past AFI-SVC Fellows, Nemocare Wellness & AgNext, among the 16 Indian Startups Selected for Google's Accelerator Program",
+      "url": "https://actionforindia.org/assets/img/news-section/AFI-SVC.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI Fellow, Doctors For You, making oxygen available at the Peak of COVID-19",
+      "excerpt": "AFI Fellow, Doctors For You, making oxygen available at the Peak of COVID-19",
+      "url": "https://actionforindia.org/assets/img/news-section/covid_aid_1_0.webp",
+      "date": "2025"
+    },
+    {
+      "title": "Digital Green receives USD 2.7B grant from MacKenzie Scott",
+      "excerpt": "Digital Green receives USD 2.7B grant from MacKenzie Scott",
+      "url": "https://actionforindia.org/assets/img/news-section/team-photo.jpeg",
+      "date": "2025"
+    },
+    {
+      "title": "Temperate Technologies",
+      "excerpt": "Name of Entrepreneur: Vishal Singhal",
+      "url": "https://actionforindia.org/afi-social-enterprises-temperate-technologies-post.html",
+      "date": "2025"
+    },
+    {
+      "title": "Navalt",
+      "excerpt": "Name of Entrepreneur: Sandith Thandasherry",
+      "url": "https://actionforindia.org/afi-social-enterprises-navalt-post.html",
+      "date": "2025"
+    },
+    {
+      "title": "LoveLocal Raises $18m in one of the largest rounds ever raised by a Solo Woman Tech Founder in India",
+      "excerpt": "MUMBAI, India, Oct. 28, 2021 /PRNewswire/ -- LoveLocal, India's leading hyper-local e-commerce platform empowering local retailers, has raised $18m or INR 143 crores, in a Pre-Series B investment round that features some of the most prominent investors and founders globally. The round, which was ove",
+      "url": "https://actionforindia.org/assets/img/news-section/LoveLocal_Team.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI-SVC Trek Fellow, Sandith Thandasherry, launches his first book",
+      "excerpt": "AFI’s partner organisation and SVC Trek 2017 Fellow, Mr. Sandith Thandasherry, CEO, NavAlt Solar and Electric Boats, recently launched the first edition of his book \"Solar-Electric Boat - Plan, Build and Benefit\". The book targets the marine transport system’s decision makers, advisors and team, who",
+      "url": "https://actionforindia.org/assets/img/news-section/solar-electric_boats.jpeg",
+      "date": "2025"
+    },
+    {
+      "title": "Kibo (Trestle Labs)",
+      "excerpt": "Name of Entrepreneur: Akshita Sachdeva",
+      "url": "https://actionforindia.org/afi-social-enterprises-kibo-post.html",
+      "date": "2025"
+    },
+    {
+      "title": "ZenOnco",
+      "excerpt": "Name of Entrepreneur: Dimple Parmar",
+      "url": "https://actionforindia.org/afi-social-enterprises-zenonco-post.html",
+      "date": "2025"
+    },
+    {
+      "title": "Organisation building assistive tech solutions wins the ‘Most Impactful Assistive Technology (AT) Start-Up'",
+      "excerpt": "Trestle Labs, an ex-AFI fellow organisation providing solutions for the visually impaired through assistive technology and learning has just won ‘Most Impactful Assistive Technology (AT) Start-up' by AssisTech Foundation Awards. The organisation has been receiving mentorship from Lavni Ventures for ",
+      "url": "https://actionforindia.org/assets/img/news-section/AT-Startup.jpeg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI Fellow, Ikure gets recognised by World Economic Forum (WEF) in Top 50 COVID-19 Last Mile Responders",
+      "excerpt": "iKure, founded by Mr. Sujay Santra - an AFI-SVC Fellow 2015, is aiding primary healthcare and wellness to communities in India through innovative technology, and has been recognised by World Economic Forum among the Top 50 COVID-19 Last Mile Responders as part of the COVID Response Alliance For Soci",
+      "url": "https://actionforindia.org/assets/img/news-section/Ikure.jpeg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI Fellow, Newndra Innovations Private Wins National Intellectual Property Awards for Year 2020",
+      "excerpt": "Mr. Ganesh Ram Jangir, AFI fellow & founder of Newndra Innovations Pvt. Ltd. has been selected as the winner of National Intellectual Property Awards for the Year 2020 in the category 'Top Start-up for IT and commercialisation'. Due to the pandemic, the ceremony will be held online & the award will ",
+      "url": "https://actionforindia.org/assets/img/news-section/intellectualproperty-Award.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI Fellow, Sohum Innovation Labs won a grant of ₹2,500,000 from Prosus SICA",
+      "excerpt": "Three Indian startups are working to scale up assistive tech for differently-abled backed by new funding received as part of the inaugural Prosus Social Impact Challenge for Accessibility (Prosus SICA). Sohum won for its \"highly accessible device” that has been designed to detect hearing impairment ",
+      "url": "https://actionforindia.org/assets/img/news-section/bl04startup.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI WISEpreneur Neha Kirpal - Enhance Outreach through Industry Partnerships",
+      "excerpt": "AFI's WISEpreneur Neha Kirpal, Co-Founder of the mental health platform Innerhour, stressed upon enhancing the outreach by partnering with other organizations during her interaction with the investors/advisors in the UK Chapter Meeting. Mr. Sudhir Subbaraman, CGI, appreciated the initiative and sign",
+      "url": "https://actionforindia.org/assets/img/news-section/Neha_Kirpal_1.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "GUVI makes it into the Guinness World Records For it's 'AI-for-India 1.0' initiative",
+      "excerpt": "AFI's partner organisation GUVI, received the Guinness World Records for it's 'AI-for-India 1.0' initiative that had the most number of users to take computer programming lessons in 24 hours. GUVI is an online platform to learn computer programming and coding in India, which offers free and paid cla",
+      "url": "https://actionforindia.org/assets/img/news-section/guvi.jpg",
+      "date": "2025"
+    },
+    {
+      "title": "AFI Fellow, Bikrant Tiwary - Action For India Award gave wings to his Green Initiative",
+      "excerpt": "Mr Bikrant Tiwary, CEO, Grow-Trees.com, during an interview with the Weather Channel, highlighted how winning the Action For India Award gave impetus to his green initiative globally. The initiative targets carbon reduction, restoring forests, improving wildlife habitats, upgrading water catchment a",
+      "url": "https://actionforindia.org/assets/img/news-section/tree-planting.jpg",
+      "date": "2025"
+    }
+  ],
+  "media_coverage": [
+    {
+      "title": "AFI Alumni in Fortune India 40 Under 40",
+      "source": "Fortune India",
+      "year": "2018",
+      "excerpt": "AFI SVC Fellow Leo Mavely recognised for healthcare contributions."
+    },
+    {
+      "title": "Forbes Asia 30 Under 30 — Four AFI Entrepreneurs",
+      "source": "Forbes Asia",
+      "year": "2020",
+      "excerpt": "Ayushi Mishra, Vidyut Mohan, Vihari Kanukollu and Prem Kumar honoured."
+    },
+    {
+      "title": "Forbes India WPower Trailblazers",
+      "source": "Forbes India",
+      "year": "2018",
+      "excerpt": "Wilma Rodrigues, Prerna Mukharya, and Neha Juneja recognised."
+    },
+    {
+      "title": "AFI Annual Forum Coverage",
+      "source": "AFI News",
+      "year": "2024",
+      "excerpt": "9th edition convenes social enterprises, investors, and government leaders."
+    }
+  ],
+  "careers": {
+    "intro": "Join Action For India's team and help scale high-potential social entrepreneurs across India. We seek passionate individuals committed to social impact.",
+    "email": "info@actionforindia.org",
+    "apply_url": "https://actionforindia.org/contact-afi-careers.html",
+    "openings": [
+      {
+        "title": "Program Manager",
+        "location": "New Delhi / Bangalore",
+        "type": "Full-time"
+      },
+      {
+        "title": "Marketing & Communications",
+        "location": "New Delhi",
+        "type": "Full-time"
+      },
+      {
+        "title": "Operations Associate",
+        "location": "Bangalore",
+        "type": "Full-time"
+      }
+    ]
+  },
+  "se_opportunities": {
+    "intro": "Explore career and fellowship opportunities with AFI's portfolio of social enterprises — ventures tackling education, healthcare, agriculture, energy, and more.",
+    "apply_url": "https://actionforindia.org/SEs_career.html",
+    "categories": [
+      "Program Management",
+      "Field Operations",
+      "Technology",
+      "Sales & Partnerships",
+      "Impact Measurement"
+    ]
+  },
+  "volunteer": {
+    "title": "Become a Volunteer",
+    "description": "Volunteer with Action For India to support social entrepreneurs and ecosystem events.",
+    "fields": [
+      "Name",
+      "Last Name",
+      "Email",
+      "Phone",
+      "ZIP code",
+      "Why you want to volunteer"
+    ],
+    "note": "Submit your interest and our team will reach out with volunteer opportunities."
+  },
+  "chapter_pages": {
+    "silicon-valley": {
+      "name": "Silicon Valley Chapter",
+      "location": "Los Altos, CA",
+      "email": "svc@actionforindia.org",
+      "description": "The AFI Silicon Valley Chapter connects Indian social entrepreneurs with Silicon Valley's investors, technologists, and diaspora. Born from AFI's mission to leverage the Indian diaspora, the chapter runs the Silicon Valley Challenge (SVC) Trek and connects entrepreneurs to mentors and funding in the US.",
+      "highlights": [
+        "Silicon Valley Challenge Trek",
+        "US mentor and investor network",
+        "Diaspora engagement",
+        "Technology partnerships"
+      ],
+      "original_url": "https://actionforindia.org/afi-chapter-silicon-valley.html"
+    },
+    "uk": {
+      "name": "UK Chapter",
+      "location": "London, UK",
+      "email": "uk@actionforindia.org",
+      "description": "Launched in 2020, the AFI UK Chapter brings together the Indian diaspora in the United Kingdom to support social entrepreneurs in India with mentorship, networks, and funding opportunities.",
+      "highlights": [
+        "UK diaspora network",
+        "Mentorship for Indian social enterprises",
+        "Cross-border impact investing",
+        "Annual Forum UK participation"
+      ],
+      "original_url": "https://actionforindia.org/afi-chapter-uk.html"
+    }
+  },
+  "news_articles": [
+    {
+      "id": "news-0",
+      "category": "recognition",
+      "tag": "News",
+      "title": "We are proud to share that AgriVijay has been awarded as “BAI Rising Star Award winner” being the 4th International Award & Recognition for the Impact created on the Lives; passion for Innovation and ability to drive positive change towards Sustainability.",
+      "excerpt": "Read More",
+      "date": "2025",
+      "featured": true,
+      "image": "https://actionforindia.org/assets/img/dummy-image-768x384.png",
+      "url": "https://www.bai.org/global-innovation-awards/rising-stars/"
+    },
+    {
+      "id": "news-1",
+      "category": "recognition",
+      "tag": "News",
+      "title": "Gaurav's (BigOHealth) story on LInkedIN",
+      "excerpt": "Read More",
+      "date": "2025",
+      "featured": true,
+      "image": "https://actionforindia.org/assets/img/dummy-image-768x384.png",
+      "url": "https://www.linkedin.com/posts/gaurav-r-b14192ba_great-to-be-part-of-india-mobile-congress-activity-7124618784367161344-BFSY?utm_source=share&utm_medium=member_ios"
+    },
+    {
+      "id": "news-2",
+      "category": "program",
+      "tag": "Newsletter",
+      "title": "AFI 2025 Year End Newsletter",
+      "excerpt": "Reflect on a year of growth,innovation & collaboration.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/Newsletter-Dec25.png",
+      "url": "https://heyzine.com/flip-book/eb73a16316.html"
+    },
+    {
+      "id": "news-3",
+      "category": "program",
+      "tag": "Newsletter",
+      "title": "AFI Newsletter",
+      "excerpt": "Celebrating the launch of AgriCohort 2.0 and the startups transforming the future of Indian agriculture.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/Newsletter-Sep.png",
+      "url": "https://actionforindia.org/AFI-Sep-2025-Newsletter.pdf"
+    },
+    {
+      "id": "news-4",
+      "category": "recognition",
+      "tag": "News",
+      "title": "DeHaat has scooped up $115 million in what appears to be the largest funding round for an agritech startup in India.",
+      "excerpt": "Two mega successes for social entrepreneurs in our network. First there was the news featuring Shashank Kumar, Co-Founder & CEO, DeHaat and AFI’s Silicon Valley Challenge (SVC) Fellow in 2016: Then, the very next day, we received an update from Akanksha Hazari, Founder & CEO, LoveLocal (previously m.paani) and AFI’s SVC Fellow in 2014:",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/dehaat-768x384.jpg",
+      "url": "https://entrackr.com/2021/10/dehaat-rakes-in-largest-funding-round-in-indian-agritech-space/"
+    },
+    {
+      "id": "news-5",
+      "category": "recognition",
+      "tag": "News",
+      "title": "LoveLocal Raises $18m in one of the largest rounds ever raised by a Solo Woman Tech Founder in India",
+      "excerpt": "MUMBAI, India, Oct. 28, 2021 /PRNewswire/ -- LoveLocal, India's leading hyper-local e-commerce platform empowering local retailers, has raised $18m or INR 143 crores, in a Pre-Series B investment round that features some of the most prominent investors and founders globally. The round, which was oversubscribed, is led by Vulcan Capital, and also includes participation from Klarna Founder & CEO Seb",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/LoveLocal_Team.jpg",
+      "url": "https://www.prnewswire.com/news-releases/lovelocal-raises-18m-pre-series-b-in-the-largest-round-ever-raised-by-a-solo-woman-tech-founder-in-india-301411153.html"
+    },
+    {
+      "id": "news-6",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI-SVC Trek Fellow, Sandith Thandasherry, launches his first book",
+      "excerpt": "AFI’s partner organisation and SVC Trek 2017 Fellow, Mr. Sandith Thandasherry, CEO, NavAlt Solar and Electric Boats, recently launched the first edition of his book \"Solar-Electric Boat - Plan, Build and Benefit\". The book targets the marine transport system’s decision makers, advisors and team, who need to understand the fundamentals of solar-electric boats.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/solar-electric_boats.jpeg",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:6833859194043600896"
+    },
+    {
+      "id": "news-7",
+      "category": "recognition",
+      "tag": "News",
+      "title": "Organisation building assistive tech solutions wins the ‘Most Impactful Assistive Technology (AT) Start-Up'",
+      "excerpt": "Trestle Labs, an ex-AFI fellow organisation providing solutions for the visually impaired through assistive technology and learning has just won ‘Most Impactful Assistive Technology (AT) Start-up' by AssisTech Foundation Awards. The organisation has been receiving mentorship from Lavni Ventures for over a year and is in talks for investment currently.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/AT-Startup.jpeg",
+      "url": "https://atflabs.org/winners"
+    },
+    {
+      "id": "news-8",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI Fellow, Ikure gets recognised by World Economic Forum (WEF) in Top 50 COVID-19 Last Mile Responders",
+      "excerpt": "iKure, founded by Mr. Sujay Santra - an AFI-SVC Fellow 2015, is aiding primary healthcare and wellness to communities in India through innovative technology, and has been recognised by World Economic Forum among the Top 50 COVID-19 Last Mile Responders as part of the COVID Response Alliance For Social Entrepreneurs. iKure aims to provide holistic healthcare services for rural residents using techn",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/Ikure.jpeg",
+      "url": "https://widgets.weforum.org/lastmiletop50india/ikure/"
+    },
+    {
+      "id": "news-9",
+      "category": "recognition",
+      "tag": "News",
+      "title": "Past AFI-SVC Fellows, Nemocare Wellness & AgNext, among the 16 Indian Startups Selected for Google's Accelerator Program",
+      "excerpt": "Nemocare Wellness working (healthcare) and AGNEXT (agriculture) have been selected for this years' Google Startups Accelerator Program. Nemocare (AFI-SVC Fellow, 2018) is creating innovative solutions to end all preventable neonatal and maternal deaths in the developing world by building affordable, accurate, continuous smart monitoring wearables. AgNext (Top 10 among SVC Fellow, 2016) is working ",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/AFI-SVC.jpg",
+      "url": "https://inc42.com/buzz/meet-the-16-indian-startups-selected-for-class-5-of-googles-accelerator-program/"
+    },
+    {
+      "id": "news-10",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI Fellow, Newndra Innovations Private Wins National Intellectual Property Awards for Year 2020",
+      "excerpt": "Mr. Ganesh Ram Jangir, AFI fellow & founder of Newndra Innovations Pvt. Ltd. has been selected as the winner of National Intellectual Property Awards for the Year 2020 in the category 'Top Start-up for IT and commercialisation'. Due to the pandemic, the ceremony will be held online & the award will be given by Hon'ble Minister of Commerce and Industry, Shri Piyush Goyal.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/intellectualproperty-Award.jpg",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:6833328509801385984"
+    },
+    {
+      "id": "news-11",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI Fellow, Sohum Innovation Labs won a grant of ₹2,500,000 from Prosus SICA",
+      "excerpt": "Three Indian startups are working to scale up assistive tech for differently-abled backed by new funding received as part of the inaugural Prosus Social Impact Challenge for Accessibility (Prosus SICA). Sohum won for its \"highly accessible device” that has been designed to detect hearing impairment amongst infants and small children.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/bl04startup.jpg",
+      "url": "https://www.thehindubusinessline.com/companies/three-indian-startups-work-to-scale-up-in-the-assistive-tech-space/article34011214.ece/"
+    },
+    {
+      "id": "news-12",
+      "category": "recognition",
+      "tag": "News",
+      "title": "GUVI makes it into the Guinness World Records For it's 'AI-for-India 1.0' initiative",
+      "excerpt": "AFI's partner organisation GUVI, received the Guinness World Records for it's 'AI-for-India 1.0' initiative that had the most number of users to take computer programming lessons in 24 hours. GUVI is an online platform to learn computer programming and coding in India, which offers free and paid classes in multiple languages.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/#",
+      "url": "https://twitter.com/guviofficial/status/1388098957717303298"
+    },
+    {
+      "id": "news-13",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI Fellow, Doctors For You, making oxygen available at the Peak of COVID-19",
+      "excerpt": "The Hero Group, in collaboration with an NGO called Doctors for You, founded by AFI fellow, have made 100 oxygen concentrators available along with medicines and doctors in Haryana to help fight the pandemic.",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/covid_aid_1_0.webp",
+      "url": "https://www.indiatoday.in/coronavirus-outbreak/story/haryana-receives-100-oxygen-concentrators-from-who-1803987-2021-05-18/"
+    },
+    {
+      "id": "news-14",
+      "category": "recognition",
+      "tag": "News",
+      "title": "AFI WISEpreneur Neha Kirpal - Enhance Outreach through Industry Partnerships",
+      "excerpt": "AFI's WISEpreneur Neha Kirpal, Co-Founder of the mental health platform Innerhour, stressed upon enhancing the outreach by partnering with other organizations during her interaction with the investors/advisors in the UK Chapter Meeting. Mr. Sudhir Subbaraman, CGI, appreciated the initiative and signed up CGI (India+APAC region) with InnerHour, providing mental health services for their 15K+ employ",
+      "date": "2025",
+      "featured": false,
+      "image": "https://actionforindia.org/assets/img/news-section/Neha_Kirpal_1.jpg",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:6819179963456004096"
+    },
+    {
+      "id": "forbes-30",
+      "category": "recognition",
+      "tag": "Recognition",
+      "title": "Forbes Asia 30 Under 30, 2020",
+      "excerpt": "Four of our social entrepreneurs — Ayushi Mishra, Vidyut Mohan, Vihari Kanukollu and Prem Kumar — were recognised by Forbes in their coveted 30 Under 30 list.",
+      "date": "2020",
+      "featured": true,
+      "image": "https://actionforindia.org/assets/img/AFI-Impact-Cohort-2025.png"
+    }
+  ],
+  "social_entrepreneurs_directory": {
+    "intro": "AFI has supported over 1000+ social entrepreneurs across education, healthcare, agriculture, energy, livelihoods, and financial inclusion. Our alumni have been recognised by Forbes, Fortune India, and leading publications.",
+    "sectors": [
+      "Education",
+      "Healthcare",
+      "Agriculture",
+      "Energy",
+      "Energy",
+      "Livelihoods",
+      "Financial Inclusion",
+      "Other Tech"
+    ],
+    "entrepreneurs": [
+      {
+        "name": "Airth",
+        "venture": "Airth",
+        "founder": "Ravi Kaushik",
+        "sector": "Clean Energy",
+        "sector_key": "cleanenergy",
+        "website": "https://airth.in/",
+        "linkedin": "https://www.linkedin.com/in/ravi-kaushik/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Airth.jpg"
+      },
+      {
+        "name": "Arficus Private Limited",
+        "venture": "Arficus Private Limited",
+        "founder": "Sandeep Sinha",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.arficus.com",
+        "linkedin": "http://linkedin.com/in/sinhasandy",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Arficus.jpg"
+      },
+      {
+        "name": "Bariflo Cybernetics Private Limited",
+        "venture": "Bariflo Cybernetics Private Limited",
+        "founder": "Mrutyunjaya Sahu",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://www.bariflolabs.com",
+        "linkedin": "https://in.linkedin.com/in/mrityunjay-sahu",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Bariflo-cybernetics.jpg"
+      },
+      {
+        "name": "Bramhansh Technologies Pvt Ltd",
+        "venture": "Bramhansh Technologies Pvt Ltd",
+        "founder": "Kartik K",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.bramhansh.com",
+        "linkedin": "https://www.linkedin.com/in/kartik-k-%F0%9F%8C%8C-6579a0165/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Bramhansh.jpg"
+      },
+      {
+        "name": "Brijdd",
+        "venture": "Brijdd",
+        "founder": "Leena Chakrabarti",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.brijdd.net",
+        "linkedin": "https://www.linkedin.com/in/leena-chakraba",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Brijdd.jpg"
+      },
+      {
+        "name": "Canfem",
+        "venture": "Canfem",
+        "founder": "Akriti Gupta",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.canfem.com",
+        "linkedin": "https://www.linkedin.com/in/akriti-gupta-366347105/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Canfem.jpg"
+      },
+      {
+        "name": "Cre-AID Labs Pvt. Ltd",
+        "venture": "Cre-AID Labs Pvt. Ltd",
+        "founder": "Amartya Gupta",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.creaidlabs.com",
+        "linkedin": "https://www.linkedin.com/in/amartya-gupta-494698214/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Cre-AID-Labs.jpg"
+      },
+      {
+        "name": "Fuselage Innovations Pvt Ltd",
+        "venture": "Fuselage Innovations Pvt Ltd",
+        "founder": "Devika Chandrasekharan",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://fuselage.co.in/",
+        "linkedin": "https://www.linkedin.com/in/devika-chandrasekharan/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Fuselage-Innovations.jpg"
+      },
+      {
+        "name": "Godaam Innovations pvt ltd",
+        "venture": "Godaam Innovations pvt ltd",
+        "founder": "Kalyani Shinde",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://www.godaaminnovations.com",
+        "linkedin": "https://www.linkedin.com/in/kalyani-shinde-178612147/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Godaam-Innovations.jpg"
+      },
+      {
+        "name": "Goploh Ventures Private Limited",
+        "venture": "Goploh Ventures Private Limited",
+        "founder": "Sandeep Mehndiratta",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://www.goplow.co.in",
+        "linkedin": "https://www.linkedin.com/in/samrat-singh-chauhan-7973638/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Goploh-Ventures.jpg"
+      },
+      {
+        "name": "GramShree Kisan",
+        "venture": "GramShree Kisan",
+        "founder": "Aastha Singh",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://gramshreeagri.in/",
+        "linkedin": "https://www.linkedin.com/in/aastha-singh-28213138/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Gramshree-Kisan.jpg"
+      },
+      {
+        "name": "Greenovate Solutions",
+        "venture": "Greenovate Solutions",
+        "founder": "Ronak Yogesh Mistry",
+        "sector": "Clean Energy",
+        "sector_key": "cleanenergy",
+        "website": "https://www.greenovate.in/",
+        "linkedin": "https://www.linkedin.com/in/mistryronakyogesh/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Greenovate-Solutions.jpg"
+      },
+      {
+        "name": "GreenPod Labs",
+        "venture": "GreenPod Labs",
+        "founder": "Deepak Rajmohan",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://greenpodlabs.com/",
+        "linkedin": "https://www.linkedin.com/in/deepakrajmohan/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/GREENPOD-Labs.jpg"
+      },
+      {
+        "name": "Learn and Empower Private Limited",
+        "venture": "Learn and Empower Private Limited",
+        "founder": "Prabodh Mahajan",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://www.signassistive.app",
+        "linkedin": "https://www.linkedin.com/in/prabodh1",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Learn-Empower.jpg"
+      },
+      {
+        "name": "myUDAAN",
+        "venture": "myUDAAN",
+        "founder": "Ravindra Singh",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://myudaan.org/",
+        "linkedin": "https://www.linkedin.com/in/rsingh10/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/myUDAAN.jpg"
+      },
+      {
+        "name": "Parallel Platform Private Limited",
+        "venture": "Parallel Platform Private Limited",
+        "founder": "Vivek Kumar Shahi",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "https://www.humlogjobs.com",
+        "linkedin": "https://www.linkedin.com/in/vivek-shahi-47ab9515/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Parallel-Platforms-Pvt-Ltd.jpg"
+      },
+      {
+        "name": "ProMeat",
+        "venture": "ProMeat",
+        "founder": "Debabrata Das",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://promeat.in",
+        "linkedin": "https://www.linkedin.com/in/debabrata1997das/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Promeat.jpg"
+      },
+      {
+        "name": "Protrainy",
+        "venture": "Protrainy",
+        "founder": "Biswajit Shaw",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://protrainy.com/",
+        "linkedin": "https://www.linkedin.com/in/biswajitshaw/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Protrainy.jpg"
+      },
+      {
+        "name": "Saltech Design Labs Private Limited",
+        "venture": "Saltech Design Labs Private Limited",
+        "founder": "Aditya Shukla",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "https://saltech.co.in",
+        "linkedin": "https://www.linkedin.com/in/adityashukla6/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Saltech-Designs.jpg"
+      },
+      {
+        "name": "Sampark Bindu",
+        "venture": "Sampark Bindu",
+        "founder": "Gundlupet Sadananda Murthy",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://samparkbindhu.in",
+        "linkedin": "https://www.linkedin.com/in/sadanandamurthy/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Sampark-Bindu.jpg"
+      },
+      {
+        "name": "Sunbots Innovations LLP",
+        "venture": "Sunbots Innovations LLP",
+        "founder": "Suket Amin",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://sunbots.in/",
+        "linkedin": "https://www.linkedin.com/in/suket-amin",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Sunbots.jpg"
+      },
+      {
+        "name": "Sunqulp Tech",
+        "venture": "Sunqulp Tech",
+        "founder": "Amit Panwar",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://sunqulp.com/",
+        "linkedin": "https://www.linkedin.com/in/reallyamit/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Sunqulp.jpg"
+      },
+      {
+        "name": "Woolah Tea",
+        "venture": "Woolah Tea",
+        "founder": "Upamanyu Borkakoty",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://woolahtea.com/",
+        "linkedin": "https://www.linkedin.com/in/upamanyu-borkakoty-b0282518/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/Woolah-Tea.jpg"
+      },
+      {
+        "name": "A2P Energy",
+        "venture": "A2P Energy",
+        "founder": "Sukhmeet\n\t\t\t\t\t\t\t\t\t\t\t\tSingh",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "https://www.a2penergy.com",
+        "linkedin": "https://www.linkedin.com/company/a2penergy",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/a2penergy.jpg"
+      },
+      {
+        "name": "BookMyBai",
+        "venture": "BookMyBai",
+        "founder": "Anupam\n\t\t\t\t\t\t\t\t\t\t\t\tSinhal",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "https://bookmybai.com",
+        "linkedin": "https://www.linkedin.com/company/bookmybai-com",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/bookmybai.jpg"
+      },
+      {
+        "name": "Donatekart",
+        "venture": "Donatekart",
+        "founder": "Anil Kumar\n\t\t\t\t\t\t\t\t\t\t\t\tReddy",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "https://www.donatekart.com",
+        "linkedin": "https://www.linkedin.com/company/donatekart/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/donatekart.jpg"
+      },
+      {
+        "name": "Farmagain",
+        "venture": "Farm Again",
+        "founder": "Benjamin\n\t\t\t\t\t\t\t\t\t\t\t\tRaja",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.farmagain.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/farmagain.jpg"
+      },
+      {
+        "name": "WEGoT Utility Solutions",
+        "venture": "WEGoT Utility Solutions",
+        "founder": "Abilash Haridass",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.wegot.in",
+        "linkedin": "https://www.linkedin.com/company/wegot-utility-solutions/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/wegot.jpg"
+      },
+      {
+        "name": "BharatRohan Airborne Innovations",
+        "venture": "BharatRohan Airborne Innovations",
+        "founder": "Amandeep Panwar",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.bharatrohan.in",
+        "linkedin": "https://www.linkedin.com/company-beta/12893933/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/bharatrohan.jpg"
+      },
+      {
+        "name": "Cerelia Nutritech",
+        "venture": "Cerelia Nutritech",
+        "founder": "Kiran Vuppala",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.cerelianutri.com/",
+        "linkedin": "https://www.linkedin.com/company/cerelianutritechpvtltd",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/cerelianutritech.jpg"
+      },
+      {
+        "name": "ChitMonks (Pangean Global Services)",
+        "venture": "ChitMonks",
+        "founder": "Pavan Adipuram",
+        "sector": "Financial Inclusion",
+        "sector_key": "financial",
+        "website": "https://www.chitmonks.com",
+        "linkedin": "https://www.linkedin.com/showcase/chitmonks",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/chitmonks.jpg"
+      },
+      {
+        "name": "Drona Maps",
+        "venture": "Drona Maps",
+        "founder": "Ayushi\n\t\t\t\t\t\t\t\t\t\t\t\tMishra",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.dronamaps.com",
+        "linkedin": "https://in.linkedin.com/in/drona-maps-2a320213a",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/dronamaps.jpg"
+      },
+      {
+        "name": "Sustainable Livelihood Initiative India",
+        "venture": "Sustainable Livelihood Initiative India",
+        "founder": "Abhimanyu Rathi",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "https://www.slii.in",
+        "linkedin": "https://www.linkedin.com/company/sliindia",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/slii.jpg"
+      },
+      {
+        "name": "GingerMind Technologies",
+        "venture": "GingerMind Technologies",
+        "founder": "Gaurav Mittal",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://eye-d.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/eye-d.jpg"
+      },
+      {
+        "name": "Guvi Geek Network",
+        "venture": "Guvi Geek Network",
+        "founder": "Arun\n\t\t\t\t\t\t\t\t\t\t\t\tPrakash",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://www.guvi.in",
+        "linkedin": "https://www.linkedin.com/company/guviofficial",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/guvi.jpg"
+      },
+      {
+        "name": "Haqdarshak Empowerment Solutions",
+        "venture": "Haqdarshak Empowerment Solutions",
+        "founder": "Aniket Doegar",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.haqdarshak.com",
+        "linkedin": "https://www.linkedin.com/company/haqdarshak-empowerment-solutions",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/haqdarshak.jpg"
+      },
+      {
+        "name": "Lootel (Dot Box Conception)",
+        "venture": "Lootel",
+        "founder": "Yashwant Suthar",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "http://www.lootel.com",
+        "linkedin": "https://www.linkedin.com/company/lootel/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/lootel.jpg"
+      },
+      {
+        "name": "Nemocare Wellness",
+        "venture": "Nemocare Wellness",
+        "founder": "Manoj Sanker",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.nemo.care",
+        "linkedin": "https://www.linkedin.com/company/nemocare",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/nemocare.jpg"
+      },
+      {
+        "name": "Antarang Foundation",
+        "venture": "Antarang",
+        "founder": "Priya Agrawal",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "http://www.antarangfoundation.org",
+        "linkedin": "https://www.linkedin.com/company/antarang-foundation",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/antarang.jpg"
+      },
+      {
+        "name": "Anthill Creations",
+        "venture": "Anthill Creations",
+        "founder": "Pooja Rai",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "http://anthillcreations.org",
+        "linkedin": "https://www.linkedin.com/company/anthillcreations",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/anthill.jpg"
+      },
+      {
+        "name": "CareNX Innovations",
+        "venture": "CareNX Innovations",
+        "founder": "Shantanu Pathak",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.carenx.com",
+        "linkedin": "https://www.linkedin.com/company/carenx-innovations",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/caremother.jpg"
+      },
+      {
+        "name": "I Support Farming",
+        "venture": "I Support Farming",
+        "founder": "Vijayakumar Mani",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.isupportfarming.com",
+        "linkedin": "https://www.linkedin.com/company/isupport-farming",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/isupportfarming.jpg"
+      },
+      {
+        "name": "Prosperita Medi 360",
+        "venture": "Prosperita Medi 360",
+        "founder": "Amar Jamadhiar",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.medi360.in",
+        "linkedin": "https://www.linkedin.com/company/medi360/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/medi360.jpg"
+      },
+      {
+        "name": "Carbon Masters",
+        "venture": "Carbon Masters",
+        "founder": "Kevin\n\t\t\t\t\t\t\t\t\t\t\t\tHouston",
+        "sector": "Clean Energy",
+        "sector_key": "cleanenergy",
+        "website": "https://carbonlites.com",
+        "linkedin": "http://www.linkedin.com/company/carbon-masters",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/carbonmasters.jpg"
+      },
+      {
+        "name": "Guru-G Learning",
+        "venture": "Guru-G Learning",
+        "founder": "Amruth\n\t\t\t\t\t\t\t\t\t\t\t\tBR",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "http://www.guruglearning.com",
+        "linkedin": "https://www.linkedin.com/company/guru-g-learning-labs",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/guruglearning.jpg"
+      },
+      {
+        "name": "Inficold India",
+        "venture": "Inficold India",
+        "founder": "Nitin\n\t\t\t\t\t\t\t\t\t\t\t\tGoel",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "http://www.www.inficold.com",
+        "linkedin": "https://www.linkedin.com/company/inficold/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/inficold.jpg"
+      },
+      {
+        "name": "Lal10",
+        "venture": "Lal10",
+        "founder": "Maneet\n\t\t\t\t\t\t\t\t\t\t\t\tGohil",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "https://lal10.com",
+        "linkedin": "https://www.linkedin.com/company/lal10-com",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/lal10.jpg"
+      },
+      {
+        "name": "NavAlt Solar and Electric Boats",
+        "venture": "NavAlt Solar and Electric Boats",
+        "founder": "Sandith Thandasherry",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "http://www.navaltboats.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/navaltboats.jpg"
+      },
+      {
+        "name": "Graposs Edutech",
+        "venture": "Graposs Edutech",
+        "founder": "Rajiv\n\t\t\t\t\t\t\t\t\t\t\t\tMalik",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "http://www.sarkaripariksha.com",
+        "linkedin": "https://www.linkedin.com/company/sarkari-pariksha",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/sarkaripariksha.jpg"
+      },
+      {
+        "name": "Lattice Innovations",
+        "venture": "The Lattice Innovations",
+        "founder": "Soura Bhattacharyya",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.thelattice.in",
+        "linkedin": "https://www.linkedin.com/company/lattice-innovations/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/thelattice.jpg"
+      },
+      {
+        "name": "Smart Joules",
+        "venture": "Smart Joules",
+        "founder": "Arjun\n\t\t\t\t\t\t\t\t\t\t\t\tGupta",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "http://www.smartjoules.in",
+        "linkedin": "https://www.linkedin.com/company/smart-joules-pvt-ltd-/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/smartjoules.jpg"
+      },
+      {
+        "name": "Sohum Innovation Lab",
+        "venture": "Sohum Innovation Lab",
+        "founder": "Nitin Sisodia",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.sohumforall.com",
+        "linkedin": "https://www.linkedin.com/company/sohum-innovation-lab/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/sohum.jpg"
+      },
+      {
+        "name": "Swarna Pragati Housing Microfinance",
+        "venture": "Swarna Pragati Housing Microfinance",
+        "founder": "A. Ramesh Kumar",
+        "sector": "Financial Inclusion",
+        "sector_key": "financial",
+        "website": "http://www.sphm.co.in",
+        "linkedin": "https://www.linkedin.com/company/swarna-pragati-housing-microfinance-private-limited/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/sphm.jpg"
+      },
+      {
+        "name": "Saajha",
+        "venture": "Saajha",
+        "founder": "Saransh\n\t\t\t\t\t\t\t\t\t\t\t\tVaswani",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://www.saajha.org",
+        "linkedin": "https://www.linkedin.com/company/saajha/?originalSubdomain=in",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/saajha.jpg"
+      },
+      {
+        "name": "Uber Diagnostics",
+        "venture": "Uber Diagnostics",
+        "founder": "Avin\n\t\t\t\t\t\t\t\t\t\t\t\tAgarwal",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.uberdiagnostics.com",
+        "linkedin": "https://www.linkedin.com/company/uber-diagnostics-private-limited/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/uber-diagnostics.jpg"
+      },
+      {
+        "name": "Green Agrevolution",
+        "venture": "Green Agrevolution",
+        "founder": "Shashank Kumar",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.agrevolution.in",
+        "linkedin": "https://www.linkedin.com/company/dehaat/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/dehaat.jpg"
+      },
+      {
+        "name": "WeMakeScholars",
+        "venture": "WeMakeScholars",
+        "founder": "Damini\n\t\t\t\t\t\t\t\t\t\t\t\tMahajan",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://www.wemakescholars.com",
+        "linkedin": "https://www.linkedin.com/company/wemakescholars-com/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/wemakescholars.jpg"
+      },
+      {
+        "name": "Swasti Agro and Bioproducts",
+        "venture": "Swasti Agro and Bioproducts",
+        "founder": "Dr. Abhay Shendye",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://swastiagro.com/",
+        "linkedin": "https://www.linkedin.com/company/swasti-agro-&-bioproducts-pvt.-ltd./about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/swastiagro.jpg"
+      },
+      {
+        "name": "Awaaz.De",
+        "venture": "Awaaz-De",
+        "founder": "Neil\n\t\t\t\t\t\t\t\t\t\t\t\tPatel",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "https://awaaz.de/",
+        "linkedin": "https://www.linkedin.com/company/awaaz-de/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/awaaz-de.jpg"
+      },
+      {
+        "name": "Gramco Infratech",
+        "venture": "Gramco Infratech",
+        "founder": "Raman\n\t\t\t\t\t\t\t\t\t\t\t\tSingh Saluja",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.www.gramco.in/",
+        "linkedin": "https://www.linkedin.com/company/gramco-inc/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/gramco.jpg"
+      },
+      {
+        "name": "Cosmos Green",
+        "venture": "Cosmos Green",
+        "founder": "Sathya\n\t\t\t\t\t\t\t\t\t\t\t\tRaghu V. Mokkapati",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.cosmosgreen.org/",
+        "linkedin": "https://www.linkedin.com/company/greencosmos/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/blank.jpg"
+      },
+      {
+        "name": "Future Greens Samsthe",
+        "venture": "Future Greens Samsthe",
+        "founder": "Dr. Balu Athani",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "http://www.futuregreens.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/futuregreens.jpg"
+      },
+      {
+        "name": "Innovation Agro / AgNext",
+        "venture": "Innovation Agro",
+        "founder": "Taranjeet Singh Bhamra",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.innovationagro.com/",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/agnext.jpg"
+      },
+      {
+        "name": "Drinkwell",
+        "venture": "Drinkwell",
+        "founder": "Minhaj\n\t\t\t\t\t\t\t\t\t\t\t\tChowdhury",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "http://www.drinkwellsystems.com",
+        "linkedin": "https://www.linkedin.com/company/drinkwell/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/drinkwell.jpg"
+      },
+      {
+        "name": "MicroX Labs",
+        "venture": "MicroX Labs",
+        "founder": "Prabhat\n\t\t\t\t\t\t\t\t\t\t\t\tKumar",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.microxlabs.com",
+        "linkedin": "https://www.linkedin.com/company/microxlabs/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/microxlabs.jpg"
+      },
+      {
+        "name": "Saahas Waste Management",
+        "venture": "Saahas Waste Management",
+        "founder": "Wilma Rodrigues",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.saahas.org",
+        "linkedin": "https://www.linkedin.com/company/saahas-zero-waste/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/saahas.jpg"
+      },
+      {
+        "name": "SankalpTaru Foundation",
+        "venture": "SankalpTaru Foundation",
+        "founder": "Apurva Bhandari",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.sankalptaru.org",
+        "linkedin": "https://www.linkedin.com/company/sankalptaru/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/sankalptaru.jpg"
+      },
+      {
+        "name": "SAS Poorna Arogya Healthcare",
+        "venture": "SAS Poorna Arogya",
+        "founder": "Dr. Arjun Sachidanand.",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.sashealthcareindia.com",
+        "linkedin": "https://www.linkedin.com/company/sas-poorna-arogya-healthcare-private-limited/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/sashealthcareindia.jpg"
+      },
+      {
+        "name": "Aaji Care",
+        "venture": "Aaji Care",
+        "founder": "Prasad\n\t\t\t\t\t\t\t\t\t\t\t\tBhide",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.aajicare.in",
+        "linkedin": "https://www.linkedin.com/company/aaji-care-home-health-services-private-limited/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/aajicare.jpg"
+      },
+      {
+        "name": "iKure Techsoft",
+        "venture": "iKure Techsoft",
+        "founder": "Sujay\n\t\t\t\t\t\t\t\t\t\t\t\tSantra",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://www.ikuretechsoft.com",
+        "linkedin": "https://www.linkedin.com/company/ikuretech/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/ikure.jpg"
+      },
+      {
+        "name": "Living Greens Organics",
+        "venture": "Living Greens Organics",
+        "founder": "Prateek Tiwari",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.thelivinggreens.com",
+        "linkedin": "https://www.linkedin.com/company/living-greens-organics-pvt-ltd-/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/thelivinggreens.jpg"
+      },
+      {
+        "name": "Reap Benefit",
+        "venture": "Reap Benefit",
+        "founder": "Kuldeep\n\t\t\t\t\t\t\t\t\t\t\t\tDantewadia",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.reapbenefit.org",
+        "linkedin": "https://www.linkedin.com/company/reap-benefit-foundation/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/reapbenefit.jpg"
+      },
+      {
+        "name": "Smiling Star Advisory",
+        "venture": "Smiling Star Advisory",
+        "founder": "Ashutosh Burnwal",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "http://www.buddy4study.com",
+        "linkedin": "https://www.linkedin.com/company/buddy4study-com/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/buddy4study.jpg"
+      },
+      {
+        "name": "Aakar Innovations",
+        "venture": "Aakar Innovations",
+        "founder": "Sombodhi Ghosh",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "http://www.aakarinnovations.com",
+        "linkedin": "https://www.linkedin.com/company/aakar-innovations/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/aakar.jpg"
+      },
+      {
+        "name": "Aquasafi",
+        "venture": "Aquasafi",
+        "founder": "Pavin\n\t\t\t\t\t\t\t\t\t\t\t\tPankajan",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.aquasafi.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/aquasafi.jpg"
+      },
+      {
+        "name": "Axio Biosolutions",
+        "venture": "Axio Biosolutions",
+        "founder": "Leo\n\t\t\t\t\t\t\t\t\t\t\t\tMavely",
+        "sector": "Healthcare",
+        "sector_key": "healthcare",
+        "website": "https://axiobio.com",
+        "linkedin": "https://www.linkedin.com/company/axio-biosolutions-private-limited/?originalSubdomain=in",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/axio.jpg"
+      },
+      {
+        "name": "Grow Trees",
+        "venture": "Grow Trees",
+        "founder": "Bikrant\n\t\t\t\t\t\t\t\t\t\t\t\tTiwari",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "https://www.grow-trees.com",
+        "linkedin": "https://www.linkedin.com/company/grow-trees-com/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/grow-trees.jpg"
+      },
+      {
+        "name": "m.Paani",
+        "venture": "m.Paani",
+        "founder": "Akanksha\n\t\t\t\t\t\t\t\t\t\t\t\tHazari",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.mpaani.com",
+        "linkedin": "https://www.linkedin.com/company/lovelocalindia/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/m-paani.jpg"
+      },
+      {
+        "name": "eKutir Rural Management Services",
+        "venture": "eKutir Rural Management Services",
+        "founder": "Krishna Chandra Mishra",
+        "sector": "Livelihoods",
+        "sector_key": "livelihoods",
+        "website": "http://http://www.ekutirsb.com/",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/ekutir.jpg"
+      },
+      {
+        "name": "Artoo",
+        "venture": "Artoo",
+        "founder": "Sameer\n\t\t\t\t\t\t\t\t\t\t\t\tSegal",
+        "sector": "Financial Inclusion",
+        "sector_key": "financial",
+        "website": "http://www.artoo.in",
+        "linkedin": "https://www.linkedin.com/company/artoo/about/",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/artoo.jpg"
+      },
+      {
+        "name": "Ecozen Solutions",
+        "venture": "Ecozen Solutions",
+        "founder": "Devendra Gupta",
+        "sector": "Energy",
+        "sector_key": "energy",
+        "website": "http://www.ecozensolutions.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/ecozen.jpg"
+      },
+      {
+        "name": "Nirmal Foundation",
+        "venture": "Nirmal Foundation",
+        "founder": "Nirmal Kumar",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "http://www.uberdiagnostics.com/",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/blank.jpg"
+      },
+      {
+        "name": "Samagra",
+        "venture": "Samagra",
+        "founder": "Swapnil\n\t\t\t\t\t\t\t\t\t\t\t\tChaturvedi",
+        "sector": "Other",
+        "sector_key": "other",
+        "website": "https://samagra.co",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/entrepreneurs/samagra.jpg"
+      },
+      {
+        "name": "Urban Kisaan",
+        "venture": "ENARR",
+        "founder": "Vihari Kanukollu",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "https://www.urbankisaan.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Ketto",
+        "venture": "ENARR",
+        "founder": "Varun Sheth",
+        "sector": "Fundraising",
+        "sector_key": "other",
+        "website": "https://www.ketto.org",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Takachar",
+        "venture": "ENARR",
+        "founder": "Vidyut Mohan",
+        "sector": "Agri-tech",
+        "sector_key": "other",
+        "website": "https://www.takachar.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "CropConnect",
+        "venture": "ENARR",
+        "founder": "Puneet Jhajharia",
+        "sector": "Agriculture",
+        "sector_key": "agriculture",
+        "website": "http://www.cropconnect.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Outline India",
+        "venture": "ENARR",
+        "founder": "Prerna Mukharya",
+        "sector": "Data for Social Impact",
+        "sector_key": "other",
+        "website": "https://www.outlineindia.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Social Cops",
+        "venture": "ENARR",
+        "founder": "Prukalpa Sankar",
+        "sector": "Social data intelligence",
+        "sector_key": "other",
+        "website": "https://socialcops.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "RangDe",
+        "venture": "ENARR",
+        "founder": "Ramakrishna NK",
+        "sector": "Fin-tech",
+        "sector_key": "other",
+        "website": "http://rangde.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Rocket Learning",
+        "venture": "ENARR",
+        "founder": "Azeez Gupta",
+        "sector": "Edu-tech",
+        "sector_key": "other",
+        "website": "https://www.rocketlearning.org",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Caremother",
+        "venture": "ENARR",
+        "founder": "Shantanu Pathak",
+        "sector": "Health-tech",
+        "sector_key": "other",
+        "website": "https://caremother.in",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Krishitantra",
+        "venture": "ENARR",
+        "founder": "Sandeep Kondaji",
+        "sector": "Agri-tech",
+        "sector_key": "other",
+        "website": "https://krishitantra.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "CENTA",
+        "venture": "ENARR",
+        "founder": "Ramya Venkataraman",
+        "sector": "Education",
+        "sector_key": "education",
+        "website": "https://centa.org",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "Onward Assist",
+        "venture": "ENARR",
+        "founder": "Dinesh Koka",
+        "sector": "Health-tech",
+        "sector_key": "other",
+        "website": "http://www.onwardhealth.ai",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "I-stem",
+        "venture": "ENARR",
+        "founder": "",
+        "sector": "Edu-tech",
+        "sector_key": "other",
+        "website": "https://www.inclusivestem.org",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      },
+      {
+        "name": "EcoZen",
+        "venture": "ENARR",
+        "founder": "Devendra Gupta",
+        "sector": "Agri-tech",
+        "sector_key": "other",
+        "website": "https://www.ecozensolutions.com",
+        "linkedin": "",
+        "logo_url": "https://actionforindia.org/assets/img/logo/enarr.jpg"
+      }
+    ],
+    "scraped_date": "2026-06-25",
+    "source": "https://actionforindia.org/afi-social-entrepreneurs.html"
+  },
+  "mentors_directory": {
+    "intro": "AFI's mentor network includes 1000+ industry leaders from India, Silicon Valley, and across the globe — spanning technology, finance, agriculture, healthcare, and social impact.",
+    "apply_url": "https://docs.google.com/forms/d/1Cc-RgqRI00FiCB4ZUtAbEk-ONChb_IWHK99eiwwuJwM/edit",
+    "mentors": [
+      {
+        "name": "Shalini Bharat",
+        "title": "",
+        "location": "Mumbai, Maharashtra",
+        "linkedin": "https://www.linkedin.com/in/shalini-bharat-1510/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/shalini-bharat.jpg"
+      },
+      {
+        "name": "Dr. M Muneer",
+        "title": "",
+        "location": "California",
+        "linkedin": "https://www.linkedin.com/in/execution/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/dr-m-muneer.jpg"
+      },
+      {
+        "name": "Shantanu Ghosh",
+        "title": "Haryana",
+        "location": "Angel Investor, Mentor",
+        "linkedin": "https://www.linkedin.com/in/shantanu-ghosh-2b47025/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/Shantanu-Ghosh.jpg"
+      },
+      {
+        "name": "PVGK Murthy",
+        "title": "",
+        "location": "Hyderabad, Telangana",
+        "linkedin": "http://linkedin.com/in/pvgkmurthy",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/pvgkmurthy.jpg"
+      },
+      {
+        "name": "Sandip Shinde",
+        "title": "",
+        "location": "Nasik, Maharashtra",
+        "linkedin": "https://www.linkedin.com/in/sandipkshinde/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/sandip-shinde.jpg"
+      },
+      {
+        "name": "Pankaj Nemade",
+        "title": "Nutrition & Health",
+        "location": "Mumbai, Maharashtra",
+        "linkedin": "https://www.linkedin.com/in/pankaj-nemade-348a5215/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/Pankaj_Nemade.jpg"
+      },
+      {
+        "name": "Bhanu Prasad",
+        "title": "",
+        "location": "Coach, DIgital Impact Square",
+        "linkedin": "https://www.linkedin.com/in/bhanupcx/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/bhanu-prasad.jpg"
+      },
+      {
+        "name": "Shivani Mishra",
+        "title": "",
+        "location": "South Delhi, Delhi",
+        "linkedin": "https://www.linkedin.com/in/shivaniahuja/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/shivani-mishra.jpg"
+      },
+      {
+        "name": "Neetu Bansal",
+        "title": "",
+        "location": "Bengaluru, Karnataka",
+        "linkedin": "https://www.linkedin.com/in/shivaniahuja/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/Neetu_Bansal.jpg"
+      },
+      {
+        "name": "Dr. Kalpana Gopalan",
+        "title": "Mentor",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/dr-kalpana-gopalan-ias-ph-d-iimb-345b3a31/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "Rahul Pahwa",
+        "title": "",
+        "location": "Advertising and Marketing, Mentor, Action for India",
+        "linkedin": "https://www.linkedin.com/in/rahulpahwa4/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "GR Krishna",
+        "title": "Founder and Chairman at BIOPRO Health Foods Pvt Ltd",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/gr-krishna-7323a6160/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "Rajan Matthews",
+        "title": "Packaged FOOD & BEVERAGE Business Leader",
+        "location": "Chennai, Tamil Nadu",
+        "linkedin": "https://www.linkedin.com/in/p-rajan-mathews-a4520223/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/Rajan_Matthews.jpg"
+      },
+      {
+        "name": "Emmanuel Murray",
+        "title": "Investment Director @ Caspian",
+        "location": "Hyderabad, Telangana",
+        "linkedin": "https://www.linkedin.com/in/emmanuel-murray/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/Emmanuel.jpg"
+      },
+      {
+        "name": "Dr. Aparna Rao",
+        "title": "",
+        "location": "Mumbai, Maharashtra",
+        "linkedin": "https://www.linkedin.com/in/dr-aparna-rao-19ba212/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/AparnaRao_Photograph.jpg"
+      },
+      {
+        "name": "Dr. Jawahar Surisetti",
+        "title": "Advisor to Government",
+        "location": "Raipur, Chhattisgarh",
+        "linkedin": "https://www.linkedin.com/in/drjawaharsurisetti/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "M. Ramakrishnan",
+        "title": "Building partnerships around #Agritech Business",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/ramakrishnanm/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/M-Ramakrishnan.jpg"
+      },
+      {
+        "name": "Paresh Vora",
+        "title": "Director - India Operations at WIN Foundation",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/pareshvora/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "Ajeet Jagannath",
+        "title": "Business Mentor | Leadership Coach",
+        "location": "Bengaluru, Karnataka",
+        "linkedin": "https://www.linkedin.com/in/ajeethjagannath/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/ajeeth.jpg"
+      },
+      {
+        "name": "Vandana Bhatnagar",
+        "title": "Leadership | Skill development",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/vandana-bhatnagar-598607/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/vandhana.jpg"
+      },
+      {
+        "name": "Dr. Rashmi Kapse",
+        "title": "",
+        "location": "Princeton, New Jersey",
+        "linkedin": "https://www.linkedin.com/in/dr-rashmi-kapse-3944921/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/dr-rashmi-kapse.jpg"
+      },
+      {
+        "name": "Avishek Gupta",
+        "title": "Debt financing for startups and social enterprises",
+        "location": "Hyderabad, Telangana",
+        "linkedin": "https://www.linkedin.com/in/guptaavishek/?originalSubdomain=in",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/avishek-gupta.jpg"
+      },
+      {
+        "name": "Aditi Balbir",
+        "title": "New Delhi",
+        "location": "Angel Investor, Mentor",
+        "linkedin": "https://www.linkedin.com/in/aditi-balbir-05574738/?originalSubdomain=in",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/aditi-balbir.jpg"
+      },
+      {
+        "name": "AGK Karunakaran",
+        "title": "",
+        "location": "San Francisco, Bay Area",
+        "linkedin": "https://www.linkedin.com/in/agk-karunakaran-036140/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/agk-karunakaran.jpg"
+      },
+      {
+        "name": "Amit Jain",
+        "title": "Start-up Mentor & Business Strategist",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/amitjain22/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/amit-jain.jpg"
+      },
+      {
+        "name": "Azeez Gupta",
+        "title": "New Delhi",
+        "location": "Founder, Rocket Learning",
+        "linkedin": "https://www.linkedin.com/in/azeez-gupta/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/azeez-gupta.jpg"
+      },
+      {
+        "name": "Dave Katragadda",
+        "title": "Place",
+        "location": "Founder and Managing Partner, Exponential Growth Capital",
+        "linkedin": "https://www.linkedin.com/in/dave-katragadda-99a55923/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/dave-katragadda.jpg"
+      },
+      {
+        "name": "Gopala Krishnan",
+        "title": "Mumbai",
+        "location": "Co- Founder, Way Beyond Media",
+        "linkedin": "https://www.linkedin.com/in/gkinchina/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/gopala-krishnan.jpg"
+      },
+      {
+        "name": "Guv Dhaliwal",
+        "title": "UK",
+        "location": "Advisor, Fuel Ventures",
+        "linkedin": "https://www.linkedin.com/in/guv-dhaliwal/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/guv-dhaliwal.jpg"
+      },
+      {
+        "name": "Hemanth Achaya",
+        "title": "Bengaluru",
+        "location": "CEO, Valdel Advanced Technologies",
+        "linkedin": "https://www.linkedin.com/in/hemanth-achaya-a318623/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/hemanth-achaya.jpg"
+      },
+      {
+        "name": "Hemendra Mathur",
+        "title": "New Delhi",
+        "location": "Venture Partner, Bharat Innovation Fund",
+        "linkedin": "https://www.linkedin.com/in/hemendra333/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/hemendra-mathur.jpg"
+      },
+      {
+        "name": "David Majerczak",
+        "title": "Strategy Lead (West Africa) at Versus",
+        "location": "",
+        "linkedin": "",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/david-majerczak.jpg"
+      },
+      {
+        "name": "Dilip Cherian",
+        "title": "New Delhi",
+        "location": "Consulting Partner, Perfect Relations",
+        "linkedin": "https://www.linkedin.com/in/dilipcherian/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/dilip-cherian.jpg"
+      },
+      {
+        "name": "Jessica Paul",
+        "title": "Bengaluru",
+        "location": "CEO, Paul Writers",
+        "linkedin": "https://www.linkedin.com/in/jessiepaul/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/jessica-paul.jpg"
+      },
+      {
+        "name": "K Srinivasan",
+        "title": "Bengaluru",
+        "location": "Director & CEO, AllGoVision",
+        "linkedin": "https://www.linkedin.com/in/srinivasan-k-66b5b31/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/k-srinivasan.jpg"
+      },
+      {
+        "name": "Kayar Raghavan",
+        "title": "UK",
+        "location": "Non Executive Director, Stent Tek Ltd",
+        "linkedin": "https://www.linkedin.com/in/kayar-raghavan-93188/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/kayar-raghavan.jpg"
+      },
+      {
+        "name": "Kumar Ganapathy",
+        "title": "",
+        "location": "San Francisco, Bay Area",
+        "linkedin": "https://www.linkedin.com/in/kumar-g-9342742",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/kumar-ganapathy.jpg"
+      },
+      {
+        "name": "Madhusudan Rammoorthy",
+        "title": "Bengaluru",
+        "location": "Director, Armor Media Pvt Ltd",
+        "linkedin": "https://www.linkedin.com/in/madhu-r-3464002",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/madhusudan-rammoorthy.jpg"
+      },
+      {
+        "name": "Mahesh Kanumury",
+        "title": "Hyderabad",
+        "location": "Managing Director, Arivali Partners",
+        "linkedin": "https://www.linkedin.com/in/mahesh-kanumury-63217/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/mahesh-kanumury.jpg"
+      },
+      {
+        "name": "Natesh B V",
+        "title": "Bengaluru",
+        "location": "Sr. Director - I-Health Inc., a division of Royal DSM",
+        "linkedin": "https://www.linkedin.com/in/nateshbv/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/natesh-bv.jpg"
+      },
+      {
+        "name": "P.S Srinivas",
+        "title": "Lead Financial Economist at The World Bank",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/p-s-srinivas-2b866129/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/ps-srinivas.jpg"
+      },
+      {
+        "name": "Pavan Mamidi",
+        "title": "Director of Centre for Social and Behavior Change",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/pavan-mamidi-28081a133/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/pavan-mamidi.jpg"
+      },
+      {
+        "name": "Prerna Makkar",
+        "title": "New Delhi",
+        "location": "Director, Health Compact",
+        "linkedin": "https://www.linkedin.com/in/prerna-makkar-4362601/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/prerna-makkar.jpg"
+      },
+      {
+        "name": "Radhika Malpani",
+        "title": "",
+        "location": "Founder, Google Images",
+        "linkedin": "https://www.linkedin.com/in/radhika-malpani/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/radhika-malpani.jpg"
+      },
+      {
+        "name": "Rajat Garg",
+        "title": "New Delhi",
+        "location": "Co-Founder, MyUpchar.com",
+        "linkedin": "https://www.linkedin.com/in/rajatgarg/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/rajat-garg.jpg"
+      },
+      {
+        "name": "Rikin Gandhi",
+        "title": "Bengaluru",
+        "location": "CEO, Digital Green",
+        "linkedin": "https://www.linkedin.com/in/rikingandhi/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/rikin-gandhi.jpg"
+      },
+      {
+        "name": "Salma Qarnain",
+        "title": "",
+        "location": "Experienced Entertainment, Internet and Talent Management Executive",
+        "linkedin": "https://www.linkedin.com/in/salma-qarnain-b7870a2/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/salma-qarnain.jpg"
+      },
+      {
+        "name": "Sandeep Tyagi",
+        "title": "",
+        "location": "Short Hills, New Jersey",
+        "linkedin": "https://www.linkedin.com/in/styagi/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/sandeep-tyagi.jpg"
+      },
+      {
+        "name": "Santanu Bhattacharya",
+        "title": "Bengaluru",
+        "location": "Chief Data Scientist, Airtel X Labs",
+        "linkedin": "https://www.linkedin.com/in/santanub/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/santanu-bhattacharya.jpg"
+      },
+      {
+        "name": "Pulle Satish",
+        "title": "London",
+        "location": "Lead Portfolio Manager, Wells Fargo Asset Management",
+        "linkedin": "https://www.linkedin.com/in/satish-pulle-a1910710/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/satish-pulle.jpg"
+      },
+      {
+        "name": "Satyam Vyas",
+        "title": "New Delhi",
+        "location": "Founder and CEO, Arthan",
+        "linkedin": "https://www.linkedin.com/in/satyam-vyas-8171a9a/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/satyam-vyas.jpg"
+      },
+      {
+        "name": "Srinivas Achanta",
+        "title": "Hyderabad",
+        "location": "Managing Director, SciTech Patent Art Services",
+        "linkedin": "https://www.linkedin.com/in/srin-achanta-2a73775/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/srinivas-achanta.jpg"
+      },
+      {
+        "name": "Sylvia Smetana",
+        "title": "Co-Founder at Divershefy Inc.",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/sylvia-smetana-1399b941/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/sylvia-smetana.jpg"
+      },
+      {
+        "name": "Ujwal Thakar",
+        "title": "Director at Pune City Connect",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/ujwal-thakar-65b1951/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/ujwal-thakar.jpg"
+      },
+      {
+        "name": "Vijay Nadiminti",
+        "title": "Hyderabad",
+        "location": "COO, a-IDEA",
+        "linkedin": "https://www.linkedin.com/in/nadimintivijay/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/vijay-nadiminti.jpg"
+      },
+      {
+        "name": "Vikas Saluguti",
+        "title": "Director at Innocare",
+        "location": "Hyderabad; Harrow, UK",
+        "linkedin": "https://www.linkedin.com/in/vikas-saluguti-07665184/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/vikas-saluguti.jpg"
+      },
+      {
+        "name": "Vikram Vuppala",
+        "title": "Hyderabad",
+        "location": "Founder & CEO, NephroPlus",
+        "linkedin": "https://www.linkedin.com/in/vikram-vuppala-558237/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/vikram-vuppala.jpg"
+      },
+      {
+        "name": "Ashish Bajpai",
+        "title": "Investor",
+        "location": "",
+        "linkedin": "",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "Bradley Laws",
+        "title": "Business Development at EcoVadis",
+        "location": "",
+        "linkedin": "https://www.linkedin.com/in/bradley-laws-aa23aa19/",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      },
+      {
+        "name": "Sree Kamineni",
+        "title": "UK",
+        "location": "Experienced Board Director of Healthcare, Technology and Not-for-profit organisations",
+        "linkedin": "https://www.linkedin.com/in/sree-kamineni-706ab8",
+        "photo_url": "https://actionforindia.org/assets/img/mentors/male.jpg"
+      }
+    ],
+    "scraped_date": "2026-06-25",
+    "source": "https://actionforindia.org/afi-mentors.html"
+  },
+  "blog_archive": {
+    "posts": [
+      {
+        "title": "Driving Social Change",
+        "url": "https://actionforindia.org/gkf.html",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Dehaat",
+        "url": "https://actionforindia.org/afi-social-enterprises-dehaat-post.html",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "A note on Social Entrepreneurs",
+        "url": "https://actionforindia.org/blog_post.html",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Past AFI-SVC Fellows, Nemocare Wellness & AgNext, among the 16 Indian Startups Selected for Google's Accelerator Program",
+        "url": "https://actionforindia.org/assets/img/news-section/AFI-SVC.jpg",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI Fellow, Doctors For You, making oxygen available at the Peak of COVID-19",
+        "url": "https://actionforindia.org/assets/img/news-section/covid_aid_1_0.webp",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Digital Green receives USD 2.7B grant from MacKenzie Scott",
+        "url": "https://actionforindia.org/assets/img/news-section/team-photo.jpeg",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Temperate Technologies",
+        "url": "https://actionforindia.org/afi-social-enterprises-temperate-technologies-post.html",
+        "excerpt": "Name of Entrepreneur: Vishal Singhal",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Navalt",
+        "url": "https://actionforindia.org/afi-social-enterprises-navalt-post.html",
+        "excerpt": "Name of Entrepreneur: Sandith Thandasherry",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "LoveLocal Raises $18m in one of the largest rounds ever raised by a Solo Woman Tech Founder in India",
+        "url": "https://actionforindia.org/assets/img/news-section/LoveLocal_Team.jpg",
+        "excerpt": "MUMBAI, India, Oct. 28, 2021 /PRNewswire/ -- LoveLocal, India's leading hyper-local e-commerce platform empowering local retailers, has raised $18m or INR 143 crores, in a Pre-Series B investment round that features some of the most prominent investors and founders globally. The round, which was ove",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI-SVC Trek Fellow, Sandith Thandasherry, launches his first book",
+        "url": "https://actionforindia.org/assets/img/news-section/solar-electric_boats.jpeg",
+        "excerpt": "AFI’s partner organisation and SVC Trek 2017 Fellow, Mr. Sandith Thandasherry, CEO, NavAlt Solar and Electric Boats, recently launched the first edition of his book \"Solar-Electric Boat - Plan, Build and Benefit\". The book targets the marine transport system’s decision makers, advisors and team, who",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Kibo (Trestle Labs)",
+        "url": "https://actionforindia.org/afi-social-enterprises-kibo-post.html",
+        "excerpt": "Name of Entrepreneur: Akshita Sachdeva",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "ZenOnco",
+        "url": "https://actionforindia.org/afi-social-enterprises-zenonco-post.html",
+        "excerpt": "Name of Entrepreneur: Dimple Parmar",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "Organisation building assistive tech solutions wins the ‘Most Impactful Assistive Technology (AT) Start-Up'",
+        "url": "https://actionforindia.org/assets/img/news-section/AT-Startup.jpeg",
+        "excerpt": "Trestle Labs, an ex-AFI fellow organisation providing solutions for the visually impaired through assistive technology and learning has just won ‘Most Impactful Assistive Technology (AT) Start-up' by AssisTech Foundation Awards. The organisation has been receiving mentorship from Lavni Ventures for ",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI Fellow, Ikure gets recognised by World Economic Forum (WEF) in Top 50 COVID-19 Last Mile Responders",
+        "url": "https://actionforindia.org/assets/img/news-section/Ikure.jpeg",
+        "excerpt": "iKure, founded by Mr. Sujay Santra - an AFI-SVC Fellow 2015, is aiding primary healthcare and wellness to communities in India through innovative technology, and has been recognised by World Economic Forum among the Top 50 COVID-19 Last Mile Responders as part of the COVID Response Alliance For Soci",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI Fellow, Newndra Innovations Private Wins National Intellectual Property Awards for Year 2020",
+        "url": "https://actionforindia.org/assets/img/news-section/intellectualproperty-Award.jpg",
+        "excerpt": "Mr. Ganesh Ram Jangir, AFI fellow & founder of Newndra Innovations Pvt. Ltd. has been selected as the winner of National Intellectual Property Awards for the Year 2020 in the category 'Top Start-up for IT and commercialisation'. Due to the pandemic, the ceremony will be held online & the award will ",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI Fellow, Sohum Innovation Labs won a grant of ₹2,500,000 from Prosus SICA",
+        "url": "https://actionforindia.org/assets/img/news-section/bl04startup.jpg",
+        "excerpt": "Three Indian startups are working to scale up assistive tech for differently-abled backed by new funding received as part of the inaugural Prosus Social Impact Challenge for Accessibility (Prosus SICA). Sohum won for its \"highly accessible device” that has been designed to detect hearing impairment ",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI WISEpreneur Neha Kirpal - Enhance Outreach through Industry Partnerships",
+        "url": "https://actionforindia.org/assets/img/news-section/Neha_Kirpal_1.jpg",
+        "excerpt": "AFI's WISEpreneur Neha Kirpal, Co-Founder of the mental health platform Innerhour, stressed upon enhancing the outreach by partnering with other organizations during her interaction with the investors/advisors in the UK Chapter Meeting. Mr. Sudhir Subbaraman, CGI, appreciated the initiative and sign",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "GUVI makes it into the Guinness World Records For it's 'AI-for-India 1.0' initiative",
+        "url": "https://actionforindia.org/assets/img/news-section/guvi.jpg",
+        "excerpt": "AFI's partner organisation GUVI, received the Guinness World Records for it's 'AI-for-India 1.0' initiative that had the most number of users to take computer programming lessons in 24 hours. GUVI is an online platform to learn computer programming and coding in India, which offers free and paid cla",
+        "source": "AFI Blog"
+      },
+      {
+        "title": "AFI Fellow, Bikrant Tiwary - Action For India Award gave wings to his Green Initiative",
+        "url": "https://actionforindia.org/assets/img/news-section/tree-planting.jpg",
+        "excerpt": "Mr Bikrant Tiwary, CEO, Grow-Trees.com, during an interview with the Weather Channel, highlighted how winning the Action For India Award gave impetus to his green initiative globally. The initiative targets carbon reduction, restoring forests, improving wildlife habitats, upgrading water catchment a",
+        "source": "AFI Blog"
+      }
+    ],
+    "scraped_date": "2026-06-25",
+    "source": "https://actionforindia.org/blogs.html"
+  },
+  "news_archive": {
+    "items": [
+      {
+        "title": "We are proud to share that AgriVijay has been awarded as “BAI Rising Star Award winner” being the 4th International Award & Recognition for the Impact created on the Lives; passion for Innovation and ability to drive positive change towards Sustainability.",
+        "url": "https://www.bai.org/global-innovation-awards/rising-stars/",
+        "excerpt": "Read More",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/dummy-image-768x384.png"
+      },
+      {
+        "title": "Gaurav's (BigOHealth) story on LInkedIN",
+        "url": "https://www.linkedin.com/posts/gaurav-r-b14192ba_great-to-be-part-of-india-mobile-congress-activity-7124618784367161344-BFSY?utm_source=share&utm_medium=member_ios",
+        "excerpt": "Read More",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/dummy-image-768x384.png"
+      },
+      {
+        "title": "AFI 2025 Year End Newsletter",
+        "url": "https://heyzine.com/flip-book/eb73a16316.html",
+        "excerpt": "Reflect on a year of growth,innovation & collaboration.",
+        "category": "newsletter",
+        "image": "https://actionforindia.org/assets/img/Newsletter-Dec25.png"
+      },
+      {
+        "title": "AFI Newsletter",
+        "url": "https://actionforindia.org/AFI-Sep-2025-Newsletter.pdf",
+        "excerpt": "Celebrating the launch of AgriCohort 2.0 and the startups transforming the future of Indian agriculture.",
+        "category": "newsletter",
+        "image": "https://actionforindia.org/assets/img/Newsletter-Sep.png"
+      },
+      {
+        "title": "DeHaat has scooped up $115 million in what appears to be the largest funding round for an agritech startup in India.",
+        "url": "https://entrackr.com/2021/10/dehaat-rakes-in-largest-funding-round-in-indian-agritech-space/",
+        "excerpt": "Two mega successes for social entrepreneurs in our network. First there was the news featuring Shashank Kumar, Co-Founder & CEO, DeHaat and AFI’s Silicon Valley Challenge (SVC) Fellow in 2016: Then, the very next day, we received an update from Akanksha Hazari, Founder & CEO, LoveLocal (previously m.paani) and AFI’s SVC Fellow in 2014:",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/dehaat-768x384.jpg"
+      },
+      {
+        "title": "LoveLocal Raises $18m in one of the largest rounds ever raised by a Solo Woman Tech Founder in India",
+        "url": "https://www.prnewswire.com/news-releases/lovelocal-raises-18m-pre-series-b-in-the-largest-round-ever-raised-by-a-solo-woman-tech-founder-in-india-301411153.html",
+        "excerpt": "MUMBAI, India, Oct. 28, 2021 /PRNewswire/ -- LoveLocal, India's leading hyper-local e-commerce platform empowering local retailers, has raised $18m or INR 143 crores, in a Pre-Series B investment round that features some of the most prominent investors and founders globally. The round, which was oversubscribed, is led by Vulcan Capital, and also includes participation from Klarna Founder & CEO Seb",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/LoveLocal_Team.jpg"
+      },
+      {
+        "title": "AFI-SVC Trek Fellow, Sandith Thandasherry, launches his first book",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:6833859194043600896",
+        "excerpt": "AFI’s partner organisation and SVC Trek 2017 Fellow, Mr. Sandith Thandasherry, CEO, NavAlt Solar and Electric Boats, recently launched the first edition of his book \"Solar-Electric Boat - Plan, Build and Benefit\". The book targets the marine transport system’s decision makers, advisors and team, who need to understand the fundamentals of solar-electric boats.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/solar-electric_boats.jpeg"
+      },
+      {
+        "title": "Organisation building assistive tech solutions wins the ‘Most Impactful Assistive Technology (AT) Start-Up'",
+        "url": "https://atflabs.org/winners",
+        "excerpt": "Trestle Labs, an ex-AFI fellow organisation providing solutions for the visually impaired through assistive technology and learning has just won ‘Most Impactful Assistive Technology (AT) Start-up' by AssisTech Foundation Awards. The organisation has been receiving mentorship from Lavni Ventures for over a year and is in talks for investment currently.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/AT-Startup.jpeg"
+      },
+      {
+        "title": "AFI Fellow, Ikure gets recognised by World Economic Forum (WEF) in Top 50 COVID-19 Last Mile Responders",
+        "url": "https://widgets.weforum.org/lastmiletop50india/ikure/",
+        "excerpt": "iKure, founded by Mr. Sujay Santra - an AFI-SVC Fellow 2015, is aiding primary healthcare and wellness to communities in India through innovative technology, and has been recognised by World Economic Forum among the Top 50 COVID-19 Last Mile Responders as part of the COVID Response Alliance For Social Entrepreneurs. iKure aims to provide holistic healthcare services for rural residents using techn",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/Ikure.jpeg"
+      },
+      {
+        "title": "Past AFI-SVC Fellows, Nemocare Wellness & AgNext, among the 16 Indian Startups Selected for Google's Accelerator Program",
+        "url": "https://inc42.com/buzz/meet-the-16-indian-startups-selected-for-class-5-of-googles-accelerator-program/",
+        "excerpt": "Nemocare Wellness working (healthcare) and AGNEXT (agriculture) have been selected for this years' Google Startups Accelerator Program. Nemocare (AFI-SVC Fellow, 2018) is creating innovative solutions to end all preventable neonatal and maternal deaths in the developing world by building affordable, accurate, continuous smart monitoring wearables. AgNext (Top 10 among SVC Fellow, 2016) is working ",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/AFI-SVC.jpg"
+      },
+      {
+        "title": "AFI Fellow, Newndra Innovations Private Wins National Intellectual Property Awards for Year 2020",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:6833328509801385984",
+        "excerpt": "Mr. Ganesh Ram Jangir, AFI fellow & founder of Newndra Innovations Pvt. Ltd. has been selected as the winner of National Intellectual Property Awards for the Year 2020 in the category 'Top Start-up for IT and commercialisation'. Due to the pandemic, the ceremony will be held online & the award will be given by Hon'ble Minister of Commerce and Industry, Shri Piyush Goyal.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/intellectualproperty-Award.jpg"
+      },
+      {
+        "title": "AFI Fellow, Sohum Innovation Labs won a grant of ₹2,500,000 from Prosus SICA",
+        "url": "https://www.thehindubusinessline.com/companies/three-indian-startups-work-to-scale-up-in-the-assistive-tech-space/article34011214.ece/",
+        "excerpt": "Three Indian startups are working to scale up assistive tech for differently-abled backed by new funding received as part of the inaugural Prosus Social Impact Challenge for Accessibility (Prosus SICA). Sohum won for its \"highly accessible device” that has been designed to detect hearing impairment amongst infants and small children.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/bl04startup.jpg"
+      },
+      {
+        "title": "GUVI makes it into the Guinness World Records For it's 'AI-for-India 1.0' initiative",
+        "url": "https://twitter.com/guviofficial/status/1388098957717303298",
+        "excerpt": "AFI's partner organisation GUVI, received the Guinness World Records for it's 'AI-for-India 1.0' initiative that had the most number of users to take computer programming lessons in 24 hours. GUVI is an online platform to learn computer programming and coding in India, which offers free and paid classes in multiple languages.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/#"
+      },
+      {
+        "title": "AFI Fellow, Doctors For You, making oxygen available at the Peak of COVID-19",
+        "url": "https://www.indiatoday.in/coronavirus-outbreak/story/haryana-receives-100-oxygen-concentrators-from-who-1803987-2021-05-18/",
+        "excerpt": "The Hero Group, in collaboration with an NGO called Doctors for You, founded by AFI fellow, have made 100 oxygen concentrators available along with medicines and doctors in Haryana to help fight the pandemic.",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/covid_aid_1_0.webp"
+      },
+      {
+        "title": "AFI WISEpreneur Neha Kirpal - Enhance Outreach through Industry Partnerships",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:6819179963456004096",
+        "excerpt": "AFI's WISEpreneur Neha Kirpal, Co-Founder of the mental health platform Innerhour, stressed upon enhancing the outreach by partnering with other organizations during her interaction with the investors/advisors in the UK Chapter Meeting. Mr. Sudhir Subbaraman, CGI, appreciated the initiative and signed up CGI (India+APAC region) with InnerHour, providing mental health services for their 15K+ employ",
+        "category": "coverage",
+        "image": "https://actionforindia.org/assets/img/news-section/Neha_Kirpal_1.jpg"
+      }
+    ],
+    "scraped_date": "2026-06-25",
+    "source": "https://actionforindia.org/news-coverage.html"
+  }
+}
