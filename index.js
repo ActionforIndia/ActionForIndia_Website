@@ -142,23 +142,8 @@ async function populateHomePage(data) {
 
   // Partners
   const partnersGroups = document.getElementById('partners-groups');
-  if (partnersGroups && data.partners) {
-    const groups = [
-      { title: 'Investors and Foundations', items: data.partners.investors_and_foundations },
-      { title: 'Corporates', items: data.partners.corporates },
-      { title: 'Academia and Government', items: data.partners.academia_and_government },
-    ];
-    partnersGroups.innerHTML = groups
-      .map(
-        (g) => `
-        <div class="home-partners__group reveal">
-          <div class="home-partners__group-title">${g.title}</div>
-          <div class="home-partners__tags">
-            ${g.items.map((name) => `<span class="home-partners__tag">${name}</span>`).join('')}
-          </div>
-        </div>`
-      )
-      .join('');
+  if (partnersGroups) {
+    renderPartnerGroups(partnersGroups, data, { reveal: true });
   }
 
   // Testimonials — all 7 from scraped data

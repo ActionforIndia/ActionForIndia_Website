@@ -315,16 +315,52 @@ function initBannerCarousel(data) {
   setInterval(() => goTo((current + 1) % total), 5000);
 }
 
-function renderPartnerLogos(container, data) {
-  if (!container || !data.partners?.partner_logos) return;
-  const base = data.partners.partner_logos.base_url;
-  container.innerHTML = data.partners.partner_logos.files
+function renderPartnerLogoItem(name) {
+  const src = getPartnerLogoUrl(name);
+  if (!src) return '';
+  return `
+    <div class="partner-logos__item" title="${name}">
+      <img src="${src}" alt="${name}" loading="lazy" />
+    </div>`;
+}
+
+function renderPartnerGroups(container, data, options = {}) {
+  if (!container || !data?.partners) return;
+
+  const groupClass = options.groupClass || 'home-partners__group';
+  const titleClass = options.titleClass || 'home-partners__group-title';
+  const revealClass = options.reveal ? ' reveal' : '';
+
+  const groups = [
+    { title: 'Investors and Foundations', items: data.partners.investors_and_foundations },
+    { title: 'Corporates', items: data.partners.corporates },
+    { title: 'Academia and Government', items: data.partners.academia_and_government },
+  ];
+
+  container.innerHTML = groups
     .map(
-      (file) => `
-      <div class="partner-logos__item">
-        <img src="${base}${file}" alt="Partner" loading="lazy" />
+      (g) => `
+      <div class="${groupClass}${revealClass}">
+        <div class="${titleClass}">${g.title}</div>
+        <div class="partner-logos">
+          ${g.items.map((name) => renderPartnerLogoItem(name)).join('')}
+        </div>
       </div>`
     )
+    .join('');
+}
+
+function renderPartnerLogos(container, data) {
+  if (!container || !data.partners?.partner_logos) return;
+  const files = data.partners.partner_logos.files || [];
+  container.innerHTML = files
+    .map((file) => {
+      const name = file.replace(/[-_]/g, ' ').replace(/\.\w+$/, '');
+      return `
+      <div class="partner-logos__item">
+        <img src="${PARTNER_LOGOS_BASE}${file}" alt="${name}" loading="lazy" />
+      </div>`;
+    })
     .join('');
 }
 

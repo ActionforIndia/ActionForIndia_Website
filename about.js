@@ -107,23 +107,11 @@ function populateAboutPage(data) {
 
   // Partners
   const partnersGroups = document.getElementById('partners-groups');
-  if (partnersGroups && data.partners) {
-    const groups = [
-      { title: 'Investors and Foundations', items: data.partners.investors_and_foundations },
-      { title: 'Corporates', items: data.partners.corporates },
-      { title: 'Academia and Government', items: data.partners.academia_and_government },
-    ];
-    partnersGroups.innerHTML = groups
-      .map(
-        (g) => `
-        <div class="partners__group">
-          <h3 class="partners__group-title">${g.title}</h3>
-          <div class="partners__tags">
-            ${g.items.map((name) => `<span class="partners__tag">${name}</span>`).join('')}
-          </div>
-        </div>`
-      )
-      .join('');
+  if (partnersGroups) {
+    renderPartnerGroups(partnersGroups, data, {
+      groupClass: 'partners__group',
+      titleClass: 'partners__group-title',
+    });
   }
 
   // About gallery
