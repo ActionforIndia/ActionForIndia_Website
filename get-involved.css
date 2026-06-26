@@ -2,24 +2,12 @@
 
 /* GI Hero Section */
 .gi-hero {
-  background: var(--color-text-dark);
-  background: linear-gradient(135deg, var(--color-text-dark) 0%, #3a0e00 100%);
-  color: white;
-  padding: 180px 0 120px;
+  background: var(--color-bg-cream);
+  color: var(--color-text-dark);
+  padding: 128px 0 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
-
-.gi-hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(200, 52, 10, 0.15) 0%, transparent 60%);
-  z-index: 1;
 }
 
 .gi-hero__inner {
@@ -37,7 +25,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 
@@ -47,6 +35,7 @@
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: var(--color-text-dark);
 }
 
 .gi-hero__title em {
@@ -58,7 +47,7 @@
   font-family: 'DM Sans', sans-serif;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-muted);
 }
 
 /* Roles Section */

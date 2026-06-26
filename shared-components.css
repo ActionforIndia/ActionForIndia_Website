@@ -350,7 +350,7 @@
 /* ===== INNER PAGES ===== */
 .page-hero {
   padding: 128px 0 64px;
-  background: linear-gradient(135deg, #7a1a00 0%, #3d0e00 100%);
+  background: var(--color-bg-cream);
 }
 
 .page-hero__inner {
