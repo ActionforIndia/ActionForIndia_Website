@@ -1,7 +1,13 @@
 /**
  * Loads and caches scraped-data.json for all pages.
  */
+const AFI_LOGO_URL = 'images/AFI-logo.png';
+
 let _siteDataCache = null;
+
+function getAfiLogoUrl() {
+  return AFI_LOGO_URL;
+}
 
 async function loadSiteData() {
   if (_siteDataCache) return _siteDataCache;

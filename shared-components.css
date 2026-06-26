@@ -85,8 +85,16 @@
 }
 
 .navbar__logo-img {
-  height: 36px;
+  height: 44px;
   width: auto;
+  display: block;
+}
+
+.footer__logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
 }
 
 /* ===== BANNER CAROUSEL ===== */
@@ -94,28 +102,31 @@
   margin-top: 72px;
   position: relative;
   overflow: hidden;
-  background: var(--color-bg-dark);
+  background: var(--color-bg-cream);
 }
 
 .banner-carousel__track {
   display: flex;
   transition: transform 0.6s ease;
+  align-items: stretch;
 }
 
 .banner-carousel__slide {
   min-width: 100%;
-  position: relative;
+  flex-shrink: 0;
 }
 
 .banner-carousel__slide a {
   display: block;
+  line-height: 0;
 }
 
 .banner-carousel__slide img {
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  opacity: 0.92;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .banner-carousel__dots {
@@ -138,6 +149,14 @@
 
 .banner-carousel__dot--active {
   background: var(--color-primary);
+}
+
+.has-banner-carousel .hero__content {
+  padding-top: 56px;
+}
+
+.has-banner-carousel .hero {
+  min-height: 0;
 }
 
 /* ===== PARTNER LOGOS ===== */
@@ -483,9 +502,5 @@
 
   .gallery-grid {
     grid-template-columns: 1fr;
-  }
-
-  .banner-carousel__slide img {
-    height: 180px;
   }
 }

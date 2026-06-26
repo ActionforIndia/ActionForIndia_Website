@@ -100,12 +100,16 @@ function buildMegaNav(currentPage) {
   });
 }
 
-function updateOrgLogo(data) {
-  const logoUrl = data.organization?.logo_url;
-  document.querySelectorAll('.navbar__logo-icon').forEach((el) => {
-    if (logoUrl) {
-      el.innerHTML = `<img src="${logoUrl}" alt="Action For India" class="navbar__logo-img" />`;
-    }
+function updateOrgLogo() {
+  const logoUrl = getAfiLogoUrl();
+  const logoImg = `<img src="${logoUrl}" alt="Action For India" class="navbar__logo-img" />`;
+
+  document.querySelectorAll('.navbar__logo').forEach((link) => {
+    link.innerHTML = logoImg;
+  });
+
+  document.querySelectorAll('.footer__brand-logo').forEach((wrap) => {
+    wrap.innerHTML = `<img src="${logoUrl}" alt="Action For India" class="footer__logo-img" />`;
   });
 }
 
@@ -271,6 +275,8 @@ function initBannerCarousel(data) {
   const container = document.getElementById('banner-carousel');
   if (!container || !data.banner_images?.length) return;
 
+  document.body.classList.add('has-banner-carousel');
+
   const track = container.querySelector('.banner-carousel__track');
   const dots = container.querySelector('.banner-carousel__dots');
   if (!track) return;
@@ -334,7 +340,7 @@ function wireDonateButtons() {
 function initSharedLayout(data) {
   const currentPage = getCurrentPage();
   buildMegaNav(currentPage);
-  updateOrgLogo(data);
+  updateOrgLogo();
   injectFooterNewsletter(data);
   injectModals(data);
   initAnalytics(data);

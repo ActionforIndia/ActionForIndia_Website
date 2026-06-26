@@ -116,19 +116,11 @@ img {
   cursor: pointer;
 }
 
-.navbar__logo-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--color-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+.navbar__logo-img {
+  height: 44px;
+  width: auto;
+  max-width: min(220px, 55vw);
+  object-fit: contain;
 }
 
 .navbar__logo-text {
