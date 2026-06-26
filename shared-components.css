@@ -99,11 +99,9 @@
 
 /* ===== BANNER CAROUSEL ===== */
 .banner-carousel {
-  margin-top: 72px;
   position: relative;
   overflow: hidden;
   background: var(--color-bg-cream);
-  --banner-height: clamp(200px, 26vw, 340px);
 }
 
 .banner-carousel__track {
@@ -118,22 +116,17 @@
 }
 
 .banner-carousel__slide a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 100%;
-  height: var(--banner-height);
   line-height: 0;
-  background: var(--color-bg-cream);
 }
 
 .banner-carousel__slide img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
+  max-height: clamp(220px, 32vw, 440px);
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -157,14 +150,6 @@
 
 .banner-carousel__dot--active {
   background: var(--color-primary);
-}
-
-.has-banner-carousel .hero__content {
-  padding-top: 56px;
-}
-
-.has-banner-carousel .hero {
-  min-height: 0;
 }
 
 /* ===== PARTNER LOGOS ===== */
@@ -512,7 +497,7 @@
     grid-template-columns: 1fr;
   }
 
-  .banner-carousel {
-    --banner-height: clamp(150px, 38vw, 220px);
+  .banner-carousel__slide img {
+    max-height: 200px;
   }
 }
