@@ -683,15 +683,117 @@
     {
       "id": "agri-2",
       "name": "Agri Cohort 2.0",
-      "description": "Supporting agri-tech startups transforming India's agricultural value chain with sustainable, technology-driven solutions for smallholder farmers.",
-      "benefits": [
-        "Agri-expert mentors",
-        "Market linkages and FPO partnerships",
-        "Funding access via AFI network",
-        "Field pilots and scale support"
-      ],
+      "label": "AFI Agri Cohort",
+      "tagline": "Building the Future of Indian Agriculture",
+      "status": "open",
+      "duration": "5 Months",
+      "deadline": "14 August 2025",
+      "cost": "Free (No equity)",
+      "commitment": "3–4 hrs/week",
+      "description": "A well-defined five-month accelerator program tailor-made for startups in Precision Agriculture, Automation, Agri Financing, or Dairy & Cattle Management in India — looking to amplify their social impact at scale.",
+      "image": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg",
       "apply_url": "https://actionforindia.org/agri-cohort-2.0.html",
-      "image": "https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg"
+      "benefits": [
+        "Mentorship",
+        "Product refinement",
+        "Masterclasses with ecosystem experts",
+        "Market Access",
+        "Startup Toolkit",
+        "Networking Opportunity",
+        "Investor Connect"
+      ],
+      "mentoring_types": [
+        {
+          "number": "01",
+          "title": "Individual Mentoring",
+          "description": "Highly effective growth-focused mentoring sessions with specialized mentors mapped exclusively for the entrepreneur's personal leadership growth, sectoral expertise and business need."
+        },
+        {
+          "number": "02",
+          "title": "Knowledge Building Session (KBS)",
+          "description": "A monthly fora for intra-cohort knowledge sharing and growth enablement through webinars and hands-on workshops."
+        },
+        {
+          "number": "03",
+          "title": "Learning Community (LC) Sessions",
+          "description": "A closed group interaction to facilitate intra-cohort relationship building to connect, collaborate, and co-create impact outcomes."
+        },
+        {
+          "number": "04",
+          "title": "AFI Huddle",
+          "description": "Many-to-One mentor engagement to support inter-sectoral insights for entrepreneurs."
+        }
+      ],
+      "cohort_startups": [
+        "eVerse.AI",
+        "Saptkrishi Scientific",
+        "Pravidhaan FPCL",
+        "Agrivitals Innovation",
+        "Agri nitro India",
+        "Oceanus Exports",
+        "Agribotic Systems",
+        "Visron",
+        "DOSTBin Solutions",
+        "Circlo",
+        "Yin N Yang Farms",
+        "BharatGodam",
+        "Villa Mart",
+        "AVN Agrobharat",
+        "Essential Aquatech",
+        "BioSouk"
+      ],
+      "alumni_testimonials": [
+        {
+          "name": "Subhajit Sinha",
+          "role": "Co-founder, 4Climate"
+        },
+        {
+          "name": "Akshay Khawale",
+          "role": "Co-founder, Agrowsure"
+        },
+        {
+          "name": "Tridibesh",
+          "role": "Co-founder, InQube"
+        },
+        {
+          "name": "Yogesh Sahu",
+          "role": "Founder, GeeCom India"
+        },
+        {
+          "name": "Develeena Bhattacharjee",
+          "role": "Founder, ClimaCrew"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What stage should my startup be in?",
+          "answer": "Early to growth-stage startups with a working MVP or product."
+        },
+        {
+          "question": "Is this a virtual program?",
+          "answer": "Yes, with optional field immersion in key agri regions."
+        },
+        {
+          "question": "What is the cost to join?",
+          "answer": "Free. AFI takes no fees or equity."
+        },
+        {
+          "question": "What sectors qualify under Agri-tech for impact?",
+          "answer": "Precision farming, market access, FPO platforms, water/soil tech, agri-finance, and more."
+        },
+        {
+          "question": "Who are the mentors?",
+          "answer": "Agri-entrepreneurs, investors, former bureaucrats, and innovation leaders."
+        },
+        {
+          "question": "What is the time commitment?",
+          "answer": "3-4 hours/week on average, over 5 months."
+        },
+        {
+          "question": "What happens at the end of the cohort?",
+          "answer": "A Demo Day + potential access to investor and pilot partnerships."
+        }
+      ]
     },
     {
       "id": "agri-1",

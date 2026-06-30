@@ -18,8 +18,9 @@ const NAV_MENU = [
     label: 'What We Do',
     children: [
       { label: 'All Programs', href: 'programs.html' },
+      { label: 'AI + Agri Cohort 2026', href: 'ai-agri-cohort.html' },
+      { label: 'AI+Impact Cohort', href: 'ai-impact-cohort.html' },
       { label: 'Agri Cohort 2.0', href: 'program-detail.html?id=agri-2' },
-      { label: 'AI+Impact Cohort', href: 'program-detail.html?id=ai-impact' },
       { label: 'Impact Catalyzer', href: 'program-detail.html?id=catalyzer' },
       { label: 'Women Entrepreneurship', href: 'program-detail.html?id=wise' },
       { label: 'Funding', href: 'program-detail.html?id=funding' },
@@ -276,12 +277,13 @@ function initBannerCarousel(data) {
   if (!container || !data.banner_images?.length) return;
 
   document.body.classList.add('has-banner-carousel');
+  container.classList.add('banner-carousel--marquee');
 
   const track = container.querySelector('.banner-carousel__track');
   const dots = container.querySelector('.banner-carousel__dots');
   if (!track) return;
 
-  track.innerHTML = data.banner_images
+  const slidesHtml = data.banner_images
     .map(
       (b) => `
       <div class="banner-carousel__slide">
@@ -292,27 +294,15 @@ function initBannerCarousel(data) {
     )
     .join('');
 
-  let current = 0;
-  const total = data.banner_images.length;
+  // Duplicate the set so the flow loops seamlessly
+  track.innerHTML = slidesHtml + slidesHtml;
 
-  if (dots) {
-    dots.innerHTML = data.banner_images
-      .map((_, i) => `<button class="banner-carousel__dot${i === 0 ? ' banner-carousel__dot--active' : ''}" data-index="${i}" aria-label="Slide ${i + 1}"></button>`)
-      .join('');
-    dots.querySelectorAll('.banner-carousel__dot').forEach((dot) => {
-      dot.addEventListener('click', () => goTo(parseInt(dot.getAttribute('data-index'), 10)));
-    });
-  }
+  // Slow, continuous flow — duration scales with the number of banners
+  const durationSeconds = Math.max(36, data.banner_images.length * 14);
+  track.style.animationDuration = `${durationSeconds}s`;
 
-  function goTo(index) {
-    current = index;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    dots?.querySelectorAll('.banner-carousel__dot').forEach((d, i) => {
-      d.classList.toggle('banner-carousel__dot--active', i === current);
-    });
-  }
-
-  setInterval(() => goTo((current + 1) % total), 5000);
+  // Continuous flow doesn't use navigation dots
+  if (dots) dots.style.display = 'none';
 }
 
 function renderPartnerLogoItem(name) {

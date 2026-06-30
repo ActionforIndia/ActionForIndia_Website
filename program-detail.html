@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="shared-components.css" />
   <link rel="stylesheet" href="programs.css" />
+  <link rel="stylesheet" href="program-detail.css" />
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -17,25 +18,97 @@
     </div>
   </nav>
 
-  <section class="page-hero">
-    <div class="page-hero__inner">
-      <span class="page-hero__label">What We Do</span>
-      <h1 class="page-hero__title" id="program-title"></h1>
-      <p class="page-hero__desc" id="program-desc"></p>
+  <!-- HERO -->
+  <section class="pd-hero">
+    <div class="pd-hero__inner">
+      <span class="pd-hero__label" id="pd-label">What We Do</span>
+      <h1 class="pd-hero__title" id="pd-title"></h1>
+      <p class="pd-hero__desc" id="pd-desc"></p>
+      <div class="pd-hero__actions">
+        <a href="#" class="btn btn--primary pd-hero__apply" id="pd-hero-apply" target="_blank">Apply Now</a>
+        <a href="programs.html" class="btn btn--outline">All Programs</a>
+      </div>
     </div>
   </section>
 
-  <section class="page-section page-section--cream">
-    <div class="page-section__inner">
-      <div class="programs-panel__image" style="height:320px;margin-bottom:32px;border-radius:16px;overflow:hidden">
-        <img id="program-image" src="https://actionforindia.org/assets/img/afi-initiatives.jpg" alt="AFI Program" style="width:100%;height:100%;object-fit:cover" />
+  <!-- HERO IMAGE + META -->
+  <section class="pd-banner">
+    <div class="pd-banner__inner">
+      <div class="pd-banner__image-wrap">
+        <img id="pd-image" src="https://actionforindia.org/assets/img/AFI-Agri-Cohort-25-26.jpg" alt="AFI Program" class="pd-banner__image" />
+        <span class="pd-banner__status pd-banner__status--open" id="pd-status-badge">Applications Open</span>
       </div>
-      <h2 class="section-header__title">What You Get</h2>
-      <div class="programs-panel__benefits-grid" id="program-benefits" style="margin-top:20px"></div>
-      <p style="margin-top:40px">
-        <a href="#" class="btn btn--primary" id="program-apply">Apply / Learn More</a>
-        <a href="programs.html" class="btn btn--outline" style="margin-left:12px">All Programs</a>
-      </p>
+      <div class="pd-banner__meta" id="pd-meta"></div>
+    </div>
+  </section>
+
+  <!-- KEY BENEFITS -->
+  <section class="pd-section pd-section--cream">
+    <div class="pd-section__inner">
+      <div class="pd-section-header reveal">
+        <span class="pd-section-header__label">What You Get</span>
+        <h2 class="pd-section-header__title">Key <em>Benefits</em></h2>
+      </div>
+      <div class="pd-benefits" id="pd-benefits"></div>
+    </div>
+  </section>
+
+  <!-- IN-DEPTH MENTORING -->
+  <section class="pd-section pd-section--white" id="pd-mentoring-section">
+    <div class="pd-section__inner">
+      <div class="pd-section-header reveal">
+        <span class="pd-section-header__label">How We Support You</span>
+        <h2 class="pd-section-header__title">In-depth <em>Mentoring</em> Engagements</h2>
+      </div>
+      <div class="pd-mentoring-grid" id="pd-mentoring"></div>
+    </div>
+  </section>
+
+  <!-- MEET THE COHORT -->
+  <section class="pd-section pd-section--dark" id="pd-cohort-section">
+    <div class="pd-section__inner">
+      <div class="pd-section-header pd-section-header--light reveal">
+        <span class="pd-section-header__label">The Cohort</span>
+        <h2 class="pd-section-header__title">Meet AFI <em id="pd-cohort-title">Agri Cohort 2.0</em></h2>
+      </div>
+      <div class="pd-cohort-grid" id="pd-cohort"></div>
+    </div>
+  </section>
+
+  <!-- ALUMNI TESTIMONIALS -->
+  <section class="pd-section pd-section--cream" id="pd-alumni-section">
+    <div class="pd-section__inner">
+      <div class="pd-section-header reveal">
+        <span class="pd-section-header__label">Success Stories</span>
+        <h2 class="pd-section-header__title">What <em>Alumni</em> Say</h2>
+      </div>
+      <div class="pd-alumni-grid" id="pd-alumni"></div>
+    </div>
+  </section>
+
+  <!-- HOW TO APPLY CTA -->
+  <section class="pd-apply-cta" id="pd-apply-section">
+    <div class="pd-apply-cta__inner">
+      <div class="pd-apply-cta__content">
+        <span class="pd-apply-cta__label">How to Apply</span>
+        <h2 class="pd-apply-cta__title">Ready to Build the Future of <em>Indian Agriculture?</em></h2>
+        <p class="pd-apply-cta__desc">Applications close on <strong id="pd-deadline">14 August 2025</strong>. Apply early to increase your chances — we review applications on a rolling basis!</p>
+        <div class="pd-apply-cta__actions">
+          <a href="#" class="btn btn--primary pd-apply-cta__btn" id="pd-apply-btn" target="_blank">Apply Now</a>
+          <p class="pd-apply-cta__contact">For queries: <a href="mailto:info@actionforindia.org">info@actionforindia.org</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="pd-section pd-section--white" id="pd-faq-section">
+    <div class="pd-section__inner">
+      <div class="pd-section-header reveal">
+        <span class="pd-section-header__label">Got Questions?</span>
+        <h2 class="pd-section-header__title">Frequently Asked <em>Questions</em></h2>
+      </div>
+      <div class="pd-faq-list" id="pd-faq"></div>
     </div>
   </section>
 
@@ -57,18 +130,144 @@
       const id = new URLSearchParams(location.search).get('id');
       const program = data.program_details?.find(p => p.id === id);
       if (!program) { location.href = 'programs.html'; return; }
+
       document.title = program.name + ' — Action For India';
-      document.getElementById('program-title').textContent = program.name;
-      document.getElementById('program-desc').textContent = program.description;
-      document.getElementById('program-image').src = program.image;
-      document.getElementById('program-image').alt = program.name;
-      document.getElementById('program-benefits').innerHTML = program.benefits.map(b =>
-        `<div class="programs-panel__benefit"><span class="programs-panel__benefit-dot"></span>${b}</div>`
-      ).join('');
-      const apply = document.getElementById('program-apply');
-      apply.href = program.apply_url;
-      apply.target = '_blank';
+
+      // Hero
+      const labelEl = document.getElementById('pd-label');
+      if (labelEl) labelEl.textContent = program.label || 'What We Do';
+      document.getElementById('pd-title').textContent = program.name;
+      document.getElementById('pd-desc').textContent = program.description;
+      const heroApply = document.getElementById('pd-hero-apply');
+      if (heroApply) heroApply.href = program.apply_url || '#';
+
+      // Banner image + status
+      const img = document.getElementById('pd-image');
+      if (img && program.image) { img.src = program.image; img.alt = program.name; }
+      const badge = document.getElementById('pd-status-badge');
+      if (badge && program.status) {
+        badge.textContent = program.status === 'open' ? 'Applications Open' : 'Coming Soon';
+        badge.className = 'pd-banner__status pd-banner__status--' + program.status;
+      }
+
+      // Meta cards
+      const meta = document.getElementById('pd-meta');
+      if (meta) {
+        const metaItems = [
+          { label: 'Duration', value: program.duration || '5 Months', icon: '📅' },
+          { label: 'Application Deadline', value: program.deadline || 'Rolling', icon: '⏰' },
+          { label: 'Cost', value: program.cost || 'Free', icon: '💚' },
+          { label: 'Commitment', value: program.commitment || '3–4 hrs/week', icon: '🕐' },
+        ];
+        meta.innerHTML = metaItems.map(m => `
+          <div class="pd-meta-card reveal">
+            <span class="pd-meta-card__icon">${m.icon}</span>
+            <span class="pd-meta-card__label">${m.label}</span>
+            <span class="pd-meta-card__value">${m.value}</span>
+          </div>
+        `).join('');
+      }
+
+      // Benefits
+      const benefits = document.getElementById('pd-benefits');
+      if (benefits && program.benefits?.length) {
+        benefits.innerHTML = program.benefits.map(b => `
+          <div class="pd-benefit-card reveal">
+            <span class="pd-benefit-card__dot"></span>
+            <span class="pd-benefit-card__text">${b}</span>
+          </div>
+        `).join('');
+      }
+
+      // Mentoring
+      const mentoringSection = document.getElementById('pd-mentoring-section');
+      const mentoringGrid = document.getElementById('pd-mentoring');
+      if (program.mentoring_types?.length && mentoringGrid) {
+        mentoringGrid.innerHTML = program.mentoring_types.map(m => `
+          <div class="pd-mentoring-card reveal">
+            <span class="pd-mentoring-card__num">${m.number}</span>
+            <h3 class="pd-mentoring-card__title">${m.title}</h3>
+            <p class="pd-mentoring-card__desc">${m.description}</p>
+          </div>
+        `).join('');
+      } else if (mentoringSection) {
+        mentoringSection.style.display = 'none';
+      }
+
+      // Cohort startups
+      const cohortSection = document.getElementById('pd-cohort-section');
+      const cohortGrid = document.getElementById('pd-cohort');
+      const cohortTitle = document.getElementById('pd-cohort-title');
+      if (cohortTitle) cohortTitle.textContent = program.name;
+      if (program.cohort_startups?.length && cohortGrid) {
+        cohortGrid.innerHTML = program.cohort_startups.map(name => `
+          <div class="pd-cohort-card reveal">
+            <div class="pd-cohort-card__icon">AFI</div>
+            <div class="pd-cohort-card__label">AFI Program</div>
+            <div class="pd-cohort-card__name">${name}</div>
+          </div>
+        `).join('');
+      } else if (cohortSection) {
+        cohortSection.style.display = 'none';
+      }
+
+      // Alumni testimonials
+      const alumniSection = document.getElementById('pd-alumni-section');
+      const alumniGrid = document.getElementById('pd-alumni');
+      if (program.alumni_testimonials?.length && alumniGrid) {
+        alumniGrid.innerHTML = program.alumni_testimonials.map(a => `
+          <div class="pd-alumni-card reveal">
+            <div class="pd-alumni-card__play">
+              <span class="pd-alumni-card__play-icon">▶</span>
+            </div>
+            <div class="pd-alumni-card__info">
+              <div class="pd-alumni-card__name">${a.name}</div>
+              <div class="pd-alumni-card__role">${a.role}</div>
+            </div>
+          </div>
+        `).join('');
+      } else if (alumniSection) {
+        alumniSection.style.display = 'none';
+      }
+
+      // Apply CTA deadline
+      const deadlineEl = document.getElementById('pd-deadline');
+      if (deadlineEl && program.deadline) deadlineEl.textContent = program.deadline;
+      const applyBtn = document.getElementById('pd-apply-btn');
+      if (applyBtn) applyBtn.href = program.apply_url || '#';
+
+      // FAQs
+      const faqSection = document.getElementById('pd-faq-section');
+      const faqList = document.getElementById('pd-faq');
+      if (program.faqs?.length && faqList) {
+        faqList.innerHTML = program.faqs.map((f, i) => `
+          <div class="pd-faq-item reveal" id="faq-${i}">
+            <button class="pd-faq-item__q" onclick="toggleFaq(${i})">
+              <span>${f.question}</span>
+              <span class="pd-faq-item__chevron" id="faq-chevron-${i}">+</span>
+            </button>
+            <div class="pd-faq-item__a" id="faq-answer-${i}">${f.answer}</div>
+          </div>
+        `).join('');
+      } else if (faqSection) {
+        faqSection.style.display = 'none';
+      }
     });
+
+    function toggleFaq(i) {
+      const answer = document.getElementById('faq-answer-' + i);
+      const chevron = document.getElementById('faq-chevron-' + i);
+      const isOpen = answer.classList.contains('pd-faq-item__a--open');
+      // Close all
+      document.querySelectorAll('.pd-faq-item__a').forEach(el => el.classList.remove('pd-faq-item__a--open'));
+      document.querySelectorAll('.pd-faq-item__chevron').forEach(el => el.textContent = '+');
+      document.querySelectorAll('.pd-faq-item').forEach(el => el.classList.remove('pd-faq-item--open'));
+      if (!isOpen) {
+        answer.classList.add('pd-faq-item__a--open');
+        chevron.textContent = '−';
+        document.getElementById('faq-' + i).classList.add('pd-faq-item--open');
+      }
+    }
   </script>
 </body>
 </html>

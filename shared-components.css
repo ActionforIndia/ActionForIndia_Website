@@ -156,6 +156,45 @@
   background: var(--color-primary);
 }
 
+/* ===== BANNER CAROUSEL — CONTINUOUS FLOW (MARQUEE) ===== */
+.banner-carousel--marquee {
+  padding: 16px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+}
+
+.banner-carousel--marquee .banner-carousel__track {
+  width: max-content;
+  transition: none;
+  animation: bannerFlow 40s linear infinite;
+}
+
+.banner-carousel--marquee:hover .banner-carousel__track {
+  animation-play-state: paused;
+}
+
+.banner-carousel--marquee .banner-carousel__slide {
+  min-width: 0;
+  width: clamp(300px, 38vw, 520px);
+  margin-right: 20px;
+}
+
+.banner-carousel--marquee .banner-carousel__slide a {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@keyframes bannerFlow {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-carousel--marquee .banner-carousel__track {
+    animation: none;
+  }
+}
+
 /* ===== PARTNER LOGOS ===== */
 .partner-logos {
   display: grid;
