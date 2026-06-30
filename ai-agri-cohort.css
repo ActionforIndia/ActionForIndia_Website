@@ -272,6 +272,18 @@
   margin-bottom: 16px;
 }
 
+.aic-get-card__icon svg,
+.aic-why-afi__check svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+.aic-why-afi__check svg {
+  width: 16px;
+  height: 16px;
+}
+
 .aic-get-card__title {
   font-family: var(--font-display);
   font-size: 19px;

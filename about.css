@@ -447,8 +447,20 @@
 }
 
 .chapters__card-flag {
-  font-size: 30px;
-  line-height: 36px;
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  background: var(--color-primary-lighter);
+  border-radius: 12px;
+}
+
+.chapters__card-flag svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
 }
 
 .chapters__card-city {

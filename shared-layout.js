@@ -4,18 +4,18 @@
 const NAV_MENU = [
   { label: 'Home', href: 'index.html', page: 'home' },
   {
-    label: 'Get to Know Us',
+    label: 'About AFI',
     children: [
       { label: 'About Us', href: 'about.html' },
       { label: 'People', href: 'about.html#team' },
-      { label: 'Our Social Entrepreneurs', href: 'entrepreneurs.html' },
-      { label: 'Our Mentors', href: 'mentors.html' },
-      { label: 'Our Partners', href: 'about.html#partners' },
-      { label: 'International Chapters', href: 'chapters.html' },
+      { label: 'Social Entrepreneurs', href: 'entrepreneurs.html' },
+      { label: 'Mentors', href: 'mentors.html' },
+      { label: 'Partners', href: 'about.html#partners' },
+      { label: 'Chapters', href: 'chapters.html' },
     ],
   },
   {
-    label: 'What We Do',
+    label: 'Programs',
     children: [
       { label: 'All Programs', href: 'programs.html' },
       { label: 'AI + Agri Cohort 2026', href: 'ai-agri-cohort.html' },
@@ -33,10 +33,10 @@ const NAV_MENU = [
     label: 'Get Involved',
     children: [
       { label: 'Overview', href: 'get-involved.html' },
-      { label: 'As a Social Entrepreneur', href: 'get-involved.html#roles-section' },
-      { label: 'As a Mentor', href: 'get-involved.html#roles-section' },
-      { label: 'As an Investor', href: 'get-involved.html#roles-section' },
-      { label: 'As a Partner', href: 'get-involved.html#roles-section' },
+      { label: 'Social Entrepreneur', href: 'get-involved.html#roles-section' },
+      { label: 'Mentor', href: 'get-involved.html#roles-section' },
+      { label: 'Investor', href: 'get-involved.html#roles-section' },
+      { label: 'Partner', href: 'get-involved.html#roles-section' },
       { label: 'Donate', href: 'get-involved.html#donation-section' },
     ],
   },
@@ -67,7 +67,7 @@ function buildMegaNav(currentPage) {
       return `
         <div class="nav-item">
           <button class="nav-item__trigger" type="button" aria-expanded="false">
-            ${item.label} <span class="nav-item__chevron">▾</span>
+            ${item.label} <i data-lucide="chevron-down" class="nav-item__chevron" aria-hidden="true"></i>
           </button>
           <div class="nav-item__dropdown">
             ${item.children.map((c) => `<a href="${c.href}">${c.label}</a>`).join('')}
@@ -87,7 +87,7 @@ function buildMegaNav(currentPage) {
     const btn = document.createElement('button');
     btn.className = 'navbar__menu-btn';
     btn.setAttribute('aria-label', 'Menu');
-    btn.innerHTML = '☰';
+    btn.innerHTML = '<span></span><span></span><span></span>';
     btn.addEventListener('click', () => nav.classList.toggle('navbar__nav--open'));
     inner.insertBefore(btn, document.getElementById('donate-btn'));
   }
@@ -116,6 +116,47 @@ function updateOrgLogo() {
 
 function injectFooterNewsletter(data) {
   document.querySelectorAll('.footer__inner').forEach((footerInner) => {
+    if (!footerInner.querySelector('.footer__contact-grid')) {
+      const org = data.organization || {};
+      const offices = data.contact?.offices || [];
+      const delhi = offices.find((o) => o.name?.toLowerCase().includes('delhi')) || {};
+      const bangalore = offices.find((o) => o.name?.toLowerCase().includes('bangalore')) || {};
+      const siliconValley = offices.find((o) => o.name?.toLowerCase().includes('silicon')) || {};
+      const us = offices.find((o) => o.name?.toLowerCase().includes('us office')) || {};
+      const uk = offices.find((o) => o.name?.toLowerCase().includes('uk')) || {};
+      const social = data.social_media || {};
+      const columns = footerInner.querySelector('.footer__columns');
+
+      if (columns) {
+        columns.classList.add('footer__contact-grid');
+        columns.innerHTML = `
+          <div class="footer__brand">
+            <div class="footer__brand-logo">
+              <img src="${getAfiLogoUrl()}" alt="Action For India" class="footer__logo-img" />
+            </div>
+            <p class="footer__brand-desc">${org.description_footer || ''}</p>
+          </div>
+          <div class="footer__contact-block">
+            <div class="footer__col-title">Contact Us</div>
+            ${renderFooterOffice(delhi)}
+            ${renderFooterOffice(bangalore)}
+            ${renderFooterOffice(siliconValley)}
+            ${renderFooterOffice(us)}
+            ${renderFooterOffice(uk)}
+          </div>
+          <div class="footer__connect-block">
+            <div class="footer__col-title">Follow Us</div>
+            <div class="footer__social footer__social--icons">
+              <a href="${social.facebook || '#'}" class="footer__social-icon" id="social-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/ffffff" alt="" loading="lazy" /></a>
+              <a href="${social.twitter || '#'}" class="footer__social-icon" id="social-twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="https://cdn.simpleicons.org/x/ffffff" alt="" loading="lazy" /></a>
+              <a href="${social.linkedin || '#'}" class="footer__social-icon" id="social-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="" loading="lazy" /></a>
+              <a href="${social.youtube || '#'}" class="footer__social-icon" id="social-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/ffffff" alt="" loading="lazy" /></a>
+            </div>
+          </div>
+        `;
+      }
+    }
+
     if (footerInner.querySelector('.footer__newsletter')) return;
 
     const mc = data.mailchimp;
@@ -137,10 +178,34 @@ function injectFooterNewsletter(data) {
         </select>
         <button type="submit">Subscribe</button>
       </form>
-      <button type="button" class="footer__volunteer-link" id="open-volunteer-modal">Become a Volunteer →</button>
+      <button type="button" class="footer__volunteer-link" id="open-volunteer-modal">Become a Volunteer -></button>
     `;
-    footerInner.appendChild(newsletter);
+    const connectBlock = footerInner.querySelector('.footer__connect-block');
+    (connectBlock || footerInner).appendChild(newsletter);
+    newsletter.classList.add('reveal');
   });
+}
+
+function renderFooterOffice(office = {}) {
+  if (!office.name) return '';
+  const place = office.address || office.location || '';
+  const maps = office.maps_url
+    ? `<a href="${office.maps_url}" target="_blank" rel="noopener noreferrer" class="footer__office-link">Location</a>`
+    : '';
+  const phone = office.phone
+    ? `<a href="tel:${office.phone.replace(/\s/g, '')}" class="footer__office-link">${office.phone}</a>`
+    : '';
+  const email = office.email
+    ? `<a href="mailto:${office.email}" class="footer__office-link">${office.email}</a>`
+    : '';
+
+  return `
+    <div class="footer__office">
+      <strong>${office.name}</strong>
+      ${place ? `<span>${place}</span>` : ''}
+      ${maps || phone || email ? `<div class="footer__office-links">${maps}${phone}${email}</div>` : ''}
+    </div>
+  `;
 }
 
 function injectModals(data) {
@@ -186,7 +251,7 @@ function injectModals(data) {
           <button type="submit" class="btn btn--primary btn--full">Donate via PayPal</button>
         </form>
         <p class="afi-modal__desc" style="margin-top:12px">
-          <a href="${getDonateUrl(data)}" target="_blank" rel="noopener noreferrer">More donation options →</a>
+          <a href="${getDonateUrl(data)}" target="_blank" rel="noopener noreferrer">More donation options -></a>
         </p>
       </div>
     </div>
@@ -298,7 +363,7 @@ function initBannerCarousel(data) {
   track.innerHTML = slidesHtml + slidesHtml;
 
   // Slow, continuous flow — duration scales with the number of banners
-  const durationSeconds = Math.max(36, data.banner_images.length * 14);
+  const durationSeconds = Math.max(30, data.banner_images.length * 11);
   track.style.animationDuration = `${durationSeconds}s`;
 
   // Continuous flow doesn't use navigation dots
@@ -363,6 +428,39 @@ function wireDonateButtons() {
   });
 }
 
+function refreshLucideIcons() {
+  if (window.lucide?.createIcons) {
+    window.lucide.createIcons();
+  }
+}
+
+function initLucideIcons() {
+  if (window.lucide?.createIcons) {
+    refreshLucideIcons();
+    return Promise.resolve();
+  }
+
+  if (document.getElementById('lucide-icons-script')) {
+    return new Promise((resolve) => {
+      document.getElementById('lucide-icons-script').addEventListener('load', () => {
+        refreshLucideIcons();
+        resolve();
+      });
+    });
+  }
+
+  return new Promise((resolve) => {
+    const script = document.createElement('script');
+    script.id = 'lucide-icons-script';
+    script.src = 'https://unpkg.com/lucide@latest/dist/umd/lucide.min.js';
+    script.onload = () => {
+      refreshLucideIcons();
+      resolve();
+    };
+    document.head.appendChild(script);
+  });
+}
+
 function initSharedLayout(data) {
   const currentPage = getCurrentPage();
   buildMegaNav(currentPage);
@@ -376,4 +474,7 @@ function initSharedLayout(data) {
   document.querySelectorAll('#partner-logos-grid').forEach((el) => {
     renderPartnerLogos(el, data);
   });
+
+  initLucideIcons();
 }
+

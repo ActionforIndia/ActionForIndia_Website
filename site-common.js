@@ -115,7 +115,11 @@ function initSiteCommon(data) {
     });
   }
 
-  // Scroll reveal for .reveal elements
+  // Add light reveal animation to common content blocks.
+  document
+    .querySelectorAll('.page-section, .section-header, .info-card, .impact__card, .home-provide__card, .get-involved__card, .partner-logos__item, .testimonials__card, .home-forum__content, .home-forum__image, .mission__content, .footer__columns, .footer__newsletter')
+    .forEach((el) => el.classList.add('reveal'));
+
   const revealElements = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -167,6 +171,9 @@ async function initSite() {
     initSiteCommon(data);
     if (typeof initSharedLayout === 'function') {
       initSharedLayout(data);
+    }
+    if (typeof observeRevealElements === 'function') {
+      observeRevealElements(document);
     }
     return data;
   } catch (err) {

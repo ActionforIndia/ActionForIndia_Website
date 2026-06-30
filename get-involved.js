@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const tabData = {
     entrepreneur: {
       title: 'Social Entrepreneur',
-      icon: '🚀',
+      icon: 'rocket',
       subtitle: entrepreneur?.description || 'Apply to AFI accelerator programs',
       desc: 'Are you a social entrepreneur looking to unleash your potential? Apply to our cohorts and get mentorship, funding, and network support.',
       url: entrepreneur?.url,
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     mentor: {
       title: 'Mentor',
-      icon: '🧭',
+      icon: 'compass',
       subtitle: 'Share expertise with high-potential social entrepreneurs',
       desc: mentor?.description || 'Are you a mentor looking for high potential social entrepreneurs?',
       url: mentor?.url,
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     investor: {
       title: 'Investor',
-      icon: '💡',
+      icon: 'lightbulb',
       subtitle: investor?.description || 'Discover high-potential social enterprises',
       desc: 'Connect with curated social enterprises addressing education, healthcare, agriculture, energy, livelihoods, and financial inclusion.',
       url: investor?.url,
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     corporate: {
       title: 'Corporate Partner',
-      icon: '🤝',
+      icon: 'handshake',
       subtitle: `Partners include ${data.partners?.corporates?.slice(0, 4).join(', ')}`,
       desc: 'Partner with AFI to support social entrepreneurs through technology, resources, and ecosystem access.',
       url: partner?.url,
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="role-pane role-pane--active" id="pane-${roleId}">
         <div class="role-pane__info">
           <div class="role-pane__header">
-            <span class="role-pane__icon-large">${info.icon}</span>
+            <span class="role-pane__icon-large"><i data-lucide="${info.icon}" aria-hidden="true"></i></span>
             <h2 class="role-pane__title">${info.title}</h2>
           </div>
           <p class="role-pane__subtitle">${info.subtitle}</p>
@@ -142,6 +142,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           alert('Thank you for your interest! We will be in touch.');
         }
       });
+    }
+    if (typeof refreshLucideIcons === 'function') {
+      refreshLucideIcons();
     }
   }
 

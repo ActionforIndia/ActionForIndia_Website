@@ -2,13 +2,13 @@
 let testimonialsData = [];
 let currentTestimonial = 0;
 
-const SECTOR_EMOJI = {
-  Education: '📚',
-  Healthcare: '🏥',
-  Agriculture: '🌾',
-  Energy: '⚡',
-  Livelihoods: '💼',
-  'Financial Inclusion': '💰',
+const SECTOR_ICON = {
+  Education: 'graduation-cap',
+  Healthcare: 'heart-pulse',
+  Agriculture: 'wheat',
+  Energy: 'zap',
+  Livelihoods: 'briefcase-business',
+  'Financial Inclusion': 'indian-rupee',
 };
 
 const SECTOR_COLOR_CLASS = ['red', 'orange', 'orange', 'red', 'orange', 'red'];
@@ -95,7 +95,7 @@ async function populateHomePage(data) {
         const iconClass = color === 'red' ? 'pink' : 'peach';
         return `
           <div class="impact__card reveal">
-            <div class="impact__card-icon impact__card-icon--${iconClass}">${SECTOR_EMOJI[area.sector] || '✦'}</div>
+            <div class="impact__card-icon impact__card-icon--${iconClass}"><i data-lucide="${SECTOR_ICON[area.sector] || 'sparkles'}" aria-hidden="true"></i></div>
             <h3 class="impact__card-title impact__card-title--${color}">${area.sector}</h3>
             <p class="impact__card-desc">${area.impact_stat}</p>
           </div>`;
@@ -386,5 +386,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (data) {
     populateHomePage(data);
     observeRevealElements();
+    if (typeof refreshLucideIcons === 'function') {
+      refreshLucideIcons();
+    }
   }
 });

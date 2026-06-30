@@ -126,7 +126,7 @@
   <script src="site-common.js"></script>
   <script src="page-shell.js"></script>
   <script>
-    /* Map startup names → logo filenames in images/ */
+    /* Map startup names to logo filenames in images/ */
     const STARTUP_LOGO_MAP = {
       'eVerse.AI': 'eVerse.png',
       'Saptkrishi Scientific': 'saptkrishi-logo-1.webp',
@@ -143,7 +143,7 @@
       'BioSouk': 'biosouklogo.avif',
     };
 
-    /* Map benefit names → icon filenames in images/ */
+    /* Map benefit names to icon filenames in images/ */
     const BENEFIT_ICON_MAP = {
       'Mentorship': 'images/001-mentorship.png',
       'Product refinement': 'images/002-product-refinement.png',
@@ -182,14 +182,14 @@
       const meta = document.getElementById('pd-meta');
       if (meta) {
         const metaItems = [
-          { label: 'Duration', value: program.duration || '5 Months', icon: '📅' },
-          { label: 'Application Deadline', value: program.deadline || 'Rolling', icon: '⏰' },
-          { label: 'Cost', value: program.cost || 'Free', icon: '💚' },
-          { label: 'Commitment', value: program.commitment || '3–4 hrs/week', icon: '🕐' },
+          { label: 'Duration', value: program.duration || '5 Months', icon: 'calendar-days' },
+          { label: 'Application Deadline', value: program.deadline || 'Rolling', icon: 'alarm-clock' },
+          { label: 'Cost', value: program.cost || 'Free', icon: 'badge-indian-rupee' },
+          { label: 'Commitment', value: program.commitment || '3-4 hrs/week', icon: 'clock-3' },
         ];
         meta.innerHTML = metaItems.map(m => `
           <div class="pd-meta-card reveal">
-            <span class="pd-meta-card__icon">${m.icon}</span>
+            <span class="pd-meta-card__icon"><i data-lucide="${m.icon}" aria-hidden="true"></i></span>
             <span class="pd-meta-card__label">${m.label}</span>
             <span class="pd-meta-card__value">${m.value}</span>
           </div>
@@ -260,7 +260,7 @@
                  <iframe src="${a.video_url}" title="${a.name}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                </div>`
             : `<div class="pd-alumni-card__play">
-                 <span class="pd-alumni-card__play-icon">▶</span>
+                 <span class="pd-alumni-card__play-icon"><i data-lucide="play" aria-hidden="true"></i></span>
                </div>`;
           return `
             <div class="pd-alumni-card reveal">
@@ -298,6 +298,7 @@
       } else if (faqSection) {
         faqSection.style.display = 'none';
       }
+      if (typeof refreshLucideIcons === 'function') refreshLucideIcons();
     });
 
     function toggleFaq(i) {

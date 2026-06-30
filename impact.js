@@ -1,12 +1,12 @@
 /* ===== Impact Page JavaScript ===== */
 
 const SECTOR_STYLES = [
-  { icon: 'yellow', stat: 'amber', emoji: '📚' },
-  { icon: 'green', stat: 'green', emoji: '🏥' },
-  { icon: 'blue', stat: 'blue', emoji: '🌾' },
-  { icon: 'pink', stat: 'pink', emoji: '⚡' },
-  { icon: 'purple', stat: 'purple', emoji: '💼' },
-  { icon: 'lemon', stat: 'lemon', emoji: '💰' },
+  { icon: 'yellow', stat: 'amber', lucide: 'graduation-cap' },
+  { icon: 'green', stat: 'green', lucide: 'heart-pulse' },
+  { icon: 'blue', stat: 'blue', lucide: 'wheat' },
+  { icon: 'pink', stat: 'pink', lucide: 'zap' },
+  { icon: 'purple', stat: 'purple', lucide: 'briefcase-business' },
+  { icon: 'lemon', stat: 'lemon', lucide: 'indian-rupee' },
 ];
 
 function extractSdgNumber(sdg) {
@@ -32,7 +32,7 @@ function renderSectorCard(area, index) {
     <div class="sector__card${reverse} reveal">
       <div class="sector__card-body">
         <div class="sector__card-header">
-          <div class="sector__card-icon sector__card-icon--${style.icon}">${style.emoji}</div>
+          <div class="sector__card-icon sector__card-icon--${style.icon}"><i data-lucide="${style.lucide}" aria-hidden="true"></i></div>
           <div class="sector__card-meta">
             <span class="sector__card-sdg">SDG ${sdgNum}</span>
             <span class="sector__card-name">${area.sector}</span>
@@ -48,7 +48,7 @@ function renderSectorCard(area, index) {
         </div>
       </div>
       <div class="sector__card-visual sector__card-visual--${style.icon}">
-        <div class="sector__card-emoji-bg">${style.emoji}</div>
+        <div class="sector__card-icon-bg"><i data-lucide="${style.lucide}" aria-hidden="true"></i></div>
         <div class="sector__card-badge">
           <span class="sector__card-badge-value sector__card-badge-value--${style.stat}">${mainStat}</span>
           <span class="sector__card-badge-label">${statLabel}</span>
@@ -124,7 +124,12 @@ function populateImpactPage(data) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const data = await initSite();
-  if (data) populateImpactPage(data);
+  if (data) {
+    populateImpactPage(data);
+    if (typeof refreshLucideIcons === 'function') {
+      refreshLucideIcons();
+    }
+  }
 
   // --- Animated stat counters ---
   const statValues = document.querySelectorAll('.impact-stats__value');
@@ -192,3 +197,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 });
+

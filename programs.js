@@ -88,12 +88,12 @@ function populateProgramsPage(data) {
 
   const resourcesGrid = document.getElementById('resources-grid');
   if (resourcesGrid && data.what_we_provide) {
-    const RESOURCE_EMOJI = { Funding: '💰', Mentorship: '🧭', 'Technology & Resources': '💻' };
+    const RESOURCE_ICON = { Funding: 'indian-rupee', Mentorship: 'compass', 'Technology & Resources': 'laptop' };
     resourcesGrid.innerHTML = data.what_we_provide
       .map(
         (item) => `
         <div class="resources__card reveal">
-          <div class="resources__card-emoji">${RESOURCE_EMOJI[item.title] || '✦'}</div>
+          <div class="resources__card-icon"><i data-lucide="${RESOURCE_ICON[item.title] || 'sparkles'}" aria-hidden="true"></i></div>
           <h3 class="resources__card-title">${item.title}</h3>
           <p class="resources__card-desc">${item.description}</p>
         </div>`
@@ -108,7 +108,7 @@ function populateProgramsPage(data) {
         (p) => `
         <a href="program-detail.html?id=${p.id}" class="all-programs__card reveal">
           <span class="all-programs__name">${p.name}</span>
-          <span class="all-programs__arrow">→</span>
+          <span class="all-programs__arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
         </a>`
       )
       .join('');
@@ -131,5 +131,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (data) {
     populateProgramsPage(data);
     observeRevealElements();
+    if (typeof refreshLucideIcons === 'function') {
+      refreshLucideIcons();
+    }
   }
 });
+

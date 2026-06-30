@@ -133,14 +133,6 @@ function populateAboutPage(data) {
 
   const chaptersGrid = document.getElementById('chapters-grid');
   if (chaptersGrid && data.contact?.offices) {
-    const flags = {
-      delhi: '🇮🇳',
-      bangalore: '🇮🇳',
-      us: '🇺🇸',
-      silicon: '🇺🇸',
-      uk: '🇬🇧',
-    };
-
     const intlChapters = data.international_chapters?.chapters || [];
     const chapterKeyMap = {
       'Silicon Valley Chapter': 'silicon-valley',
@@ -150,9 +142,8 @@ function populateAboutPage(data) {
     chaptersGrid.innerHTML = data.contact.offices
       .map((office) => {
         const key = office.name.toLowerCase();
-        let flag = '🇮🇳';
-        if (key.includes('uk')) flag = '🇬🇧';
-        else if (key.includes('us') || key.includes('silicon')) flag = '🇺🇸';
+        let icon = 'map-pin';
+        if (key.includes('uk') || key.includes('us') || key.includes('silicon')) icon = 'landmark';
 
         const city = office.location || office.name.replace(' Office', '').replace(' Chapter', '');
         const detail = office.address || office.email || '';
@@ -166,7 +157,7 @@ function populateAboutPage(data) {
         const close = chapterKey ? '</a>' : '</div>';
 
         return `${wrapper}
-            <div class="chapters__card-flag">${flag}</div>
+            <div class="chapters__card-flag"><i data-lucide="${icon}" aria-hidden="true"></i></div>
             <div class="chapters__card-city">${city}</div>
             <div class="chapters__card-country">${detail}</div>
             <div class="chapters__card-badge">${badge}</div>
@@ -180,11 +171,12 @@ function populateAboutPage(data) {
       if (parent) {
         const viewAll = document.createElement('a');
         viewAll.href = 'chapters.html';
-        viewAll.textContent = 'View all chapters →';
+        viewAll.innerHTML = 'View all chapters <i data-lucide="arrow-right" aria-hidden="true"></i>';
         viewAll.style.cssText = 'display:block;margin-top:12px;font-size:14px;color:var(--color-primary)';
         parent.appendChild(viewAll);
       }
     }
+    if (typeof refreshLucideIcons === 'function') refreshLucideIcons();
   }
 }
 

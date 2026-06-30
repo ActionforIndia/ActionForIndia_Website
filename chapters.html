@@ -52,27 +52,28 @@
       document.getElementById('future-plans').textContent = 'Future chapters planned: ' + data.international_chapters.future_plans;
 
       const chapters = [
-        { key: 'silicon-valley', flag: '🇺🇸', badge: 'Silicon Valley Chapter' },
-        { key: 'uk', flag: '🇬🇧', badge: 'UK Chapter' },
+        { key: 'silicon-valley', icon: 'landmark', badge: 'Silicon Valley Chapter' },
+        { key: 'uk', icon: 'landmark', badge: 'UK Chapter' },
       ];
 
       document.getElementById('chapters-grid').innerHTML = chapters.map((c) => {
         const ch = data.chapter_pages[c.key];
         return `<a href="chapter-detail.html?chapter=${c.key}" class="chapters__card" style="text-decoration:none">
-          <div class="chapters__card-flag">${c.flag}</div>
+          <div class="chapters__card-flag"><i data-lucide="${c.icon}" aria-hidden="true"></i></div>
           <div class="chapters__card-city">${ch.name}</div>
           <div class="chapters__card-country">${ch.location}</div>
           <div class="chapters__card-badge">${c.badge}</div>
         </a>`;
       }).join('') + data.contact.offices.filter(o => o.name.includes('Office')).map((office) => {
-        const flag = office.name.includes('Bangalore') || office.name.includes('Delhi') ? '🇮🇳' : '🇺🇸';
+        const icon = office.name.includes('Bangalore') || office.name.includes('Delhi') ? 'map-pin' : 'building-2';
         return `<div class="chapters__card">
-          <div class="chapters__card-flag">${flag}</div>
+          <div class="chapters__card-flag"><i data-lucide="${icon}" aria-hidden="true"></i></div>
           <div class="chapters__card-city">${office.name.replace(' Office','')}</div>
           <div class="chapters__card-country">${office.address || ''}</div>
           <div class="chapters__card-badge">${office.phone || office.email || 'Office'}</div>
         </div>`;
       }).join('');
+      if (typeof refreshLucideIcons === 'function') refreshLucideIcons();
     });
   </script>
 </body>

@@ -497,9 +497,22 @@
   box-shadow: 0 16px 32px rgba(200, 52, 10, 0.08);
 }
 
-.resources__card-emoji {
-  font-size: 30px;
-  line-height: 36px;
+.resources__card-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  background: var(--color-primary-lighter);
+  border-radius: 12px;
+}
+
+.resources__card-icon svg,
+.all-programs__arrow svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
 }
 
 .resources__card-title {
@@ -688,3 +701,4 @@
     grid-template-columns: 1fr;
   }
 }
+

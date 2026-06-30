@@ -99,6 +99,25 @@
   color: var(--color-white);
 }
 
+.aic-immersion__pill svg,
+.aic-sector__icon svg,
+.aic-why-afi__check svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+.aic-sector__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.aic-why-afi__check svg {
+  width: 16px;
+  height: 16px;
+}
+
 /* ===== ABOUT ===== */
 .aic-about__text {
   max-width: 860px;
