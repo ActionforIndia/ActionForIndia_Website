@@ -126,6 +126,34 @@
   <script src="site-common.js"></script>
   <script src="page-shell.js"></script>
   <script>
+    /* Map startup names → logo filenames in images/ */
+    const STARTUP_LOGO_MAP = {
+      'eVerse.AI': 'eVerse.png',
+      'Saptkrishi Scientific': 'saptkrishi-logo-1.webp',
+      'Agrivitals Innovation': 'agrivitals.jpeg',
+      'Oceanus Exports': 'ocenuseexport-logo.png',
+      'Visron': 'VISRON-LOGO.avif',
+      'DOSTBin Solutions': 'Dostbin-Logo.png',
+      'Circlo': 'Circlo-logo.avif',
+      'Yin N Yang Farms': 'YinNYang_Secondary_Logo.avif',
+      'BharatGodam': 'BharatGoDam.png',
+      'Villa Mart': 'villamart-logo.png',
+      'AVN Agrobharat': 'AVN-agrobharat.jpg',
+      'Essential Aquatech': 'Essential-Aquatech.png',
+      'BioSouk': 'biosouklogo.avif',
+    };
+
+    /* Map benefit names → icon filenames in images/ */
+    const BENEFIT_ICON_MAP = {
+      'Mentorship': 'images/001-mentorship.png',
+      'Product refinement': 'images/002-product-refinement.png',
+      'Masterclasses with ecosystem experts': 'images/003-masterclasses-with-ecosystem-experts.png',
+      'Market Access': 'images/004-market-access.png',
+      'Startup Toolkit': 'images/005-startup-toolkit.png',
+      'Networking Opportunity': 'images/006-networking-opportunity.png',
+      'Investor Connect': 'images/007-investor-connect.png',
+    };
+
     initPage((data) => {
       const id = new URLSearchParams(location.search).get('id');
       const program = data.program_details?.find(p => p.id === id);
@@ -168,15 +196,21 @@
         `).join('');
       }
 
-      // Benefits
+      // Benefits — with icon images when available
       const benefits = document.getElementById('pd-benefits');
       if (benefits && program.benefits?.length) {
-        benefits.innerHTML = program.benefits.map(b => `
-          <div class="pd-benefit-card reveal">
-            <span class="pd-benefit-card__dot"></span>
-            <span class="pd-benefit-card__text">${b}</span>
-          </div>
-        `).join('');
+        benefits.innerHTML = program.benefits.map(b => {
+          const iconSrc = BENEFIT_ICON_MAP[b];
+          const iconHtml = iconSrc
+            ? `<img class="pd-benefit-card__icon" src="${iconSrc}" alt="${b}" />`
+            : `<span class="pd-benefit-card__dot"></span>`;
+          return `
+            <div class="pd-benefit-card reveal">
+              ${iconHtml}
+              <span class="pd-benefit-card__text">${b}</span>
+            </div>
+          `;
+        }).join('');
       }
 
       // Mentoring
@@ -194,38 +228,50 @@
         mentoringSection.style.display = 'none';
       }
 
-      // Cohort startups
+      // Cohort startups — with actual logo images when available
       const cohortSection = document.getElementById('pd-cohort-section');
       const cohortGrid = document.getElementById('pd-cohort');
       const cohortTitle = document.getElementById('pd-cohort-title');
       if (cohortTitle) cohortTitle.textContent = program.name;
       if (program.cohort_startups?.length && cohortGrid) {
-        cohortGrid.innerHTML = program.cohort_startups.map(name => `
-          <div class="pd-cohort-card reveal">
-            <div class="pd-cohort-card__icon">AFI</div>
-            <div class="pd-cohort-card__label">AFI Program</div>
-            <div class="pd-cohort-card__name">${name}</div>
-          </div>
-        `).join('');
+        cohortGrid.innerHTML = program.cohort_startups.map(name => {
+          const logoFile = STARTUP_LOGO_MAP[name];
+          const iconHtml = logoFile
+            ? `<img class="pd-cohort-card__logo" src="images/${logoFile}" alt="${name}" />`
+            : `<div class="pd-cohort-card__icon">${name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()}</div>`;
+          return `
+            <div class="pd-cohort-card reveal">
+              ${iconHtml}
+              <div class="pd-cohort-card__name">${name}</div>
+            </div>
+          `;
+        }).join('');
       } else if (cohortSection) {
         cohortSection.style.display = 'none';
       }
 
-      // Alumni testimonials
+      // Alumni testimonials — YouTube video embeds when URL available
       const alumniSection = document.getElementById('pd-alumni-section');
       const alumniGrid = document.getElementById('pd-alumni');
       if (program.alumni_testimonials?.length && alumniGrid) {
-        alumniGrid.innerHTML = program.alumni_testimonials.map(a => `
-          <div class="pd-alumni-card reveal">
-            <div class="pd-alumni-card__play">
-              <span class="pd-alumni-card__play-icon">▶</span>
+        alumniGrid.innerHTML = program.alumni_testimonials.map(a => {
+          const videoHtml = a.video_url
+            ? `<div class="pd-alumni-card__video">
+                 <iframe src="${a.video_url}" title="${a.name}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>`
+            : `<div class="pd-alumni-card__play">
+                 <span class="pd-alumni-card__play-icon">▶</span>
+               </div>`;
+          return `
+            <div class="pd-alumni-card reveal">
+              ${videoHtml}
+              <div class="pd-alumni-card__info">
+                <div class="pd-alumni-card__name">${a.name}</div>
+                <div class="pd-alumni-card__role">${a.role}</div>
+              </div>
             </div>
-            <div class="pd-alumni-card__info">
-              <div class="pd-alumni-card__name">${a.name}</div>
-              <div class="pd-alumni-card__role">${a.role}</div>
-            </div>
-          </div>
-        `).join('');
+          `;
+        }).join('');
       } else if (alumniSection) {
         alumniSection.style.display = 'none';
       }

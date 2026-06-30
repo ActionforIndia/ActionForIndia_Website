@@ -239,23 +239,37 @@
 .pd-benefits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  gap: 20px;
 }
 
 .pd-benefit-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 20px 24px;
+  gap: 16px;
+  padding: 32px 24px;
   background: var(--color-white);
   border: 1px solid var(--color-primary-light);
-  border-radius: 14px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .pd-benefit-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(200, 52, 10, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(200, 52, 10, 0.12);
+}
+
+.pd-benefit-card__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.pd-benefit-card:hover .pd-benefit-card__icon {
+  transform: scale(1.12);
 }
 
 .pd-benefit-card__dot {
@@ -268,8 +282,9 @@
 
 .pd-benefit-card__text {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-text-dark);
+  line-height: 1.4;
 }
 
 /* ===== MENTORING ===== */
@@ -320,36 +335,55 @@
 /* ===== COHORT STARTUPS ===== */
 .pd-cohort-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
 }
 
 .pd-cohort-card {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  padding: 24px 16px;
+  border-radius: 18px;
+  padding: 28px 16px 22px;
   text-align: center;
-  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+  transition: background 0.3s, transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 
 .pd-cohort-card:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.pd-cohort-card__logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+
+.pd-cohort-card:hover .pd-cohort-card__logo {
+  transform: scale(1.08);
 }
 
 .pd-cohort-card__icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 12px;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
   background: var(--color-primary);
-  border-radius: 12px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
   letter-spacing: 0.04em;
@@ -361,37 +395,31 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 .pd-cohort-card__name {
   font-size: 14px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.3;
 }
 
 /* ===== ALUMNI ===== */
 .pd-alumni-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .pd-alumni-card {
   background: var(--color-white);
   border: 1px solid var(--color-primary-light);
   border-radius: 20px;
-  padding: 28px 24px;
-  width: 200px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pd-alumni-card:hover {
@@ -399,32 +427,61 @@
   box-shadow: 0 20px 48px rgba(200, 52, 10, 0.12);
 }
 
+.pd-alumni-card__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #1a1a1a;
+}
+
+.pd-alumni-card__video iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .pd-alumni-card__play {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #2d1500 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.pd-alumni-card:hover .pd-alumni-card__play {
+  background: linear-gradient(135deg, #3d2000 0%, #2a2a2a 100%);
+}
+
+.pd-alumni-card__play-icon {
+  width: 56px;
+  height: 56px;
   background: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.pd-alumni-card:hover .pd-alumni-card__play {
-  transform: scale(1.08);
-  box-shadow: 0 8px 24px rgba(200, 52, 10, 0.4);
-}
-
-.pd-alumni-card__play-icon {
   color: white;
-  font-size: 18px;
-  margin-left: 3px;
+  font-size: 20px;
+  padding-left: 4px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pd-alumni-card:hover .pd-alumni-card__play-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(200, 52, 10, 0.5);
+}
+
+.pd-alumni-card__info {
+  padding: 18px 20px;
+  text-align: center;
 }
 
 .pd-alumni-card__name {
   font-size: 15px;
   font-weight: 600;
   color: var(--color-text-dark);
+  margin-bottom: 4px;
 }
 
 .pd-alumni-card__role {
@@ -656,10 +713,8 @@
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
   .pd-alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-  }
-  .pd-alumni-card {
-    width: 160px;
   }
   .pd-apply-cta__title {
     font-size: 30px;
@@ -682,8 +737,8 @@
   .pd-cohort-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .pd-alumni-card {
-    width: 140px;
+  .pd-alumni-grid {
+    grid-template-columns: 1fr;
   }
   .pd-apply-cta__title {
     font-size: 24px;
