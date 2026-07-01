@@ -116,23 +116,10 @@ function initSiteCommon(data) {
   }
 
   // Add light reveal animation to common content blocks.
+  // Skip .page-section — it's a layout wrapper; fading it hides all nested cards.
   document
-    .querySelectorAll('.page-section, .section-header, .info-card, .impact__card, .home-provide__card, .get-involved__card, .partner-logos__item, .testimonials__card, .home-forum__content, .home-forum__image, .mission__content, .footer__columns, .footer__newsletter')
+    .querySelectorAll('.section-header, .info-card, .impact__card, .home-provide__card, .get-involved__card, .partner-logos__item, .testimonials__card, .home-forum__content, .home-forum__image, .mission__content, .footer__columns, .footer__newsletter')
     .forEach((el) => el.classList.add('reveal'));
-
-  const revealElements = document.querySelectorAll('.reveal');
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-  );
-  revealElements.forEach((el) => revealObserver.observe(el));
 
   // Contact info in footer
   const delhi = data.contact?.offices?.find((o) =>
@@ -160,9 +147,18 @@ function observeRevealElements(root = document) {
         }
       });
     },
-    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0, rootMargin: '0px 0px -5% 0px' }
   );
-  root.querySelectorAll('.reveal:not(.visible)').forEach((el) => revealObserver.observe(el));
+
+  const scope = root.querySelectorAll ? root : document;
+  scope.querySelectorAll('.reveal:not(.visible)').forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+    } else {
+      revealObserver.observe(el);
+    }
+  });
 }
 
 async function initSite() {
