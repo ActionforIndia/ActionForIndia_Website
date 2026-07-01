@@ -53,10 +53,38 @@ function getPartnerLogoUrl(name) {
 
 async function loadSiteData() {
   if (_siteDataCache) return _siteDataCache;
-  const response = await fetch('scraped-data.json');
-  if (!response.ok) throw new Error('Failed to load scraped-data.json');
-  _siteDataCache = await response.json();
-  return _siteDataCache;
+
+  // 1. Check for pre-loaded global (set by scraped-data-bundle.js)
+  if (window.__AFI_SITE_DATA) {
+    _siteDataCache = window.__AFI_SITE_DATA;
+    return _siteDataCache;
+  }
+
+  // 2. Try fetch (works on HTTP servers)
+  try {
+    const response = await fetch('scraped-data.json');
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    _siteDataCache = await response.json();
+    return _siteDataCache;
+  } catch (_fetchErr) {
+    // 3. Fallback: dynamically load the JS bundle (works on file://)
+    return new Promise(function (resolve, reject) {
+      var script = document.createElement('script');
+      script.src = 'scraped-data-bundle.js';
+      script.onload = function () {
+        _siteDataCache = window.__AFI_SITE_DATA;
+        if (_siteDataCache) {
+          resolve(_siteDataCache);
+        } else {
+          reject(new Error('scraped-data-bundle.js loaded but data is missing'));
+        }
+      };
+      script.onerror = function () {
+        reject(new Error('Failed to load site data via both fetch and script fallback'));
+      };
+      document.head.appendChild(script);
+    });
+  }
 }
 
 function formatPersonName(name) {
