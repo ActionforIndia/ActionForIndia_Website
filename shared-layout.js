@@ -342,13 +342,16 @@ function initBannerCarousel(data) {
   if (!container || !data.banner_images?.length) return;
 
   document.body.classList.add('has-banner-carousel');
-  container.classList.add('banner-carousel--marquee');
 
   const track = container.querySelector('.banner-carousel__track');
   const dots = container.querySelector('.banner-carousel__dots');
+  const prevBtn = container.querySelector('.banner-carousel__arrow--prev');
+  const nextBtn = container.querySelector('.banner-carousel__arrow--next');
   if (!track) return;
 
-  const slidesHtml = data.banner_images
+  const images = data.banner_images;
+
+  track.innerHTML = images
     .map(
       (b) => `
       <div class="banner-carousel__slide">
@@ -359,15 +362,69 @@ function initBannerCarousel(data) {
     )
     .join('');
 
-  // Duplicate the set so the flow loops seamlessly
-  track.innerHTML = slidesHtml + slidesHtml;
+  let current = 0;
+  let timer = null;
 
-  // Slow, continuous flow — duration scales with the number of banners
-  const durationSeconds = Math.max(30, data.banner_images.length * 11);
-  track.style.animationDuration = `${durationSeconds}s`;
+  function goTo(index) {
+    current = (index + images.length) % images.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots?.querySelectorAll('.banner-carousel__dot').forEach((dot, i) => {
+      dot.classList.toggle('banner-carousel__dot--active', i === current);
+      dot.setAttribute('aria-current', i === current ? 'true' : 'false');
+    });
+  }
 
-  // Continuous flow doesn't use navigation dots
-  if (dots) dots.style.display = 'none';
+  function startAutoplay() {
+    stopAutoplay();
+    if (images.length > 1) {
+      timer = setInterval(() => goTo(current + 1), 5000);
+    }
+  }
+
+  function stopAutoplay() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  if (dots) {
+    dots.innerHTML = images
+      .map(
+        (_, i) =>
+          `<button type="button" class="banner-carousel__dot${i === 0 ? ' banner-carousel__dot--active' : ''}" aria-label="Go to slide ${i + 1}" aria-current="${i === 0 ? 'true' : 'false'}"></button>`
+      )
+      .join('');
+
+    dots.querySelectorAll('.banner-carousel__dot').forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        goTo(i);
+        startAutoplay();
+      });
+    });
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    goTo(current - 1);
+    startAutoplay();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    goTo(current + 1);
+    startAutoplay();
+  });
+
+  container.addEventListener('mouseenter', stopAutoplay);
+  container.addEventListener('mouseleave', startAutoplay);
+
+  if (images.length <= 1) {
+    prevBtn?.setAttribute('hidden', '');
+    nextBtn?.setAttribute('hidden', '');
+    if (dots) dots.style.display = 'none';
+  }
+
+  goTo(0);
+  startAutoplay();
 }
 
 function renderPartnerLogoItem(name) {
